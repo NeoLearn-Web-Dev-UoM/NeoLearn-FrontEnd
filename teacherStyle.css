@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+#toolbar {
+    background-color: lightcyan;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.frame-container {
+    border: 2px solid #333;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
