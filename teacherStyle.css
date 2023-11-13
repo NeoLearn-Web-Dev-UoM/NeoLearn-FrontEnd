@@ -3,11 +3,11 @@ body {
 
 }
 
-#toolbar {
+/* #toolbar {
     background-color: lightcyan;
     padding: 10px;
     text-align: center;
-}
+} */
 
 button {
     margin: 0 5px;
@@ -16,7 +16,7 @@ button {
     cursor: pointer;
 }
 
-.frame-container {
+/* .frame-container {
     border: 2px solid #333;
     padding: 20px;
     background-color: #fff;
@@ -26,4 +26,4 @@ button {
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+} */
