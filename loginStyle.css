@@ -41,12 +41,32 @@ h2 {
     font-weight: bold;
 }
 
+@media screen and (max-width: 992px) {
+    #username {
+        border: 2px solid rgb(0, 96, 100);
+        padding: 3%;
+        margin-top: 5px;
+        border-radius: 5%;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #password {
+        border: 2px solid rgb(0, 96, 100);
+        padding: 3%;
+        margin-top: 5px;
+        border-radius: 5%;
+        width: 70%;
+    }
+}
+
 #username {
     border: 2px solid rgb(0, 96, 100);
     padding: 3%;
     margin-top: 5px;
     border-radius: 5%;
-    width: 80%;
+    /* width: 100%; */
 }
 
 #password {
@@ -54,7 +74,7 @@ h2 {
     padding: 3%;
     margin-top: 5px;
     border-radius: 5%;
-    width: 80%;
+    /* width: 100%; */
 }
 
 .frame {
