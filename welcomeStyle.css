@@ -1,6 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.left-half {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.right-half {
+    flex: 1;
+    /* display: flex; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.title-class {
+    color: blue;
+    margin-top: 35%;
+    padding: 10px;
+}
+
+.details-class {
+
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.hyperlink-class {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+
 img {
-    max-width: 80%;
+    max-width: 50%;
     /* Adjust the percentage as needed */
     height: auto;
     margin-bottom: 20px;
 }
+
+/* 
+.login-button {
+    background-color: black !important;
+} */
