@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title> NeoLearn </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="greenBack.png" type="image/png">
     <link rel="stylesheet" href="loginStyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
     EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -12,19 +13,36 @@
 
 <body>
     <div class="left-half">
-        <img src="NL-blue.png" alt="Logo">
+        <img src="greenNL.png" alt="Logo">
     </div>
     <div class="right-half">
         <div class="frame">
             <form method="post" action="">
                 <h2>Καλώς ήρθατε στο NeoLearn!</h2>
-                Όνομα χρήστη: <input type="text" id="username" value="" placeholder="name@example.com"><br /><br />
-                Κωδικός: <input type="password" id="password" placeholder="********"><br /><br />
-                <button type="button" onclick="submitBtn()" id="signinBtn"
-                    class="btn btn-outline-primary">Σύνδεση</button>
+                <main class="content">
+                    Όνομα χρήστη: <input type="text" id="username" value="" placeholder="name@example.com"><br /><br />
+                    Κωδικός: <input type="password" id="password" placeholder="********"><br /><br />
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="teacher"
+                            onclick="handleCheckboxClick('teacher')">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Εκπαιδευτικός
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="student"
+                            onclick="handleCheckboxClick('student')">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Εκπαιδευόμενος
+                        </label>
+                    </div>
+                    <button type="button" onclick="submitBtn()" id="signinBtn"
+                        class="btn btn-outline-light">Σύνδεση</button>
+                </main>
             </form>
         </div>
     </div>
+    <script src="login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-
     MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

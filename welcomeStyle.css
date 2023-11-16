@@ -23,7 +23,7 @@ body {
 }
 
 .title-class {
-    color: blue;
+    color: #006064;
     margin-top: 35%;
     padding: 10px;
 }
@@ -44,7 +44,7 @@ body {
 }
 
 img {
-    max-width: 50%;
+    max-width: 70%;
     /* Adjust the percentage as needed */
     height: auto;
     margin-bottom: 20px;
