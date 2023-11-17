@@ -1,6 +1,6 @@
 'use strict'
 
-function submitBtn() {
+function signUpBtn() {
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
     checkboxes.forEach(function (checkbox) {
