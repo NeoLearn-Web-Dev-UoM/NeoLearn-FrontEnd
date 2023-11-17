@@ -79,7 +79,7 @@ h2 {
 
 .frame {
     width: 90%;
-    max-width: 400px;
+    max-width: 500px;
     box-shadow: 5px 5px 20px rgb(0, 96, 100);
     border-radius: 15%;
     background-color: white;
@@ -90,16 +90,6 @@ h2 {
     justify-content: center;
 }
 
-/* 
-img {
-   
-} */
-
-#signinBtn {
-    background-color: rgb(0, 96, 100) !important;
-    border-radius: 10% !important;
-    margin-top: 10px !important;
-}
 
 .form-check {
     margin-top: 5px;
@@ -109,4 +99,28 @@ img {
 .form-check-input:checked~.form-check-label::before {
     background-color: rgb(0, 96, 100) !important;
     border-color: rgb(0, 96, 100) !important;
+}
+
+.content-field-input input {
+    width: 15rem;
+    height: 40px;
+}
+
+#signinBtn {
+    width: 15rem !important;
+    background-color: rgb(0, 96, 100) !important;
+    /* border-radius: 10% !important; */
+    margin-top: 10px !important;
+    height: 40px;
+}
+
+.form-check {
+    display: flex !important;
+    justify-content: center;
+}
+
+.form-check-label {
+    width: 10rem;
+    text-align: left;
+    margin-left: 1rem;
 }
