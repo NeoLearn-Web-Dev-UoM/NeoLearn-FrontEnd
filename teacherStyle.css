@@ -30,16 +30,17 @@ body {
  
  .container {
      border: 1px solid;
-     width: 1100px!important;
+     width: 70%!important;
      height: 700px;
      padding-right: 40%;
      padding-left: 30%;
      background-color: lightgray;
      border-color: black;
+
   
  }
  
- .img {
+ .logo {
      position:absolute;
      top: 20px;
      margin-top:-24px;
@@ -50,4 +51,37 @@ body {
     position:absolute;
     top: 250px;
    
+}
+
+@media screen and (max-width: 992px) {
+    #username {
+        border: 2px solid rgb(0, 96, 100);
+        padding: 3%;
+        margin-top: 5px;
+        border-radius: 5%;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #password {
+        border: 2px solid rgb(0, 96, 100);
+        padding: 3%;
+        margin-top: 5px;
+        border-radius: 5%;
+        width: 70%;
+    }
+}
+
+.header{
+	display:flex;
+}
+
+
+.img{
+	padding-right: 10%; 
+}
+
+.profile{
+	margin-left: 70%; 
 }
