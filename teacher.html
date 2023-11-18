@@ -21,7 +21,7 @@
         <h1>This is a Frame</h1>
         <p>Content goes here...</p>
     </div> -->
-    <img src="images/NL-white.png" width="200"  class="logo"> 
+    <img src="images/NL-white.png" width="300" height="300" class="logo"> 
     <div class="list-group d-inline-block">
 
         <div class="mh-100" style="width: 220px; height: 200px; background-color: rgba(0,0,255,0.1);">
@@ -35,7 +35,6 @@
                 <img src="images/NL-courses.png" class="img-fluid" alt="bellow" width="20" height="25"> Τα μαθήματα μου</a>
             <a href="/link" class="list-group-item" style="color: white; background-color: #006064;">
                 <img src="images/NL-edit.png" class="img-fluid" alt="bellow" width="20" height="25"> Επεξεργασία προφίλ</a>
-            
         </div>
   </div>
 
@@ -52,21 +51,22 @@
 					<ul class="navbar-nav ml-auto">
 					<li class="nav-item dropdown">
 					<a class="navbar-brand" href="#">
-						<img src="images/NL-profile.png" alt="profile" width="50" height="50" class="d-inline-block align-text-top">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Samaras
-						</a>
-
-						
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Το προφίλ μου</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Τα μαθήματα μου</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Το ημερολόγιο μου</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Έξοδος</a></li>
-                        </ul>
+                        <div class="profile-container">
+                            <img src="images/NL-profile.png" alt="profile" width="50" height="50" class="d-inline-block align-text-top">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Samaras
+                            </a>
+                            
+					    	<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                 <li><a class="dropdown-item" href="#">Το προφίλ μου</a></li>
+                                 <li><hr class="dropdown-divider"></li>
+                                 <li><a class="dropdown-item" href="#">Τα μαθήματα μου</a></li>
+                                 <li><hr class="dropdown-divider"></li>
+                                 <li><a class="dropdown-item" href="#">Το ημερολόγιο μου</a></li>
+                                 <li><hr class="dropdown-divider"></li>
+                                 <li><a class="dropdown-item" href="#">Έξοδος</a></li>
+                             </ul>
+                        </div>	
                     </a>
 					</li>
 					
@@ -81,6 +81,7 @@
             <button class="btn btn-outline-success" type="submit">Αναζήτηση</button>
             <!--Αν τελικά κάνουμε ζωντανή αναζήτηση θα βγει το κουμπί-->
         </form>
+      
         
 	</div>
   
