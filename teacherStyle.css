@@ -78,12 +78,13 @@ button {
     padding-top: 0%;
 }
 
-.profile-container{
+.profile-container {
     display: grid;
-    align-items: center; 
+    align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 20%;
 }
+
 .img {
     /*padding-right: 10%;*/
     margin-top: 150%;
@@ -92,12 +93,12 @@ button {
 
 .profile {
     margin-left: 70%;
-   margin-bottom: -10%;
+    margin-bottom: -10%;
 }
 
-.courses-container{
+.courses-container {
     width: 60% !important;
-    height:40%;
+    height: 40%;
     max-width: 500px;
     box-shadow: 5px 5px 20px rgb(0, 96, 100);
     border-radius: 5%;
@@ -109,10 +110,11 @@ button {
     justify-content: left;
     font-size: 12px;
     background-color: lightgray;
-   
+
     width: 90%;
-   
+
 }
+
 /*
 .delete-container{
     display: grid;

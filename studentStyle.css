@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(0, 96, 100) !important;
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    margin-top: -5%;
+    margin-left: -2%;
+    width: 20%;
+    height: 20%;
+}
+
+.container {
+    border: 1px solid;
+    width: 70% !important;
+    display: flex;
+    /* height: 700px; */
+    padding-right: 40%;
+    padding-left: 30%;
+    background-color: lightgray;
+    border-color: black;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.container .logo {
+    flex: 1;
+}
+
+.header {
+    display: flex;
+    padding-top: 0%;
+}
+
+.profile-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 20%;
+    /* text-align: right; */
+}
