@@ -16,6 +16,27 @@ button {
     cursor: pointer;
 }
 
+.mh-100{
+    width: 220px; 
+    height: 100px; 
+}
+
+.list-group-item{
+    color: white!important;
+    background-color: #006064 !important;
+    border-color: #006064 !important;
+} /*τελος*/
+
+.img-fluid{
+    width:30px;
+    height:25px;
+ }
+
+ .img-fluid2{
+    background-color: lightgray;
+    width:30px;
+    height:20px;
+ }
 /* .frame-container {
      border: 2px solid #333;
      padding: 20px;
@@ -43,8 +64,9 @@ button {
     position: absolute;
     top: 20px;
     margin-top: -5%;
-    margin-left: -2%;
-
+    margin-left: -5%;
+    width: 25%;
+    height: 40%;
 }
 
 .list-group {
@@ -91,6 +113,15 @@ button {
     margin-bottom: -50%;
 }
 
+#dimentions_30_40{
+    width:40px;
+    height:30px;
+}
+
+#dimentions_50_50{
+    width:50%;
+    height:50%;
+}
 .profile {
     margin-left: 70%;
     margin-bottom: -10%;
@@ -115,23 +146,16 @@ button {
 
 }
 
-/*
-.delete-container{
-    display: grid;
-    align-items: center; 
-    grid-template-columns: 1fr 1fr 1fr;
-    
-}*/
-
-.horizontal_line {
-
-    width: 90%;
-    height: 5px;
-    border-top: 5px dotted black;
-    line-height: 80%;
+.search-course{
+    display: flex;
+  align-items: center; 
 }
 
-.line {
-    margin-top: 5px;
-    width: 90%;
+.form-control {
+  margin-left: 10px;
+  width: 200%;
+}
+
+#btn{
+    background-color: rgba(0,0,255,0.1);
 }
