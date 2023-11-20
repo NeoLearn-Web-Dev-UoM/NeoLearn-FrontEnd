@@ -21,35 +21,33 @@
         <h1>This is a Frame</h1>
         <p>Content goes here...</p>
     </div> -->
-  <img src="images/NL-white.png" width="300" height="300" class="logo">
+  <img src="images/NL-white.png" class="logo">
   <div class="list-group d-inline-block">
 
-    <div class="mh-100" style="width: 220px; height: 100px; background-color: rgba(0,0,255,0.1);">
+    <div class="mh-100">
 
-      <a href="/link" class="list-group-item" style="color: white; background-color: #006064;">
-        <img src="images/NL-below.png" class="img-fluid" alt="bellow" width="20" height="25"> Βασικές Επιλογές
-      </a>
-      <a href="/link" class="list-group-item" style="color: white; background-color: #006064;">
-        <img src="images/NL-add.png" class="img-fluid" alt="add" width="20" height="25"> Νέο Μάθημα</a>
-      <a href="/link" class="list-group-item" style="color: white; background-color: #006064;">
-        <img src="images/NL-courses.png" class="img-fluid" alt="bellow" width="20" height="25"> Τα μαθήματα μου</a>
-      <a href="/link" class="list-group-item" style="color: white; background-color: #006064;">
-        <img src="images/NL-edit.png" class="img-fluid" alt="bellow" width="20" height="25"> Επεξεργασία προφίλ</a>
+      <a href="/link" class="list-group-item">
+        <img src="images/NL-below.png" class="img-fluid" alt="bellow"> Βασικές Επιλογές</a>
+      <a href="/link" class="list-group-item">
+        <img src="images/NL-add.png" class="img-fluid" alt="add"> Νέο Μάθημα</a>
+      <a href="/link" class="list-group-item">
+        <img src="images/NL-courses.png" class="img-fluid" alt="bellow"> Τα μαθήματα μου</a>
+      <a href="/link" class="list-group-item">
+        <img src="images/NL-edit.png" class="img-fluid" alt="bellow"> Επεξεργασία προφίλ</a>
     </div>
   </div>
 
   <div class="container" id="test">
     <div class="header" id="h">
-      <p><a href=""><img src="images/NL-home.png" alt="home" style="width:40px;height:30px;" class="img"></a></p>
-      <p><a href=""><img src="images/NL-questionmark.png" alt="questionmark" style="width:40px;height:30px;"
-            class="img"></a></p>
+      <p><a href=""><img src="images/NL-home.png" alt="home" id="dimentions_30_40" class="img"></a></p>
+      <p><a href=""><img src="images/NL-questionmark.png" alt="questionmark" id="dimentions_30_40" class="img"></a></p>
       <div class="profile">
 
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
             <a class="navbar-brand" href="#">
               <div class="profile-container">
-                <img src="images/NL-profile.png" alt="profile" width="50" height="50"
+                <img src="images/NL-profile.png" alt="profile" id="dimentions_50_50"
                   class="d-inline-block align-text-top">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
@@ -79,14 +77,15 @@
       </div>
     </div>
     <hr>
-    <h3>Τα μαθήματα μου:</h3>
-    <br>
-    <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Αναζήτηση μαθήματος.." aria-label="Search"
-        style="width: 300px;">
-      <button class="btn btn-outline" type="submit" style="background-color: rgba(0,0,255,0.1);">Αναζήτηση</button>
-      <!--Αν τελικά κάνουμε ζωντανή αναζήτηση θα βγει το κουμπί-->
-    </form>
+    <div class="search-course">
+      <h3>Τα μαθήματα μου:</h3>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Αναζήτηση μαθήματος.." aria-label="Search">
+        <button class="btn btn-outline" type="submit" id="btn">Αναζήτηση</button>
+        <!--Αν τελικά κάνουμε ζωντανή αναζήτηση θα βγει το κουμπί-->
+      </form>
+
+    </div>
     <br>
 
     <div class="courses-container">
@@ -102,8 +101,8 @@
             </figcaption>
           </figure>
         </a>
-        <a href="/link" class="list-group-item">
-          <img src=" images/NL-delete.png" class="img-fluid" alt="bellow" width="20" height="25"> Delete
+        <a href="/link" class="list-group-item2" id="r">
+          <img src=" images/NL-delete.png" class="img-fluid2" alt="bellow"> Delete
         </a>
         <hr>
         <a href="link2.html">
@@ -116,8 +115,8 @@
             </figcaption>
           </figure>
         </a>
-        <a href="/link" class="list-group-item">
-          <img src=" images/NL-delete.png" class="img-fluid" alt="bellow" width="20" height="25"> Delete
+        <a href="/link" class="list-group-item2">
+          <img src=" images/NL-delete.png" class="img-fluid2" alt="bellow"> Delete
         </a>
         <hr>
         <a href="link3.html">
@@ -131,8 +130,8 @@
             </figcaption>
           </figure>
         </a>
-        <a href="/link" class="list-group-item">
-          <img src=" images/NL-delete.png" class="img-fluid" alt="bellow" width="20" height="25"> Delete
+        <a href="/link" class="list-group-item2">
+          <img src=" images/NL-delete.png" class="img-fluid2" alt="bellow"> Delete
         </a>
         <hr>
         <a href="link4.html">
@@ -145,14 +144,13 @@
             </figcaption>
           </figure>
         </a>
-        <a href="/link" class="list-group-item">
-          <img src=" images/NL-delete.png" class="img-fluid" alt="bellow" width="20" height="25"> Delete
+        <a href="/link" class="list-group-item2">
+          <img src=" images/NL-delete.png" class="img-fluid2" alt="bellow"> Delete
         </a>
 
       </ul>
     </div>
-    
-
+    <hr>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
