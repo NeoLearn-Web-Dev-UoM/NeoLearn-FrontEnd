@@ -31,7 +31,7 @@
   
   .calendar-header {
     background: linear-gradient(to left,rgb(0, 96, 100), #9796f0, #42445A);
-
+    font-size:20px;
     display: flex;
     justify-content: space-between;
     border-radius: 7px;
@@ -51,6 +51,7 @@
     font-weight: 600;
     cursor: pointer;
     color: rgb(104, 104, 104);
+    font-size:20px;
   }
   
 @media screen and (max-width: 992px) {
