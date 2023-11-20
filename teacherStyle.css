@@ -17,19 +17,20 @@ button {
 }
 
 .mh-100{
-    width: 220px; 
-    height: 100px; 
+    width: 108%; 
+    height: 140%; 
 }
 
 .list-group-item{
     color: white!important;
     background-color: #006064 !important;
-    border-color: #006064 !important;
 } /*τελος*/
 
 .img-fluid{
     width:30px;
     height:25px;
+    padding-bottom: 0%;
+    padding-top: 0%;
  }
 
  .img-fluid2{
@@ -72,7 +73,6 @@ button {
 .list-group {
     position: absolute;
     top: 30%;
-
 }
 
 @media screen and (max-width: 992px) {
@@ -98,24 +98,27 @@ button {
 .header {
     display: flex;
     padding-top: 0%;
+    margin-top: 0%;
+    
 }
 
 .profile-container {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 20%;
+    padding-top: 0%;
 }
 
 .img {
     /*padding-right: 10%;*/
-    margin-top: 150%;
+ 
     margin-bottom: -50%;
+    padding-top: 0%;
 }
 
 #dimentions_30_40{
-    width:40px;
-    height:30px;
+    width:45px;
+    height:40px;
 }
 
 #dimentions_50_50{
@@ -128,21 +131,14 @@ button {
 }
 
 .courses-container {
-    width: 60% !important;
-    height: 40%;
-    max-width: 500px;
+    height: 60vh;
+    width: 45%;
     box-shadow: 5px 5px 20px rgb(0, 96, 100);
-    border-radius: 5%;
-    padding: 20%;
     padding-right: 0%;
-    padding-left: 0%;
     display: inline-flex;
     align-items: center;
-    justify-content: left;
     font-size: 12px;
     background-color: lightgray;
-
-    width: 90%;
 
 }
 
@@ -158,4 +154,10 @@ button {
 
 #btn{
     background-color: rgba(0,0,255,0.1);
+}
+
+.footer{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
 }
