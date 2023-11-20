@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans&display=swap');
 * {
     padding: 0;
     margin: 0;
     font-family: consolas;
     box-sizing: border-box;
   }
-  
+
   body {
     display: flex;
     height: 100vh;
@@ -41,11 +40,11 @@
     color: #ffffff;
     padding: 10px;
   }
-  
+
   .calendar-body {
     padding: 10px;
   }
-  
+
   .calendar-week-days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -54,6 +53,11 @@
     color: rgb(104, 104, 104);
   }
   
+@media screen and (max-width: 992px) {
+  .calendar-week-days {
+      font-size: 0.8em; /* Προσαρμογή μεγέθους γραμμάτων για μικρότερες οθόνες */
+  }
+}
   .calendar-week-days div:hover {
     color:rgb(0, 6, 100);
     transform: scale(1.2);
@@ -146,12 +150,12 @@
   .month-list {
     position: relative;
     left: 0;
-    top: -130px;
+    top: -250px;
     background-color: #ebebeb;
     color: #151426;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    gap: 5px;
+    gap: 2px;
     border-radius: 20px;
   }
   
