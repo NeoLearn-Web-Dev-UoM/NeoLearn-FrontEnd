@@ -89,6 +89,8 @@
     position: relative;
     cursor: pointer;
     animation: to-top 1s forwards;
+    font-size: 18px;
+
   }
   
   .month-picker {
@@ -223,7 +225,7 @@
     text-align: center;
     padding-left: 5%;
     color: rgb(0, 6, 100);
-    
+    font-size:20px;
   }
   
   .time-formate {
