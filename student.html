@@ -26,7 +26,7 @@
         </div>
     </div>
 
-    <div class="frame">
+    <div class="container">
         <div class="header">
             <p><a href=""><img src="images/NL-home.png" alt="home" class="icons"></a>
             </p>
@@ -66,9 +66,49 @@
             </div>
         </div>
         <hr>
-        <button type="button" onclick="newLesson()" id="newLesson">
-            Εγγραφή σε μάθημα</button>
+        <div class="inline-elemments">
+            <div class="search-course">
+                <h4>Τα μαθήματα μου:</h4>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Αναζήτηση μαθήματος.."
+                        aria-label="Search">
+                    <button class="btn btn-outline" type="submit" id="searchbtn">Αναζήτηση</button>
+                    <!--Αν τελικά κάνουμε ζωντανή αναζήτηση θα βγει το κουμπί-->
+                </form>
+            </div>
+            <button type="button" onclick="newLesson()" class="btn btn-outline" id="newLesson">
+                <a href="/link" class="list-group-item">
+                    <img src="images/NL-add.png" class="img-fluid" alt="add">
+                    Εγγραφή σε μάθημα</a></button>
+        </div>
+        <div class="courses-frame">
+            <div class="slide" id="slide1">
+                <figure>
+                    <blockquote class="blockquote">
+                        <p>Βάσεις Δεδομένων</p>
+                    </blockquote>
 
+                    <figcaption class="blockquote-footer">
+                        <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης</cite>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <blockquote class="blockquote">
+                        <p>Προγραμματισμός Διαδικτύου </p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        <cite title="Source Title">Μάθημα επιλογής</cite>
+                    </figcaption>
+                </figure>
+            </div>
+
+
+        </div>
+        <hr>
+        <div class="footer">
+            2023 NeoLearn All Rights Reserved.<br>
+            <a href="">Terms of UsePrivacy Policy2G Fair Use Policy</a>
+        </div>
     </div>
     <script src="student.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
