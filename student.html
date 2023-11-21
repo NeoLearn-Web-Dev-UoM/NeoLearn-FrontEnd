@@ -78,31 +78,79 @@
             </div>
             <button type="button" onclick="newLesson()" class="btn btn-outline" id="newLesson">
                 <a href="/link" class="list-group-item">
-                    <img src="images/NL-add.png" class="img-fluid" alt="add">
+                    <img src="images/NL-add.png" class="newLesson" alt="add">
                     Εγγραφή σε μάθημα</a></button>
         </div>
         <div class="courses-frame">
             <div class="slide" id="slide1">
-                <figure>
-                    <blockquote class="blockquote">
-                        <p>Βάσεις Δεδομένων</p>
-                    </blockquote>
+                <!-- θα το βαζω να πηγαινει στο αναλογο αρχειο του μαθηματος -->
+                <a href="link1.html">
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p>Βάσεις Δεδομένων</p>
+                            <a href="/link" class="deleteLesson">
+                                <img src=" images/NL-delete.png" class="delete-icon" alt="bellow">
+                            </a>
+                        </blockquote>
 
-                    <figcaption class="blockquote-footer">
-                        <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης</cite>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <blockquote class="blockquote">
-                        <p>Προγραμματισμός Διαδικτύου </p>
-                    </blockquote>
-                    <figcaption class="blockquote-footer">
-                        <cite title="Source Title">Μάθημα επιλογής</cite>
-                    </figcaption>
-                </figure>
+                        <figcaption class="blockquote-footer">
+                            <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης</cite>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <hr>
+                <a href="link2.html">
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p>Προγραμματισμός Διαδικτύου </p>
+                            <a href="/link" class="deleteLesson">
+                                <img src=" images/NL-delete.png" class="delete-icon" alt="bellow">
+                            </a>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <cite title="Source Title">Μάθημα επιλογής</cite>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <hr>
+                <a href="link3.html">
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p>Αρχιτεκτονική Υπολογιστών </p>
+                            <a href="/link" class="deleteLesson">
+                                <img src=" images/NL-delete.png" class="delete-icon" alt="bellow">
+                            </a>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης </cite>
+
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <hr>
+                <button onclick="changeSlide(2)">Next</button>
             </div>
+            <div class="slide" id="slide2">
+                <a href="link4.html">
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p>Λειτουργικά Συστήματα</p>
+                            <a href="/link" class="deleteLesson">
+                                <img src=" images/NL-delete.png" class="delete-icon" alt="bellow">
+                            </a>
+                        </blockquote>
 
+                        <figcaption class="blockquote-footer">
+                            <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης</cite>
+                        </figcaption>
+                    </figure>
+                </a>
 
+                <button onclick="changeSlide(1)">Previous</button>
+            </div>
         </div>
         <hr>
         <div class="footer">
