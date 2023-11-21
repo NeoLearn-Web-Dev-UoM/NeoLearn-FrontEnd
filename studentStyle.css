@@ -6,11 +6,11 @@ body {
 
 .logo {
     position: absolute;
-    top: 50px;
+    top: 20px;
     margin-top: -5%;
-    margin-left: -4%;
-    width: 23%;
-    height: 27%;
+    margin-left: -5%;
+    width: 25%;
+    height: 40%;
 }
 
 /* .frame {
@@ -72,6 +72,12 @@ height: 100vh;
 .epiloges {
     background-color: rgba(0, 0, 255, 0.1);
     margin-top: 150%;
+}
+
+.mh-100 {
+    margin-top: 150%;
+    width: 108%;
+    height: 140%;
 }
 
 .list-group-item {
