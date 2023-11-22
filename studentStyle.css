@@ -13,50 +13,18 @@ body {
     height: 40%;
 }
 
-/* .frame {
-    width: 100%;
-    max-width: 800px;
-    border-radius: 0%;
-    background-color: lightgray;
-    /* padding: 15%; */
-/* text-align: center;
-display: flex;
-align-items: center;
-justify-content: center;
-margin-left: 10%;
-margin-right: 10%;
-height: 100vh;
-} */
-
-.container {
-
-    border: 1px solid;
-    width: 70% !important;
-    padding-right: 40%;
-    padding-left: 30%;
-    background-color: lightgray;
-    border-color: black;
-    height: 100vh;
-    /* justify-content: space-between; */
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
 .container .logo {
     flex: 1;
 }
 
-.header {
-    display: flex;
-    padding-top: 0%;
-    margin-top: 0%;
-}
+
 
 .profile-container {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .profile {
@@ -69,15 +37,11 @@ height: 100vh;
     margin-bottom: -50%;
 }
 
-.epiloges {
-    background-color: rgba(0, 0, 255, 0.1);
-    margin-top: 150%;
-}
 
 .mh-100 {
+    background-color: rgba(0, 0, 255, 0.1);
     margin-top: 150%;
     width: 108%;
-    height: 140%;
 }
 
 .list-group-item {
@@ -97,6 +61,7 @@ height: 100vh;
 }
 
 #newLesson {
+    margin-top: -10px;
     width: 14rem !important;
     background-color: rgb(0, 96, 100) !important;
     /* margin-top: 10px !important; */
@@ -110,7 +75,7 @@ height: 100vh;
 
 
 .footer {
-    text-align: center;
+    text-align: center !important;
     color: rgba(0, 0, 0, 0.5);
     font-size: 15px;
     padding: 2px;
@@ -125,20 +90,14 @@ height: 100vh;
     background-color: rgba(0, 0, 255, 0.1);
 }
 
-.inline-elemments {
-    display: flex;
-    flex-direction: row;
-    row-gap: 10px;
-    gap: 45px;
-}
 
 .courses-frame {
     margin-top: 15px;
     height: 60vh;
-    width: 45%;
+    width: 90%;
     box-shadow: 5px 5px 20px rgb(0, 96, 100);
     margin-left: 3px;
-    /* display: inline-flex; */
+    display: inline-flex;
     padding-top: 15px;
     padding-left: 9px;
     align-items: center;
@@ -157,4 +116,408 @@ height: 100vh;
     flex-direction: row;
     row-gap: 10px;
     gap: 45px;
+}
+
+.container {
+    border: 1px solid;
+    width: 90% !important;
+    background-color: lightgray;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: -20px;
+    padding-right: 10%;
+    justify-content: center;
+}
+
+.left-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+.right-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container-header {
+    display: flex;
+    width: 90%;
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    width: 90%;
+    height: 100vh;
+}
+
+.down-container {
+    width: 90%;
+    padding-right: 10%;
+    padding-left: 10%;
+    display: flex;
+    background-color: lightgray;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center !important;
+}
+
+#slideBtn {
+    width: 7rem !important;
+    background-color: rgb(0, 96, 100) !important;
+    text-align: center;
+    color: white;
+}
+
+
+/* calendar css */
+
+* {
+    /* padding: 0; */
+    margin: 0;
+    font-family: consolas;
+    box-sizing: border-box;
+}
+
+.calendar-class {
+    display: flex;
+    height: 50vh;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    background: linear-gradient(to right, rgb(0, 96, 100), #9796f0, #42445A);
+    overflow: hidden;
+}
+
+.calendar {
+    height: 30rem;
+    width: max-content;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 25px 30px 0px 50px;
+}
+
+.calendar {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.calendar-header {
+    background: linear-gradient(to left, rgb(0, 96, 100), #9796f0, #42445A);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 7px;
+    align-items: center;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.calendar-body {
+    padding: 10px;
+}
+
+.calendar-week-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(104, 104, 104);
+    font-size: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .calendar-week-days {
+        font-size: 0.8em;
+        /* Προσαρμογή μεγέθους γραμμάτων για μικρότερες οθόνες */
+    }
+}
+
+.calendar-week-days div:hover {
+    color: rgb(0, 6, 100);
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+
+.calendar-week-days div {
+    display: grid;
+    place-items: center;
+    color: #6D67CF;
+    height: 50px;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    color: #0A0921;
+}
+
+.calendar-days div {
+    width: 37px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    animation: to-top 1s forwards;
+    font-size: 18px;
+
+}
+
+.month-picker {
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.year-picker {
+    display: flex;
+    align-items: center;
+}
+
+.year-change {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.year-change:hover {
+    background-color: #9796f0;
+    transition: all .2s ease-in-out;
+    transform: scale(1.12);
+}
+
+.calendar-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#year:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.2 ease-in-out;
+}
+
+.calendar-days div span {
+    position: absolute;
+}
+
+.calendar-days div:hover {
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+    background-color: #fbc7d4;
+    border-radius: 20%;
+    color: #f8fbff;
+}
+
+.calendar-days div.current-date {
+    color: #f8fbff;
+    background-color: #9796f0;
+    border-radius: 20%;
+}
+
+.month-list {
+    position: relative;
+    left: 0;
+    top: -250px;
+    background-color: #ebebeb;
+    color: #151426;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 2px;
+    border-radius: 20px;
+}
+
+.month-list>div {
+    display: grid;
+    place-content: center;
+    margin: 5px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.month-list>div>div {
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.month-list>div>div:hover {
+    background-color: #9796f0;
+    color: #f8fbff;
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
+}
+
+.month-list.show {
+    visibility: visible;
+    pointer-events: visible;
+    transition: 0.6s ease-in-out;
+    animation: to-left .71s forwards;
+}
+
+.month-list.hideonce {
+    visibility: hidden;
+}
+
+.month-list.hide {
+    animation: to-right 1s forwards;
+    visibility: none;
+    pointer-events: none;
+}
+
+.date-time-formate {
+    height: 4rem;
+    width: 100%;
+    font-family: Dubai Light, Century Gothic;
+    position: relative;
+    display: flex;
+    top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.day-text-formate {
+    font-family: Microsoft JhengHei UI;
+    font-size: 1.4rem;
+    padding-right: 5%;
+    border-right: 3px solid #9796f0;
+    color: rgb(0, 6, 100);
+    font-weight: bold;
+}
+
+.date-time-value {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-left: 5%;
+    color: rgb(0, 6, 100);
+    font-size: 20px;
+}
+
+.time-formate {
+    font-size: 1.5rem;
+}
+
+.time-formate.hideTime {
+    animation: hidetime 1.5s forwards;
+}
+
+.day-text-formate.hidetime {
+    animation: hidetime 1.5s forwards;
+}
+
+.date-formate.hideTime {
+    animation: hidetime 1.5s forwards;
+}
+
+.day-text-formate.showtime {
+    animation: showtime 1s forwards;
+}
+
+.time-formate.showtime {
+    animation: showtime 1s forwards;
+}
+
+.date-formate.showtime {
+    animation: showtime 1s forwards;
+}
+
+@keyframes to-top {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(100%);
+        opacity: 1;
+    }
+}
+
+@keyframes to-left {
+    0% {
+        transform: translatex(230%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+
+@keyframes to-right {
+    10% {
+        transform: translatex(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translatex(-150%);
+        opacity: 1;
+    }
+}
+
+@keyframes showtime {
+    0% {
+        transform: translatex(250%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translatex(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes hidetime {
+    0% {
+        transform: translatex(0%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translatex(-370%);
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: rgb(0, 6, 100);
+    text-align: center;
+    font-weight: bold;
+    font-family: Microsoft JhengHei UI;
 }

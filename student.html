@@ -14,9 +14,7 @@
 <body>
     <img src="images/NL-white.png" class="logo">
     <div class="list-group d-inline-block">
-
-        <div class="epiloges">
-
+        <div class="mh-100">
             <a href="/link" class="list-group-item">
                 <img src="images/NL-below.png" class="img-fluid" alt="bellow"> Βασικές Επιλογές
             </a>
@@ -26,8 +24,8 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="header">
+    <div class="center">
+        <div class="container-header">
             <p><a href=""><img src="images/NL-home.png" alt="home" class="icons"></a>
             </p>
             <p><a href=""><img src="images/NL-questionmark.png" alt="questionmark" class="icons"></a>
@@ -65,100 +63,155 @@
                 </ul>
             </div>
         </div>
-        <hr>
-        <div class="inline-elemments">
-            <div class="search-course">
-                <h4>Τα μαθήματα μου:</h4>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Αναζήτηση μαθήματος.."
-                        aria-label="Search">
-                    <button class="btn btn-outline" type="submit" id="searchbtn">Αναζήτηση</button>
-                    <!--Αν τελικά κάνουμε ζωντανή αναζήτηση θα βγει το κουμπί-->
-                </form>
+        <!-- <hr> -->
+        <div class="container">
+            <div class="left-container">
+                <div class="search-course">
+                    <h4>Τα μαθήματα μου:</h4>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Αναζήτηση μαθήματος.."
+                            aria-label="Search">
+                        <button class="btn btn-outline" type="submit" id="searchbtn">Αναζήτηση</button>
+                        <!--Αν τελικά κάνουμε ζωντανή αναζήτηση θα βγει το κουμπί-->
+                    </form>
+                </div>
+                <div class="courses-frame">
+                    <div class="slide" id="slide1">
+                        <!-- θα το βαζω να πηγαινει στο αναλογο αρχειο του μαθηματος -->
+                        <a href="link1.html">
+                            <figure>
+                                <blockquote class="blockquote">
+                                    <p>Βάσεις Δεδομένων</p>
+                                    <a href="/link" class="deleteLesson">
+                                        <img src=" images/NL-delete.png" class="delete-icon" alt="bellow">
+                                    </a>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης</cite>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                        <hr>
+                        <a href="link2.html">
+                            <figure>
+                                <blockquote class="blockquote">
+                                    <p>Προγραμματισμός Διαδικτύου </p>
+                                    <a href="/link" class="deleteLesson">
+                                        <img src=" images/NL-delete.png" class="delete-icon" alt="bellow">
+                                    </a>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="Source Title">Μάθημα επιλογής</cite>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                        <hr>
+                        <a href="link3.html">
+                            <figure>
+                                <blockquote class="blockquote">
+                                    <p>Αρχιτεκτονική Υπολογιστών </p>
+                                    <a href="/link" class="deleteLesson">
+                                        <img src=" images/NL-delete.png" class="delete-icon" alt="bellow">
+                                    </a>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης </cite>
+
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <hr>
+                        <button type="button" onclick="changeSlide(2)" class="btn btn-outline"
+                            id="slideBtn">Next</button>
+                    </div>
+                    <div class="slide" id="slide2">
+                        <a href="link4.html">
+                            <figure>
+                                <blockquote class="blockquote">
+                                    <p>Λειτουργικά Συστήματα</p>
+                                    <a href="/link" class="deleteLesson">
+                                        <img src=" images/NL-delete.png" class="delete-icon" alt="bellow">
+                                    </a>
+                                </blockquote>
+
+                                <figcaption class="blockquote-footer">
+                                    <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης</cite>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                        <button type="button" onclick="changeSlide(1)" class="btn btn-outline"
+                            id="slideBtn">Previous</button>
+                    </div>
+                </div>
             </div>
-            <button type="button" onclick="newLesson()" class="btn btn-outline" id="newLesson">
-                <a href="/link" class="list-group-item">
-                    <img src="images/NL-add.png" class="newLesson" alt="add">
-                    Εγγραφή σε μάθημα</a></button>
-        </div>
-        <div class="courses-frame">
-            <div class="slide" id="slide1">
-                <!-- θα το βαζω να πηγαινει στο αναλογο αρχειο του μαθηματος -->
-                <a href="link1.html">
-                    <figure>
-                        <blockquote class="blockquote">
-                            <p>Βάσεις Δεδομένων</p>
-                            <a href="/link" class="deleteLesson">
-                                <img src=" images/NL-delete.png" class="delete-icon" alt="bellow">
-                            </a>
-                        </blockquote>
+            <div class="right-container">
+                <button type="button" onclick="newLesson()" class="btn btn-outline" id="newLesson">
+                    <a href="/link" class="list-group-item">
+                        <img src="images/NL-add.png" class="newLesson" alt="add">
+                        Εγγραφή σε μάθημα</a></button>
+                <div class="calendar-class">
+                    <div class="contianer">
+                        <h1> Το ημερολόγιο μου</h1>
+                        <div class="calendar">
+                            <br>
+                            <div class="calendar-header">
+                                <span class="month-picker" id="month-picker"> ΜΑΙΟΣ </span>
+                                <div class="year-picker" id="year-picker">
+                                    <span class="year-change" id="pre-year">
+                                        <pre><</pre>
+                                    </span>
+                                    <span id="year">2020 </span>
+                                    <span class="year-change" id="next-year">
+                                        <pre>></pre>
+                                    </span>
+                                </div>
+                            </div>
 
-                        <figcaption class="blockquote-footer">
-                            <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης</cite>
-                        </figcaption>
-                    </figure>
-                </a>
+                            <div class="calendar-body">
+                                <div class="calendar-week-days">
+                                    <div>Κυριακή</div>
+                                    <div>Δευτέρα</div>
+                                    <div>Τρίτη</div>
+                                    <div>Τετάρτη</div>
+                                    <div>Πέμπτη</div>
+                                    <div>Παρασκευή</div>
+                                    <div>Σάββατο</div>
+                                </div>
+                                <div class="calendar-days">
+                                </div>
+                            </div>
+                            <div class="calendar-footer">
+                            </div>
+                            <div class="date-time-formate">
+                                <div class="day-text-formate">ΣΗΜΕΡΑ</div>
+                                <div class="date-time-value">
+                                    <div class="time-formate">01:41:20</div>
+                                    <div class="date-formate">03 - ΜΑΡΤΙΟΣ - 2022</div>
+                                </div>
+                            </div>
+                            <div class="month-list"></div>
+                        </div>
+                    </div>
+                </div>
 
-                <hr>
-                <a href="link2.html">
-                    <figure>
-                        <blockquote class="blockquote">
-                            <p>Προγραμματισμός Διαδικτύου </p>
-                            <a href="/link" class="deleteLesson">
-                                <img src=" images/NL-delete.png" class="delete-icon" alt="bellow">
-                            </a>
-                        </blockquote>
-                        <figcaption class="blockquote-footer">
-                            <cite title="Source Title">Μάθημα επιλογής</cite>
-                        </figcaption>
-                    </figure>
-                </a>
 
-                <hr>
-                <a href="link3.html">
-                    <figure>
-                        <blockquote class="blockquote">
-                            <p>Αρχιτεκτονική Υπολογιστών </p>
-                            <a href="/link" class="deleteLesson">
-                                <img src=" images/NL-delete.png" class="delete-icon" alt="bellow">
-                            </a>
-                        </blockquote>
-                        <figcaption class="blockquote-footer">
-                            <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης </cite>
-
-                        </figcaption>
-                    </figure>
-                </a>
-
-                <hr>
-                <button onclick="changeSlide(2)">Next</button>
             </div>
-            <div class="slide" id="slide2">
-                <a href="link4.html">
-                    <figure>
-                        <blockquote class="blockquote">
-                            <p>Λειτουργικά Συστήματα</p>
-                            <a href="/link" class="deleteLesson">
-                                <img src=" images/NL-delete.png" class="delete-icon" alt="bellow">
-                            </a>
-                        </blockquote>
-
-                        <figcaption class="blockquote-footer">
-                            <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης</cite>
-                        </figcaption>
-                    </figure>
-                </a>
-
-                <button onclick="changeSlide(1)">Previous</button>
+            <hr>
+        </div>
+        <div class="down-container">
+            <div class="footer">
+                2023 NeoLearn All Rights Reserved.<br>
+                <a href="">Terms of UsePrivacy Policy2G Fair Use Policy</a>
             </div>
         </div>
-        <hr>
-        <div class="footer">
-            2023 NeoLearn All Rights Reserved.<br>
-            <a href="">Terms of UsePrivacy Policy2G Fair Use Policy</a>
-        </div>
+
     </div>
+
     <script src="student.js"></script>
+    <script src="calendar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
