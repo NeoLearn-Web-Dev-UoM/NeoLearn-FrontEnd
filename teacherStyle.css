@@ -134,12 +134,12 @@ button {
     height: 60vh;
     width: 45%;
     box-shadow: 5px 5px 20px rgb(0, 96, 100);
-    padding-right: 0%;
-    display: inline-flex;
+    margin-left: 3px;
+    padding-top: 15px;
+    padding-left: 9px;
     align-items: center;
     font-size: 12px;
     background-color: lightgray;
-
 }
 
 .search-course{
@@ -154,6 +154,13 @@ button {
 
 #btn{
     background-color: rgba(0,0,255,0.1);
+}
+
+.blockquote {
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    gap: 45px;
 }
 
 .footer{
