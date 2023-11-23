@@ -1,64 +1,8 @@
 body {
     /* font-family: Arial, sans-serif;*/
     background-color: rgb(0, 96, 100) !important;
-}
-
-/* #toolbar {
-     background-color: lightcyan;
-     padding: 10px;
-     text-align: center;
- } */
-
-button {
-    margin: 0 5px;
-    padding: 5px 10px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.mh-100{
-    width: 108%; 
-    height: 140%; 
-}
-
-.list-group-item{
-    color: white!important;
-    background-color: #006064 !important;
-} /*τελος*/
-
-.img-fluid{
-    width:30px;
-    height:25px;
-    padding-bottom: 0%;
-    padding-top: 0%;
- }
-
- .img-fluid2{
-    background-color: lightgray;
-    width:30px;
-    height:20px;
- }
-/* .frame-container {
-     border: 2px solid #333;
-     padding: 20px;
-     background-color: #fff;
-     margin: 0;
-     padding: 0;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 100vh;
- } */
-
-.container {
-    border: 1px solid;
-    width: 70% !important;
-    /* height: 700px; */
-    padding-right: 40%;
-    padding-left: 30%;
-    background-color: lightgray;
-    border-color: black;
-    height: 1500vh!important;
+    display: flex;
+    margin: 0;
 }
 
 .logo {
@@ -70,76 +14,141 @@ button {
     height: 40%;
 }
 
-.list-group {
-    position: absolute;
-    top: 30%;
+/* .frame {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 0%;
+    background-color: lightgray;
+    /* padding: 15%; */
+/* text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 10%;
+margin-right: 10%;
+height: 100vh;
+} */
+
+.container {
+
+    border: 1px solid;
+    width: 70% !important;
+    padding-right: 40%;
+    padding-left: 30%;
+    background-color: lightgray;
+    border-color: black;
+    height: 100vh;
+    /* justify-content: space-between; */
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-@media screen and (max-width: 992px) {
-    #username {
-        border: 2px solid rgb(0, 96, 100);
-        padding: 3%;
-        margin-top: 5px;
-        border-radius: 5%;
-        width: 70%;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    #password {
-        border: 2px solid rgb(0, 96, 100);
-        padding: 3%;
-        margin-top: 5px;
-        border-radius: 5%;
-        width: 70%;
-    }
+.container .logo {
+    flex: 1;
 }
 
 .header {
     display: flex;
     padding-top: 0%;
     margin-top: 0%;
-    
 }
 
 .profile-container {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 0%;
+    margin-top: 50px;
 }
 
-.img {
-    /*padding-right: 10%;*/
- 
-    margin-bottom: -50%;
-    padding-top: 0%;
-}
-
-#dimentions_30_40{
-    width:45px;
-    height:40px;
-}
-
-#dimentions_50_50{
-    width:50%;
-    height:50%;
-}
 .profile {
     margin-left: 70%;
     margin-bottom: -10%;
 }
 
-.courses-container {
+.img {
+    margin-top: 150%;
+    margin-bottom: -50%;
+}
+
+.epiloges {
+    background-color: rgba(0, 0, 255, 0.1);
+    margin-top: 150%;
+}
+
+.mh-100 {
+    margin-top: 150%;
+    width: 108%;
+    height: 140%;
+}
+
+.list-group-item {
+    color: white !important;
+    background-color: #006064 !important;
+}
+
+.img-fluid {
+    width: 20px;
+    height: 25px;
+}
+
+.icons {
+    margin-top: 50px;
+    width: 40px;
+    height: 30px;
+}
+
+#newLesson {
+    width: 14rem !important;
+    background-color: rgb(0, 96, 100) !important;
+    /* margin-top: 10px !important; */
+    text-align: center;
+}
+
+.newLesson {
+    width: 20px;
+    height: 25px;
+}
+
+
+.footer {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    padding: 2px;
+}
+
+.search-course {
+    display: flex;
+    align-items: center;
+}
+
+#searchbtn {
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+.inline-elemments {
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    gap: 45px;
+}
+
+.courses-frame {
+    margin-top: 15px;
     height: 60vh;
-    width: 45%;
+    width: 80%;
     box-shadow: 5px 5px 20px rgb(0, 96, 100);
     margin-left: 3px;
+    /* display: inline-flex; */
     padding-top: 15px;
     padding-left: 9px;
     align-items: center;
     font-size: 12px;
     background-color: lightgray;
+}
+
+#row-course {
+    flex-direction: row !important;
 }
 
 .search-course{
@@ -161,11 +170,4 @@ button {
     flex-direction: row;
     row-gap: 10px;
     gap: 45px;
-}
-
-.footer{
-    text-align: center;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 15px;
-    padding: 2px;
 }
