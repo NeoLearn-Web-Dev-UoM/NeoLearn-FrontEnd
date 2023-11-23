@@ -1,94 +1,27 @@
 body {
-    /* font-family: Arial, sans-serif;*/
     background-color: rgb(0, 96, 100) !important;
-    display: flex;
-    margin: 0;
 }
 
-.logo {
-    position: absolute;
-    top: 20px;
-    margin-top: -5%;
-    margin-left: -5%;
-    width: 25%;
-    height: 40%;
+hr {
+    color: black !important;
 }
-
-/* .frame {
-    width: 100%;
-    max-width: 800px;
-    border-radius: 0%;
-    background-color: lightgray;
-    /* padding: 15%; */
-/* text-align: center;
-display: flex;
-align-items: center;
-justify-content: center;
-margin-left: 10%;
-margin-right: 10%;
-height: 100vh;
-} */
 
 .container {
-
-    border: 1px solid;
-    width: 70% !important;
-    padding-right: 40%;
-    padding-left: 30%;
     background-color: lightgray;
-    border-color: black;
-    height: 100vh;
-    /* justify-content: space-between; */
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* height: 100vh; */
+    max-width: 70% !important;
 }
 
-.container .logo {
-    flex: 1;
-}
-
-.header {
-    display: flex;
-    padding-top: 0%;
-    margin-top: 0%;
+#header-container {
+    background-color: lightgray;
+    height: 10vh !important;
 }
 
 .profile-container {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 50px;
-}
-
-.profile {
-    margin-left: 70%;
-    margin-bottom: -10%;
-}
-
-.img {
-    margin-top: 150%;
-    margin-bottom: -50%;
-}
-
-.epiloges {
-    background-color: rgba(0, 0, 255, 0.1);
-    margin-top: 150%;
-}
-
-.mh-100 {
-    margin-top: 150%;
-    width: 108%;
-    height: 140%;
-}
-
-.list-group-item {
-    color: white !important;
-    background-color: #006064 !important;
-}
-
-.img-fluid {
-    width: 20px;
-    height: 25px;
+    display: grid !important;
+    align-items: center !important;
+    grid-template-columns: 1fr 1fr !important;
+    margin-top: 15px;
 }
 
 .icons {
@@ -97,24 +30,21 @@ height: 100vh;
     height: 30px;
 }
 
-#newLesson {
-    width: 14rem !important;
-    background-color: rgb(0, 96, 100) !important;
-    /* margin-top: 10px !important; */
-    text-align: center;
+#profile-col {
+    text-align: right;
+    justify-content: right;
+    display: flex;
+    flex-direction: row !important;
+    color: black !important;
 }
 
-.newLesson {
-    width: 20px;
-    height: 25px;
+#middle-container {
+    background-color: lightgray;
+    height: 80vh !important;
 }
 
-
-.footer {
-    text-align: center;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 15px;
-    padding: 2px;
+#right-col {
+    text-align: right;
 }
 
 .search-course {
@@ -126,20 +56,13 @@ height: 100vh;
     background-color: rgba(0, 0, 255, 0.1);
 }
 
-.inline-elemments {
-    display: flex;
-    flex-direction: row;
-    row-gap: 10px;
-    gap: 45px;
-}
-
-.courses-frame {
+#courses-frame {
     margin-top: 15px;
     height: 60vh;
     width: 80%;
     box-shadow: 5px 5px 20px rgb(0, 96, 100);
     margin-left: 3px;
-    /* display: inline-flex; */
+    display: inline-flex;
     padding-top: 15px;
     padding-left: 9px;
     align-items: center;
@@ -151,18 +74,10 @@ height: 100vh;
     flex-direction: row !important;
 }
 
-.search-course{
-    display: flex;
-  align-items: center; 
-}
-
-.form-control {
-  margin-left: 10px;
-  width: 200%;
-}
-
-#btn{
-    background-color: rgba(0,0,255,0.1);
+.delete-icon {
+    background-color: lightgray;
+    width: 30px;
+    height: 20px;
 }
 
 .blockquote {
@@ -170,4 +85,50 @@ height: 100vh;
     flex-direction: row;
     row-gap: 10px;
     gap: 45px;
+}
+
+#slideBtn {
+    width: 7rem !important;
+    background-color: rgb(0, 96, 100) !important;
+    text-align: center;
+    color: white;
+}
+
+#newLesson {
+    margin-top: 10px;
+    width: 14rem !important;
+    background-color: rgb(0, 96, 100) !important;
+    /* margin-top: 10px !important; */
+    text-align: center;
+}
+
+.newLesson {
+    width: 20px;
+    height: 25px;
+}
+
+.footer {
+    text-align: center !important;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    padding: 10px;
+}
+
+.profile-details {
+    width: 50%;
+    margin-left: 3px;
+    padding-left: 9px;
+    align-items: center;
+    font-size: 15px;
+    background-color: whitesmoke;
+    text-align: left;
+    justify-content: left;
+    display: flex;
+    flex-direction: row !important;
+    color: black !important;
+}
+
+.sum-profile {
+    display: flex;
+    flex-direction: row !important;
 }
