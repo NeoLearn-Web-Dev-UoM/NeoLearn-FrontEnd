@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   place-items: center;
-  background: linear-gradient(to right,rgb(0, 96, 100), #9796f0, #42445A);
+  background: linear-gradient(to right, rgb(0, 96, 100), #9796f0, #42445A);
   overflow: hidden;
 }
 
@@ -30,8 +30,8 @@ body {
 }
 
 .calendar-header {
-  background: linear-gradient(to left,rgb(0, 96, 100), #9796f0, #42445A);
-  font-size:20px;
+  background: linear-gradient(to left, rgb(0, 96, 100), #9796f0, #42445A);
+  font-size: 20px;
   display: flex;
   justify-content: space-between;
   border-radius: 7px;
@@ -51,16 +51,18 @@ body {
   font-weight: 600;
   cursor: pointer;
   color: rgb(104, 104, 104);
-  font-size:20px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 992px) {
-.calendar-week-days {
-    font-size: 0.8em; /* Προσαρμογή μεγέθους γραμμάτων για μικρότερες οθόνες */
+  .calendar-week-days {
+    font-size: 0.8em;
+    /* Προσαρμογή μεγέθους γραμμάτων για μικρότερες οθόνες */
+  }
 }
-}
+
 .calendar-week-days div:hover {
-  color:rgb(0, 6, 100);
+  color: rgb(0, 6, 100);
   transform: scale(1.2);
   transition: all .2s ease-in-out;
 }
@@ -215,7 +217,7 @@ body {
   font-size: 1.4rem;
   padding-right: 5%;
   border-right: 3px solid #9796f0;
-  color:rgb(0, 6, 100);
+  color: rgb(0, 6, 100);
   font-weight: bold;
 }
 
@@ -225,7 +227,7 @@ body {
   text-align: center;
   padding-left: 5%;
   color: rgb(0, 6, 100);
-  font-size:20px;
+  font-size: 20px;
 }
 
 .time-formate {
@@ -316,9 +318,9 @@ body {
   }
 }
 
-h1{
-  color:rgb(0, 6, 100);
+h1 {
+  color: rgb(0, 6, 100);
   text-align: center;
-  font-weight:bold;
+  font-weight: bold;
   font-family: Microsoft JhengHei UI;
 }

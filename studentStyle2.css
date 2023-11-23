@@ -56,7 +56,7 @@ hr {
     background-color: rgba(0, 0, 255, 0.1);
 }
 
-#courses-frame {
+.courses-frame {
     margin-top: 15px;
     height: 60vh;
     width: 80%;
@@ -112,23 +112,4 @@ hr {
     color: rgba(0, 0, 0, 0.5);
     font-size: 15px;
     padding: 10px;
-}
-
-.profile-details {
-    width: 50%;
-    margin-left: 3px;
-    padding-left: 9px;
-    align-items: center;
-    font-size: 15px;
-    background-color: whitesmoke;
-    text-align: left;
-    justify-content: left;
-    display: flex;
-    flex-direction: row !important;
-    color: black !important;
-}
-
-.sum-profile {
-    display: flex;
-    flex-direction: row !important;
 }

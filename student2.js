@@ -20,4 +20,3 @@ function changeSlide(nextSlide) {
 
 // Show the initial slide
 showSlide(currentSlide);
-
