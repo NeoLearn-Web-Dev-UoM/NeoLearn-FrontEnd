@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NeoLearn</title>
+    <link rel="icon" href="images/greenBack.png" type="image/png">
+    <link rel="stylesheet" href="firstLessonStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class=".container text-white">
+            <div class="row">
+                <div class="container-fluid" id="header-container">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand" href="#">
+                                <div class="profile-container">
+                                    <div class="col" id="home-questionmark">
+                                        <img src="images/NL-home.png" alt="home" width="50" height="50"
+                                            class="d-inline-block align-text-top">
+                                        <img src="images/NL-questionmark.png" alt="questionmark" width="50" height="50"
+                                            class="d-inline-block align-text-top">
+                                    </div>
+                                    <div class="col" id="profile-col">
+                                        <img src="images/NL-profile.png" alt="profile" width="50" height="50"
+                                            class="d-inline-block align-text-top">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            ics21100
+                                        </a>
+
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Το προφίλ μου</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Τα μαθήματα μου</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Το ημερολόγιο μου</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Έξοδος</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <div class="container-fluid" id="middle-container">
+                        <div class=".container-md" id="first-lesson">
+                            <figure>
+                                <blockquote class="blockquote">
+                                    <p>Βάσεις Δεδομένων</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="right-col">
+                    <button type="button" onclick="deleteLesson()" class="btn btn-outline" id="deleteLesson">
+                        <a href="/link" class="list-group-item">
+                            <img src="images/NL-minus.png" class="deleteLesson" alt="add">
+                            Απεγγραφή απο το μάθημα</a></button>
+
+                    <!-- edw to hmerologio -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="container-fluid" id="details-container">
+                        <div class=".container-md" id="details-lesson">
+                            <p>Εισαγωγικό μάθημα στις Βάσεις Δεδομένων. Με την ολοκλήρωση του μαθήματος θα μπορείτε να
+                                σχεδιάζετε βάσεις δεδομένων που
+                                να είναι σύμφωνες με την ανάλυση απαιτήσεων συγκεκριμένων εφαρμογών και να διαχειρίζεστε
+                                τα περιεχόμενά τους με την
+                                γλώσσα SQL. Ύλη Διαλέξεων:
+                                1.Ορισμοί βασικών εννοιών, Μια πρώτη μοντελοποίηση, Μοντέλο Οντοτήτων-Συσχετίσεων (μέρος
+                                Α)
+                                2.Μοντέλο Οντοτήτων-Συσχετίσεων (μέρος Β), Μελέτη Περίπτωσης
+                                3.Σχεσιακό Μοντέλο, Από το ιδεατό στο λογικό (σχεσιακό) μοντέλο, Από το λογικό στο
+                                φυσικό
+                                (SQL) μοντέλο
+                                4.Περιβάλλοντα διαχείρισης ΒΔ (MySQL Workbench)
+                                5.Σχεσιακή Άλγεβρα, Παραδείγματα
+                                6.SQL (Απλή SELECT)
+                                7.SQL (Συζεύξεις, Εμφώλευση)
+                                8.SQL (Συναθροίσεις, Ομαδοποίηση)
+                                9.SQL (Διαίρεση, Όψεις, Εναύσματα)
+                                10.Κανονικοποίηση: Εισαγωγικά, Συναρτησιακές εξαρτήσεις, BCNF
+                                11.Κανονικοποίηση: 1NF, 2NF, 3NF, Παραδείγματα, Μελέτη Περίπτωσης
+                                12.Database Administration (διαχείριση συστήματος και δεδομένων)
+                                13.Database Administration (χρήστες, δικαιώματα, backup, restore)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="sum-profile">
+                    <img src="images/NL-profile.png" alt="profile" width="70" height="80"
+                        class="d-inline-block align-text-top">
+                    <div class="container-md">
+                        <div class="profile-details">
+                            <p>ΜΑΡΙΟΣ ΠΑΠΑΔΟΠΟΥΛΟΣ
+                                Κατηγορία: ΠΡΟΠΤΥΧΙΑΚΟΣ ΦΟΙΤΗΤΗΣ
+                                Τμήμα Εφαρμοσμένης Πληροφορικής (Department of Applied Informatics)
+                                ΠΑΝΕΠΙΣΤΗΜΙΟ ΜΑΚΕΔΟΝΙΑΣ (UNIVERSITY OF MACEDONIA)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="container-fluid" id="footer-container">
+                    <div class="footer">
+                        2023 NeoLearn All Rights Reserved.<br>
+                        <a href="">Terms of UsePrivacy Policy2G Fair Use Policy</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
