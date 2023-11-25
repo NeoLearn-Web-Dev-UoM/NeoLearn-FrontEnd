@@ -3,6 +3,7 @@ body {
     padding: 0;
     display: flex;
     height: 100vh;
+    background-color: #f0f0f0 !important;
 }
 
 .left-half {
@@ -20,6 +21,11 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #f0f0f0;
+    text-align: center;
 }
 
 .title-class {
@@ -44,10 +50,15 @@ body {
 }
 
 img {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 70%;
     /* Adjust the percentage as needed */
     height: auto;
-    margin-bottom: 20px;
+    margin-top: 15%;
+    margin-left: 15%;
 }
 
 /* 
