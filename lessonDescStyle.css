@@ -43,13 +43,14 @@ hr {
     height: 15vh !important;
 }
 
+/* 
 #right-col {
     text-align: right;
-}
+} */
 
-#first-lesson {
+#lesson {
     margin-top: 10px;
-    width: 80%;
+    width: 50%;
     margin-left: 3px;
     padding-left: 9px;
     align-items: center;
@@ -63,7 +64,7 @@ hr {
 }
 
 #deleteLesson {
-    margin-top: 10px;
+    margin-top: 22px;
     width: 14rem !important;
     background-color: #C4291E !important;
     /* margin-top: 10px !important; */
@@ -115,3 +116,51 @@ hr {
     display: flex;
     flex-direction: row !important;
 }
+
+/* calendar css */
+table {
+    padding-right: 9px;
+    width: 60%;
+    max-width: 400px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: black;
+    text-align: center;
+    justify-content: center;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 4px;
+    text-align: center;
+    font-size: 15px;
+}
+
+th {
+    background-color: lightgray;
+}
+
+.month-year {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: rgb(0, 96, 100);
+    color: black;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* ews edw */
