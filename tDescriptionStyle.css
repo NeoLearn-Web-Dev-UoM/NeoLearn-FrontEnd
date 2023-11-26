@@ -1,0 +1,107 @@
+body {
+    background-color: rgb(0, 96, 100) !important;
+}
+
+hr {
+    color: black !important;
+}
+
+.container {
+    background-color: lightgray;
+    /* height: 100vh; */
+    max-width: 70% !important;
+}
+
+#header-container {
+    background-color: lightgray;
+    height: 10vh !important;
+}
+
+.profile-container {
+    display: grid !important;
+    align-items: center !important;
+    grid-template-columns: 1fr 1fr !important;
+    margin-top: 15px;
+}
+
+.icons {
+    margin-top: 50px;
+    width: 40px;
+    height: 30px;
+}
+
+#profile-col {
+    text-align: right;
+    justify-content: right;
+    display: flex;
+    flex-direction: row !important;
+    color: black !important;
+}
+
+#middle-container {
+    background-color: lightgray;
+    height: 80vh !important;
+}
+
+#right-col {
+    text-align: right;
+}
+
+.search-course {
+    display: flex;
+    align-items: center;
+}
+
+#searchbtn {
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+#courses-frame {
+    margin-top: 15px;
+    height: 60vh;
+    width: 80%;
+    box-shadow: 5px 5px 20px rgb(0, 96, 100);
+    margin-left: 3px;
+    display: inline-flex;
+    padding-top: 15px;
+    padding-left: 9px;
+    align-items: center;
+    font-size: 12px;
+    background-color: lightgray;
+}
+
+
+
+.blockquote {
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    gap: 45px;
+}
+
+
+.footer {
+    text-align: center !important;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    padding: 10px;
+}
+
+.profile-details {
+    width: 50%;
+    margin-left: 3px;
+    padding-left: 9px;
+    align-items: center;
+    font-size: 15px;
+    background-color: whitesmoke;
+    text-align: left;
+    justify-content: left;
+    display: flex;
+    flex-direction: row !important;
+    color: black !important;
+}
+
+.sum-profile {
+    display: flex;
+    flex-direction: row !important;
+}
