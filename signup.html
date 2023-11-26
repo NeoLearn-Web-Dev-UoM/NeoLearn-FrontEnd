@@ -12,64 +12,68 @@
 </head>
 
 <body>
-    <div class="left-half">
-        <img src="images/greenNL.png" alt="Logo">
-    </div>
-    <div class="right-half">
-        <div class="frame">
-            <form method="post" action="">
-                <h2>Καλώς ήρθατε στο NeoLearn!</h2>
-                <main class="content">
-                    <div class="content-field">
-                        <div class="content-field-label">
-                            Όνομα:
-                        </div>
-                        <div class="content-field-input">
-                            <input type="text" id="firstname" value="" placeholder="First name">
-                        </div>
-                    </div>
-                    <div class="content-field">
-                        <div class="content-field-label">
-                            Επώνυμο:
-                        </div>
-                        <div class="content-field-input">
-                            <input type="text" id="lastname" value="" placeholder="Last name">
-                        </div>
-                    </div>
-                    <div class="content-field">
-                        <div class="content-field-label">
-                            Όνομα χρήστη:
-                        </div>
-                        <div class="content-field-input">
-                            <input type="text" id="username" value="" placeholder="name@example.com">
-                        </div>
-                    </div>
-                    <div class="content-field">
-                        <div class="content-field-label">
-                            Κωδικός:
-                        </div>
-                        <div class="content-field-input">
-                            <input type="password" id="password" placeholder="********">
-                        </div>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="teacher"
-                            onclick="handleCheckboxClick('teacher')">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Εκπαιδευτικός
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="student"
-                            onclick="handleCheckboxClick('student')">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Εκπαιδευόμενος
-                        </label>
-                    </div>
-                    <button type="button" onclick="signUpBtn()" id="signupBtn"
-                        class="btn btn-outline-light">Εγγραφή</button>
-                </main>
-            </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <img src="images/greenNL.png" alt="Logo" id="logo">
+            </div>
+            <div class="col-sm">
+                <div class="frame">
+                    <form method="post" action="">
+                        <h2>Καλώς ήρθατε στο NeoLearn!</h2>
+                        <main class="content">
+                            <div class="content-field">
+                                <div class="content-field-label">
+                                    Όνομα:
+                                </div>
+                                <div class="content-field-input">
+                                    <input type="text" id="firstname" value="" placeholder="First name">
+                                </div>
+                            </div>
+                            <div class="content-field">
+                                <div class="content-field-label">
+                                    Επώνυμο:
+                                </div>
+                                <div class="content-field-input">
+                                    <input type="text" id="lastname" value="" placeholder="Last name">
+                                </div>
+                            </div>
+                            <div class="content-field">
+                                <div class="content-field-label">
+                                    Όνομα χρήστη:
+                                </div>
+                                <div class="content-field-input">
+                                    <input type="text" id="username" value="" placeholder="name@example.com">
+                                </div>
+                            </div>
+                            <div class="content-field">
+                                <div class="content-field-label">
+                                    Κωδικός:
+                                </div>
+                                <div class="content-field-input">
+                                    <input type="password" id="password" placeholder="********">
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="teacher"
+                                    onclick="handleCheckboxClick('teacher')">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Εκπαιδευτικός
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="student"
+                                    onclick="handleCheckboxClick('student')">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Εκπαιδευόμενος
+                                </label>
+                            </div>
+                            <button type="button" onclick="signUpBtn()" id="signupBtn"
+                                class="btn btn-outline-light">Εγγραφή</button>
+                        </main>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <script src="signup.js"></script>

@@ -7,23 +7,15 @@ body {
 
 }
 
-.left-half {
+#logo {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f0f0f0;
+    /* Adjust the percentage as needed */
+    height: auto;
+    margin-top: 15%;
 }
-
-.right-half {
-    flex: 1;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: #f0f0f0;
-}
-
 
 h1 {
     font-family: Georgia;
@@ -90,6 +82,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 15%;
 }
 
 
