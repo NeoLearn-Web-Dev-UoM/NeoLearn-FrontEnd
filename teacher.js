@@ -1,10 +1,6 @@
 'use strict'
-
 let currentSlide = 1;
 
-function showMessage(action) {
-    alert('Toolbar button clicked: ' + action);
-}
 function showSlide(slideNumber) {
     const slides = document.querySelectorAll('.slide');
     slides.forEach(slide => {
@@ -24,3 +20,12 @@ function changeSlide(nextSlide) {
 
 // Show the initial slide
 showSlide(currentSlide);
+
+function lessonClicked(lessonTitle) {
+
+    //για να ξερω αν πηρε σωστο ονομα μαθηματος θα το σβησω 
+    alert('Lesson Clicked: ' + lessonTitle);
+    var details = document.getElementById('lesson-name')
+    details.textContent = lessonTitle;
+
+}
