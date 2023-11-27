@@ -165,12 +165,6 @@ body {
 }
 
   /*egw*/
-  #sidebar{
-    position: absolute;
-    margin-top: 10%;
-    height: 40%;
-    }
-
     .logo {
       /*  margin-top: -20%;*/
         margin-left: -4%;
@@ -211,12 +205,12 @@ body {
   .sidebar {
     margin: 0;
     padding: 0;
-    width: 30vh;
+    width: 15%;
     
     position: fixed;
     height: 100%;
-    overflow: auto;
-  }
+    overflow-wrap: break-word;
+    }
   
   .sidebar a {
     display: block;
@@ -257,4 +251,8 @@ body {
       float: none;
       font-size: 25px;
     }
+  }
+
+  #options{
+    overflow-wrap: break-word;
   }
