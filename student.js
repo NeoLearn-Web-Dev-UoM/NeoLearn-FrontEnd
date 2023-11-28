@@ -19,11 +19,18 @@ function changeSlide(nextSlide) {
 showSlide(currentSlide);
 
 
-function lessonClicked(lessonTitle) {
+function openNewPage(lessonTextId, sourceTitleId) {
+    //Εδω απο τη βαση θα γεμιζω κι το πλαισιο για την περιγραφη του μαθήματος 
 
-    //για να ξερω αν πηρε σωστο ονομα μαθηματος θα το σβησω 
-    alert('Lesson Clicked: ' + lessonTitle);
-    var details = document.getElementById('lesson-name')
-    details.textContent = lessonTitle;
 
+    // Get the text content of the specified <p> and <cite> elements
+    var lessonText = document.getElementById(lessonTextId).textContent;
+    var sourceTitle = document.getElementById(sourceTitleId).textContent;
+
+    // Encode the values as URI components and pass them as query parameters
+    var encodedLessonText = encodeURIComponent(lessonText);
+    var encodedSourceTitle = encodeURIComponent(sourceTitle);
+
+    // Navigate to the new_page.html with the lessonText as a query parameter
+    window.location.href = 'lessonDescription.html?lessonText=' + encodedLessonText + '&sourceTitle=' + encodedSourceTitle;;
 }

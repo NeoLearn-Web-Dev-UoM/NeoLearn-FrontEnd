@@ -16,20 +16,11 @@
 
 <body>
 
-    <div class="sidebar" id="mySidebar">
-        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
-        <a href="#">Νέο Μάθημα</a>
-        <a href="#">Τα μαθήματά μου</a>
-        <a href="#">Επεξεργασία προφίλ</a>
-    </div>
-    <div class="content">
-        <span class="open-btn" onclick="openNav()">&#9776; Βασικές Επιλογές </span>
 
-    </div>
     <div class="container">
         <!-- <img src="images/NL-white.png" class="logo"> -->
 
-        <div class=".container text-white">
+        <div class=".container text-black">
             <div class="row">
                 <div class="container-fluid" id="header-container">
                     <ul class="navbar-nav ml-auto">
@@ -82,7 +73,7 @@
                                             <li>
                                                 <hr class="dropdown-divider">
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Το ημερολόγιο μου</a></li>
+                                            <li><a class="dropdown-item" href="calendar.html">Το ημερολόγιο μου</a></li>
                                             <li>
                                                 <hr class="dropdown-divider">
                                             </li>
@@ -101,7 +92,7 @@
                 <div class="col">
                     <div class="container-fluid" id="middle-container">
                         <div class="search-course">
-                            <h4>Τα μαθήματα μου:</h4>
+                            <h5>Τα μαθήματα μου:</h5>
                             <form class="d-flex">
                                 <input class="form-control me-2" type="search" placeholder="Αναζήτηση μαθήματος.."
                                     aria-label="Search">
@@ -112,39 +103,38 @@
                         <div class=".container-md" id="courses-frame">
                             <div class="slide" id="slide1">
                                 <!-- θα το βαζω να πηγαινει στο αναλογο αρχειο του μαθηματος -->
-                                <a href="lessonDescription.html" class="lesson-link"
-                                    onclick="lessonClicked('Βάσεις Δεδομένων')">
+                                <a class="lesson-link" onclick="openNewPage('lessonText1' ,'sourceTitle1')">
                                     <figure>
                                         <blockquote class="blockquote">
-                                            <p>Βάσεις Δεδομένων</p>
+                                            <p id="lessonText1">Βάσεις Δεδομένων</p>
                                         </blockquote>
                                         <figcaption class="blockquote-footer">
-                                            <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης</cite>
+                                            <cite title="Source Title" id="sourceTitle1">Υποχρεωτικό Μάθημα
+                                                Κατεύθυνσης</cite>
                                         </figcaption>
                                     </figure>
                                 </a>
                                 <hr>
-                                <a href="lessonDescription.html" class="lesson-link"
-                                    onclick="lessonClicked('Προγραμματισμός Διαδικτύου')">
+                                <a class="lesson-link" onclick="openNewPage('lessonText2','sourceTitle2')">
                                     <figure>
                                         <blockquote class="blockquote">
-                                            <p>Προγραμματισμός Διαδικτύου </p>
+                                            <p id="lessonText2">Προγραμματισμός Διαδικτύου</p>
                                         </blockquote>
                                         <figcaption class="blockquote-footer">
-                                            <cite title="Source Title">Μάθημα επιλογής</cite>
+                                            <cite title="Source Title" id="sourceTitle2">Μάθημα επιλογής</cite>
                                         </figcaption>
                                     </figure>
                                 </a>
 
                                 <hr>
-                                <a href="lessonDescription.html" class="lesson-link"
-                                    onclick="lessonClicked('Αρχιτεκτονική Υπολογιστών')">
+                                <a class="lesson-link" onclick="openNewPage('lessonText3','sourceTitle3')">
                                     <figure>
                                         <blockquote class="blockquote">
-                                            <p>Αρχιτεκτονική Υπολογιστών </p>
+                                            <p id="lessonText3">Αρχιτεκτονική Υπολογιστών </p>
                                         </blockquote>
                                         <figcaption class="blockquote-footer">
-                                            <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης </cite>
+                                            <cite title="Source Title" id="sourceTitle3">Υποχρεωτικό Μάθημα Κατεύθυνσης
+                                            </cite>
                                         </figcaption>
                                     </figure>
                                 </a>
@@ -154,45 +144,44 @@
                                     id="slideBtn">Next</button>
                             </div>
                             <div class="slide" id="slide2">
-                                <a href="lessonDescription.html" class="lesson-link"
-                                    onclick="lessonClicked('Λειτουργικά Συστήματα')">
-                                    <figure>
-                                        <blockquote class="blockquote">
-                                            <p>Λειτουργικά Συστήματα</p>
-                                        </blockquote>
-                                        <figcaption class="blockquote-footer">
-                                            <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης</cite>
-                                        </figcaption>
+                                <a class="lesson-link" onclick="openNewPage('lessonText4','sourceTitle4')">
+                                    <blockquote class="blockquote">
+                                        <p id="lessonText4">Λειτουργικά Συστήματα</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer">
+                                        <cite title="Source Title" id="sourceTitle4">Υποχρεωτικό Μάθημα
+                                            Κατεύθυνσης</cite>
+                                    </figcaption>
                                     </figure>
                                 </a>
                                 <hr>
-                                <a href="lessonDescription.html" class="lesson-link"
-                                    onclick="lessonClicked('Τεχνητή Νοημοσύνη')">
+                                <a class="lesson-link" onclick="openNewPage('lessonText5','sourceTitle5')">
                                     <figure>
                                         <blockquote class="blockquote">
-                                            <p>Τεχνητή Νοημοσύνη </p>
+                                            <p id="lessonText5">Τεχνητή Νοημοσύνη </p>
                                             <!-- <a href="/link" class="deleteLesson">
                                                 <img src=" images/NL-delete.png" class="delete-icon" alt="bellow">
                                             </a> -->
                                         </blockquote>
                                         <figcaption class="blockquote-footer">
-                                            <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης </cite>
+                                            <cite title="Source Title" id="sourceTitle5">Υποχρεωτικό Μάθημα Κατεύθυνσης
+                                            </cite>
 
                                         </figcaption>
                                     </figure>
                                 </a>
                                 <hr>
-                                <a href="lessonDescription.html" class="lesson-link"
-                                    onclick="lessonClicked('Εφαρμοσμένα Μαθηματικά')">
+                                <a class="lesson-link" onclick="openNewPage('lessonText6','sourceTitle6')">
                                     <figure>
                                         <blockquote class="blockquote">
-                                            <p>Εφαρμοσμένα Μαθηματικά </p>
+                                            <p id="lessonText6">Εφαρμοσμένα Μαθηματικά </p>
                                             <!-- <a href="/link" class="deleteLesson">
                                                 <img src=" images/NL-delete.png" class="delete-icon" alt="bellow">
                                             </a> -->
                                         </blockquote>
                                         <figcaption class="blockquote-footer">
-                                            <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης </cite>
+                                            <cite title="Source Title" id="sourceTitle6">Υποχρεωτικό Μάθημα Κατεύθυνσης
+                                            </cite>
 
                                         </figcaption>
                                     </figure>
