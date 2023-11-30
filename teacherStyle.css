@@ -178,7 +178,8 @@ body {
         margin-top: -20%;
         margin-bottom: -20%;
         margin-left: -2%;
-        width: 100%;
+        width: 10%!important;
+        height: 20% !important;
     }
 }
     hr.new1{
