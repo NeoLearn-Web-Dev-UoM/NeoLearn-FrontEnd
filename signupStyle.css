@@ -82,6 +82,10 @@ h2 {
     }
 }
 
+#logo {
+    margin-top: 15%;
+}
+
 #username {
     border: 2px solid rgb(0, 96, 100);
     padding: 3%;
@@ -125,6 +129,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 15%;
 }
 
 /* 
