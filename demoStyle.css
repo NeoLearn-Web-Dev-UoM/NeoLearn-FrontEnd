@@ -105,3 +105,71 @@ hr {
     display: flex;
     flex-direction: row !important;
 }
+
+/*sidebar*/
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    
+    position: fixed;
+    height: 100%;
+    overflow-wrap: break-word;
+    }
+  
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #263238;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: lightblue;
+    color: #263238;
+  }
+
+  @media screen and (max-width: 1280px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 1280px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+      font-size: 25px;
+    }
+  }
+  
+.logo {
+    /*  margin-top: -20%;*/
+      margin-left: -4%;
+      width: 110%;
+      height: 30%;
+  }
+
+  @media screen and (max-width: 1280) {
+    .logo {
+        margin-top: -20%;
+        margin-bottom: -20%;
+        margin-left: -2%;
+        width: 100%;
+    }
+}
+ 
+
+#options{
+    overflow-wrap: break-word;
+  }
