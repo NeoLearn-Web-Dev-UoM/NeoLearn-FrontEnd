@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            padding-top: 60px;
+            transition: 0.5s;
+            z-index: 1;
+            overflow-x: hidden;
+        }
+
+        .sidebar a {
+            padding: 15px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .content {
+            transition: margin-left 0.5s;
+            padding: 16px;
+            margin-left: 250px;
+        }
+
+        #menu-icon {
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            color: #818181;
+            z-index: 2;
+            display: none;
+        }
+
+        @media screen and (max-width: 1280px) {
+            .sidebar {
+                left: -250px;
+            }
+
+            .content {
+                margin-left: 0;
+            }
+
+            #menu-icon {
+                display: block;
+            }
+
+            body.sidebar-open .sidebar {
+                left: 0;
+            }
+
+            body.sidebar-open .content {
+                margin-left: 250px;
+            }
+        }
+
+        body {
+            background-color: rgb(0, 96, 100) !important;
+        }
+
+        hr {
+            color: black !important;
+        }
+
+        .container {
+            background-color: lightgray;
+            /* height: 100vh; */
+            max-width: 70% !important;
+        }
+
+        #header-container {
+            background-color: lightgray;
+            height: 10vh !important;
+        }
+
+        .profile-container {
+            display: grid !important;
+            align-items: center !important;
+            grid-template-columns: 1fr 1fr !important;
+            margin-top: 15px;
+        }
+
+        .icons {
+            margin-top: 50px;
+            width: 40px;
+            height: 30px;
+        }
+
+        #profile-col {
+            text-align: right;
+            justify-content: right;
+            display: flex;
+            flex-direction: row !important;
+            color: black !important;
+        }
+
+        #middle-container {
+            background-color: lightgray;
+            height: 80vh !important;
+        }
+
+        #right-col {
+            text-align: right;
+        }
+
+        @media screen and (max-width: 992px) {
+            #right-col {
+                text-align: center;
+
+            }
+        }
+
+        .search-course {
+            display: flex;
+            align-items: center;
+        }
+
+        #searchbtn {
+            background-color: rgba(0, 0, 255, 0.1);
+        }
+
+        #courses-frame {
+            margin-top: 15px;
+            height: 60vh;
+            width: 80%;
+            box-shadow: 5px 5px 20px rgb(0, 96, 100);
+            margin-left: 3px;
+            display: inline-flex;
+            padding-top: 15px;
+            padding-left: 9px;
+            align-items: center;
+            font-size: 12px;
+            background-color: lightgray;
+        }
+
+
+
+        .blockquote {
+            display: flex;
+            flex-direction: row;
+            row-gap: 10px;
+            gap: 45px;
+        }
+
+
+        .footer {
+            text-align: center !important;
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        .profile-details {
+            width: 50%;
+            margin-left: 3px;
+            padding-left: 9px;
+            align-items: center;
+            font-size: 15px;
+            background-color: whitesmoke;
+            text-align: left;
+            justify-content: left;
+            display: flex;
+            flex-direction: row !important;
+            color: black !important;
+        }
+
+        .sum-profile {
+            display: flex;
+            flex-direction: row !important;
+        }
+
+        .logo {
+            /*  margin-top: -20%;*/
+            margin-left: -4%;
+            width: 110%;
+            height: 30%;
+        }
+    </style>
+</head>
+
+<body class="sidebar-open">
+
+    <div class="sidebar">
+        <img src="images/NL-white.png" class="logo">
+        <hr class="new1">
+        <a class="active" href="#home" id="options">Βασικές επιλογές</a>
+        <a href="#news">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+            </svg> Νέο Μάθημα
+        </a>
+        <a href="#contact">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                <path
+                    d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
+                <path
+                    d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z" />
+            </svg> Τα μαθήματα μου
+        </a>
+        <a href="#about">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-fill-gear" viewBox="0 0 16 16">
+                <path
+                    d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4m9.886-3.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382l.045-.148ZM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
+            </svg> Επεξεργασία προφίλ
+        </a>
+    </div>
+
+    <div class="content">
+        <div id="menu-icon" onclick="toggleNav()">&#9776;</div>
+        <div class="container">
+            <div class=".container text-white">
+                <div class="row">
+                    <div class="container-fluid" id="header-container">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a class="navbar-brand" href="#">
+                                    <div class="profile-container">
+                                        <div class="col" id="home-questionmark">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                                fill="currentColor" class="bi bi-houses  d-inline-block align-text-top"
+                                                viewBox="0 0 16 16" style="color: #263238;">
+                                                <path
+                                                    d="M5.793 1a1 1 0 0 1 1.414 0l.647.646a.5.5 0 1 1-.708.708L6.5 1.707 2 6.207V12.5a.5.5 0 0 0 .5.5.5.5 0 0 1 0 1A1.5 1.5 0 0 1 1 12.5V7.207l-.146.147a.5.5 0 0 1-.708-.708zm3 1a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708zm.707.707L5 7.207V13.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5V7.207z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                                fill="currentColor"
+                                                class="bi bi-question-diamond d-inline-block align-text-top"
+                                                viewBox="0 0 16 16" style="color: #263238;">
+                                                <path
+                                                    d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z" />
+                                                <path
+                                                    d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+                                            </svg>
+                                        </div>
+                                        <div class="col" id="profile-col">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                fill="currentColor"
+                                                class="bi bi-person-circle d-inline-block align-text-top"
+                                                viewBox="0 0 16 16" style="color: #263238;">
+                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                                <path fill-rule="evenodd"
+                                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                            </svg>
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                ics21100
+                                                <!--ονομα μαθητη ή καθηγητη αναλογα-->
+                                            </a>
+
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="#">Το προφίλ μου</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Τα μαθήματα μου</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Το ημερολόγιο μου</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Έξοδος</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <div class="container-fluid" id="middle-container">
+                            <div class="search-course">
+                                <h4>Τα μαθήματα μου:</h4>
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Αναζήτηση μαθήματος.."
+                                        aria-label="Search">
+                                    <button class="btn btn-outline" type="submit" id="searchbtn">Αναζήτηση</button>
+                                    <!--Αν τελικά κάνουμε ζωντανή αναζήτηση θα βγει το κουμπί-->
+                                </form>
+                            </div>
+                            <div class=".container-md" id="courses-frame">
+
+                                <!--na allazw kai id-->
+                                <!--lesson container perigrafh ktl-->
+                                <div class="slide" id="slide1">
+                                    <!--slide 1-->
+                                    <div class="slide" id="slide2">
+                                        <!--slide 2 -->
+                                        <!--ομοια αν θελουμε παραπανω σλαιντ  -->
+
+                                        <!-- <button type="button" onclick="changeSlide(1)" class="btn btn-outline"
+                                        id="slideBtn">Previous</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="right-col">
+                            <!--βαζω εδω οτι ειναι στο δεξι μισο του container-->
+
+                            <!-- edw to hmerologio -->
+
+                            <!--κωδικας για ημρολογιο αλλα πρεπει να βαλω και το css και js file του-->
+                            <!-- <div class="month-year" id="month-year"></div>
+                        <div class="button-container">
+                            <button id="prev-btn">
+                                < </button>
+                                    <button id="next-btn"> ></button>
+                        </div>
+                        <table>
+                            <tbody id="calendar-body"></tbody>
+                        </table> -->
+
+                        </div>
+                    </div>
+
+                    <!--κωδικας για φουτερ και στοιχεια προφιλ -->
+                    <div class="row">
+                        <div class="sum-profile">
+                            <img src="images\NL-profile.png" alt="profile" width="70" height="80"
+                                class="d-inline-block align-text-top">
+                            <div class="container-md">
+                                <div class="profile-details">
+                                    <p>ΜΑΡΙΟΣ ΠΑΠΑΔΟΠΟΥΛΟΣ
+                                        Κατηγορία: ΠΡΟΠΤΥΧΙΑΚΟΣ ΦΟΙΤΗΤΗΣ
+                                        Τμήμα Εφαρμοσμένης Πληροφορικής (Department of Applied Informatics)
+                                        ΠΑΝΕΠΙΣΤΗΜΙΟ ΜΑΚΕΔΟΝΙΑΣ (UNIVERSITY OF MACEDONIA)</p>
+
+                                    <!--  αντιστοιχα για καθηγητη -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="container-fluid" id="footer-container">
+                            <div class="footer">
+                                2023 NeoLearn All Rights Reserved.<br>
+                                <a href="">Terms of UsePrivacy Policy2G Fair Use Policy</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleNav() {
+            document.body.classList.toggle('sidebar-open');
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
