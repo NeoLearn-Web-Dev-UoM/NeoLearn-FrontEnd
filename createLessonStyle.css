@@ -207,4 +207,9 @@ hr.new2{
     font-size: 20px;
   }
   
-  
+  #inputGroupFileAddon03{
+   /* background: linear-gradient(to right, rgb(11, 196, 135), #263238);*/
+   background-color:  rgb(12, 167, 136)!important;
+   color: white;
+}
+
