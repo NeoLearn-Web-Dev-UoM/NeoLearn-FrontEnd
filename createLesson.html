@@ -113,20 +113,25 @@
                                 <h2 class="h2style"> Δημιουργία νέου μαθήματος</h2>
                                 <div class="mb-3">
                                   <label for="exampleInputEmail1" class="form-label">Όνομα Μαθήματος:</label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Όνομα νέου μαθήματος">
                                 </div>
                                 <div class="mb-3">
                                   <label for="exampleInputPassword1" class="form-label">Κωδικός Μαθήματος:</label>
-                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="NEL210">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlTextarea1" class="form-label">Περιγραφή Μαθήματος:</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <div id="emailHelp" class="form-text">Παρακαλώ δώστε μια σύντομη αλλά λεπτομερής περιγραφή.</div>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Περιγράψτε το μάθημα.. "></textarea>
                                   </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
                               </form>
+                              
                         </div>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Προσθήκη Αρχείου</button>
+                            <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                          </div>
+
                       <!--  <div class=".container-md" id="courses-frame">
                             
                         </div>-->
@@ -135,7 +140,6 @@
                         <!--βαζω εδω οτι ειναι στο δεξι μισο του container-->
 
                         <!-- edw to hmerologio -->
-
                         <!--κωδικας για ημρολογιο αλλα πρεπει να βαλω και το css και js file του-->
                         <!-- <div class="month-year" id="month-year"></div>
                         <div class="button-container">
