@@ -1,13 +1,7 @@
-//lesson name and source title text
-var urlParams = new URLSearchParams(window.location.search);
-var lessonText = urlParams.get('lessonText');
-var sourceTitle = urlParams.get('sourceTitle');
+'use strict'
 
-// Decode the URI components and set the content of the new <p> elements
-document.getElementById('lessonTextOnNewPage').textContent = decodeURIComponent(lessonText);
-document.getElementById('sourceTitleOnNewPage').textContent = decodeURIComponent(sourceTitle);
+//οταν παταει απεγγραφη στο παραθυρο με τη περιγραφη του μαθηματος
 
-
-//------------------------------------------------------------------------------------------------------
-//delete btn code
-
+function deleteLessonLink() {
+    window.location.href = 'deleteLesson.html'
+}
