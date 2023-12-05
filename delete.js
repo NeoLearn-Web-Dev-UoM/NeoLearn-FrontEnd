@@ -1,6 +1,7 @@
 'use strict'
 
 //οταν παταει απεγγραφη στο παραθυρο με τη περιγραφη του μαθηματος
-function deleteLessonLink() {
+function deleteLessonLink(event) {
+    event.preventDefault();
     window.location.href = 'deleteLesson.html';
 }
