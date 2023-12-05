@@ -12,16 +12,40 @@ hr {
     max-width: 70% !important;
 }
 
+/*lefki*/
+@media screen and (max-width: 1280px) {
+    .container {
+        background-color: lightgray;
+        /* height: 100vh; */
+        max-width: 100% !important;
+    }
+}
+
 #header-container {
     background-color: lightgray;
     height: 10vh !important;
+    padding-top: 0%;
+    /*lefki*/
+    margin-bottom: -2%;
+    /*lefki*/
+}
+
+/*lefki*/
+@media screen and (max-width: 1280px) {
+    #header-container {
+        background-color: lightgray;
+        height: 25vh !important;
+        padding-top: 0%;
+        margin-bottom: -10% !important;
+    }
 }
 
 .profile-container {
     display: grid !important;
     align-items: center !important;
     grid-template-columns: 1fr 1fr !important;
-    margin-top: 15px;
+    margin-top: 5px;
+    /*lefki*/
 }
 
 .icons {
@@ -41,7 +65,7 @@ hr {
 #middle-container {
     background-color: lightgray;
     height: 15vh !important;
-    padding-bottom: 7%;
+    /* padding-bottom: 7%; */
 }
 
 /* 
@@ -167,7 +191,6 @@ button {
 /* ews edw */
 
 /*sidebar*/
-
 .sidebar {
     margin: 0;
     padding: 0;
