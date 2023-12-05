@@ -199,11 +199,12 @@ hr.new2{
 
   .h2style{
     color:#263238;
+    font-family: Georgia;
   }
 
   .form-label{
     color: #263238;
-    font-weight:italic;
+    font-weight: Georgia;
     font-size: 20px;
   }
   
@@ -213,3 +214,23 @@ hr.new2{
    color: white;
 }
 
+#btnCreate{
+    color: white;
+    opacity: 0.8;
+    background: linear-gradient(to right, rgb(0, 96, 100),rgb(80, 186, 190));
+    border-color: rgb(0, 96, 100)!important;
+    border: 2px solid;
+}
+
+#description, #id , #name{
+    border: 2px solid rgb(0, 96, 100);
+    background-color: lightgray;
+}
+
+.form-check{
+    color: black;
+}
+
+.form-check-input:checked {
+    background-color: red;
+}
