@@ -74,11 +74,10 @@ hr {
     width: 80%;
     box-shadow: 5px 5px 20px rgb(0, 96, 100);
     margin-left: 3px;
-    display: inline-flex;
     padding-top: 15px;
     padding-left: 9px;
     align-items: center;
-    font-size: 7px;
+    font-size: 15px;
     background-color: lightgray;
 }
 
@@ -219,4 +218,21 @@ hr {
 
 #options {
     overflow-wrap: break-word;
+}
+
+/**/
+
+#title {
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 3px;
+    padding-left: 9px;
+    align-items: center;
+    background-color: whitesmoke;
+    text-align: left;
+    justify-content: left;
+    display: flex;
+    flex-direction: row !important;
+    color: black !important;
+
 }

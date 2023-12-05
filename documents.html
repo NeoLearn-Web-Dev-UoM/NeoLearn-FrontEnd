@@ -53,6 +53,7 @@
         <!-- <img src="images/NL-white.png" class="logo"> -->
 
         <div class=".container text-black">
+
             <div class="row">
                 <div class="container-fluid" id="header-container">
                     <ul class="navbar-nav ml-auto">
@@ -122,64 +123,123 @@
             <hr>
             <div class="row">
                 <div class="col">
+                    <div class="container-fluid" id="title-container">
+                        <div class=".container-md" id="title">
+                            <figure>
+                                <blockquote class="blockquote">
+                                    <!-- <p id="lesson-name"></p> -->
+                                    <p id="lessonText"></p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <!-- <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης</cite> -->
+                                    <p id="sourceTitle"></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
                     <div class="container-fluid" id="middle-container">
                         <div class=".container-md" id="courses-frame">
                             <div class="slide" id="slide1">
                                 <h5>Αρχικός κατάλογος</h5>
                                 <hr>
                                 <!-- θα το βαζω να πηγαινει στο αναλογο αρχειο του μαθηματος -->
-                                <a class="lesson-link" onclick="lecture('lecture1')">
-                                    <figure>
-                                        <blockquote class="blockquote">
-                                            <p id="lecture1">Διάλεξη 1</p>
-                                        </blockquote>
-                                    </figure>
-                                </a>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="lesson-link" onclick="lecture('lecture1')">
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p id="lecture1">Διάλεξη 1</p>
+                                                </blockquote>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        05/12/2023
+                                    </div>
+                                </div>
                                 <hr>
-                                <a class="lesson-link" onclick="lecture('lecture2')">
-                                    <figure>
-                                        <blockquote class="blockquote">
-                                            <p id="lecture2">Διάλεξη 2</p>
-                                        </blockquote>
-                                    </figure>
-                                </a>
-
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="lesson-link" onclick="lecture('lecture2')">
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p id="lecture2">Διάλεξη 2</p>
+                                                </blockquote>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        05/12/2023
+                                    </div>
+                                </div>
                                 <hr>
-                                <a class="lesson-link" onclick="lecture('lecture3')">
-                                    <figure>
-                                        <blockquote class="blockquote">
-                                            <p id="lecture3">Διάλεξη 3</p>
-                                        </blockquote>
-                                    </figure>
-                                </a>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="lesson-link" onclick="lecture('lecture3')">
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p id="lecture3">Διάλεξη 3</p>
+                                                </blockquote>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        05/12/2023
+                                    </div>
+                                </div>
                                 <hr>
                                 <button type="button" onclick="changeSlide(2)" class="btn btn-outline"
                                     id="slideBtn">Next</button>
                             </div>
                             <div class="slide" id="slide2">
-                                <a class="lesson-link" onclick="lecture('lecture4')">
-                                    <figure>
-                                        <blockquote class="blockquote">
-                                            <p id="lecture4">Διάλεξη 4</p>
-                                        </blockquote>
-                                    </figure>
-                                </a>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="lesson-link" onclick="lecture('lecture4')">
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p id="lecture4">Διάλεξη 4</p>
+                                                </blockquote>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        05/12/2023
+                                    </div>
+                                </div>
                                 <hr>
-                                <a class="lesson-link" onclick="lecture('lecture5')">
-                                    <figure>
-                                        <blockquote class="blockquote">
-                                            <p id="lecture5">Διάλεξη 5</p>
-                                        </blockquote>
-                                    </figure>
-                                </a>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="lesson-link" onclick="lecture('lecture5')">
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p id="lecture5">Διάλεξη 5</p>
+                                                </blockquote>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        05/12/2023
+                                    </div>
+                                </div>
                                 <hr>
-                                <a class="lesson-link" onclick="lecture('lecture6')">
-                                    <figure>
-                                        <blockquote class="blockquote">
-                                            <p id="lecture6">Διάλεξη 6</p>
-                                        </blockquote>
-                                    </figure>
-                                </a>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="lesson-link" onclick="lecture('lecture6')">
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p id="lecture6">Διάλεξη 6</p>
+                                                </blockquote>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        05/12/2023
+                                    </div>
+                                </div>
                                 <hr>
                                 <button type="button" onclick="changeSlide(1)" class="btn btn-outline"
                                     id="slideBtn">Previous</button>
