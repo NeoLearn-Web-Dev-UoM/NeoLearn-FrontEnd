@@ -32,5 +32,5 @@ function openNewPage(lessonTextId, sourceTitleId) {
     var encodedSourceTitle = encodeURIComponent(sourceTitle);
 
     // Navigate to the new_page.html with the lessonText as a query parameter
-    window.location.href = 'lessonDescription.html?lessonText=' + encodedLessonText + '&sourceTitle=' + encodedSourceTitle;;
+    window.location.href = 'lessonDescription.html?lessonText=' + encodedLessonText + '&sourceTitle=' + encodedSourceTitle;
 }
