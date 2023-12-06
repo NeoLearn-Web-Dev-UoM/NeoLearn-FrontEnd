@@ -18,34 +18,31 @@ hr {
         background-color: lightgray;
         /* height: 100vh; */
         max-width: 100% !important;
-    }
 }
-
+  }
+  
 #header-container {
     background-color: lightgray;
     height: 10vh !important;
-    padding-top: 0%;
-    /*lefki*/
-    margin-bottom: -2%;
-    /*lefki*/
+    padding-top: 0%;/*lefki*/
+    margin-bottom: -2%;/*lefki*/
 }
 
 /*lefki*/
 @media screen and (max-width: 1280px) {
     #header-container {
-        background-color: lightgray;
-        height: 10vh !important;
-        padding-top: 0%;
-        margin-bottom: -10% !important;
-    }
-}
+      background-color: lightgray;
+      height: 10vh !important;
+      padding-top: 0%;
+      margin-bottom: -10%!important;
+  }
+  }
 
 .profile-container {
     display: grid !important;
     align-items: center !important;
     grid-template-columns: 1fr 1fr !important;
-    margin-top: 5px;
-    /*lefki*/
+    margin-top: 5px;/*lefki*/
 }
 
 /* αυτό νομίζω θέλει σβήσιμο*/
@@ -60,7 +57,7 @@ hr {
     justify-content: right;
     display: flex;
     flex-direction: row !important;
-    color: #263238;
+    color: #263238; /*lefki*/
 }
 
 #middle-container {
