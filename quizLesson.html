@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NeoLearn</title>
     <link rel="icon" href="images/greenBack.png" type="image/png">
-    <link rel="stylesheet" href="lectureStyle.css">
+    <link rel="stylesheet" href="quizLessonStyle.css">
     <link rel="stylesheet" href="calendarL.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -120,108 +120,73 @@
                 </div>
             </div>
             <hr>
-            <div class="row">
-                <div class="col">
-                    <div class="container-fluid" id="title-container">
-                        <div class=".container-md" id="title">
-                            <figure>
-                                <blockquote class="blockquote">
-                                    <!-- <p id="lesson-name"></p> -->
-                                    <p id="lessonText"></p>
-                                </blockquote>
-                                <figcaption class="blockquote-footer">
-                                    <!-- <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης</cite> -->
-                                    <p id="sourceTitle"></p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="container-fluid" id="middle-container">
-                        <div class=".container-md" id="courses-frame">
-                            <div class="slide" id="slide1">
-                                <!-- επιλεγμενη διαλεξη -->
-                                <h5>Διάλεξη 1</h5>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="lesson-link">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="file1">lect-01.pdf</p>
-                                                </blockquote>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        05/12/2023
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="lesson-link">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="file2">solved-problem.pdf</p>
-                                                </blockquote>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        05/12/2023
-                                    </div>
-                                </div>
-
-                                <hr>
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="lesson-link">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="file4">video-01.mp4</p>
-                                                </blockquote>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        05/12/2023
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col" id="right-col">
-                    <div class="month-year" id="month-year"></div>
-                    <div class="button-container">
-                        <button id="prev-btn">
-                            < </button>
-                                <button id="next-btn"> ></button>
-                    </div>
-                    <table>
-                        <tbody id="calendar-body"></tbody>
-                    </table>
-                    <!-- edw to hmerologio -->
-                </div>
-            </div>
 
             <div class="row">
-                <div class="sum-profile">
-                    <img src="images\NL-profile.png" alt="profile" width="70" height="80"
-                        class="d-inline-block align-text-top">
-                    <div class="container-md">
-                        <div class="profile-details">
-                            <p>ΜΑΡΙΟΣ ΠΑΠΑΔΟΠΟΥΛΟΣ
-                                Κατηγορία: ΠΡΟΠΤΥΧΙΑΚΟΣ ΦΟΙΤΗΤΗΣ
-                                Τμήμα Εφαρμοσμένης Πληροφορικής (Department of Applied Informatics)
-                                ΠΑΝΕΠΙΣΤΗΜΙΟ ΜΑΚΕΔΟΝΙΑΣ (UNIVERSITY OF MACEDONIA)</p>
+                <div class="quiz-form">
+                    <h2>Quiz αυτό-αξιολόγησης</h2>
+                    <div class="question1">
+                        <h4> Ερώτηση 1:</h4>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Επιλογή 1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Επιλογή 2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option3">
+                            <label class="form-check-label" for="inlineRadio2">Επιλογή 3</label>
                         </div>
                     </div>
+                    <div class="question2">
+                        <h4> Ερώτηση 2:</h4>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Επιλογή 1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Επιλογή 2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option3">
+                            <label class="form-check-label" for="inlineRadio2">Επιλογή 3</label>
+                        </div>
+                    </div>
+                    <div class="question3">
+                        <h4> Ερώτηση 3:</h4>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Σωστό</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Λάθος</label>
+                        </div>
+                    </div>
+                    <div class="question4">
+                        <h4> Ερώτηση 4:</h4>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Σωστό</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Λάθος</label>
+                        </div>
+                    </div>
+                    <button type="button" id="submit" class="btn btn-outline">Υποβολή</button>
                 </div>
             </div>
             <hr>
@@ -236,7 +201,6 @@
             </div>
         </div>
     </div>
-    <script src="document.js"></script>
     <script src="calendarL.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">

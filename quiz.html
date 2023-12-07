@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NeoLearn</title>
     <link rel="icon" href="images/greenBack.png" type="image/png">
-    <link rel="stylesheet" href="lectureStyle.css">
+    <link rel="stylesheet" href="quizStyle.css">
     <link rel="stylesheet" href="calendarL.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -143,21 +143,19 @@
                     <div class="container-fluid" id="middle-container">
                         <div class=".container-md" id="courses-frame">
                             <div class="slide" id="slide1">
-                                <!-- επιλεγμενη διαλεξη -->
-                                <h5>Διάλεξη 1</h5>
                                 <hr>
                                 <div class="row">
                                     <div class="col-8">
                                         <div class="lesson-link">
                                             <figure>
                                                 <blockquote class="blockquote">
-                                                    <p id="file1">lect-01.pdf</p>
+                                                    <p id="file1">Quiz Βάσεις Δεδομένων</p>
                                                 </blockquote>
                                             </figure>
                                         </div>
                                     </div>
-                                    <div class="col-4">
-                                        05/12/2023
+                                    <div class="col-4" onclick="tryQuiz(event)">
+                                        Δοκίμασε
                                     </div>
                                 </div>
                                 <hr>
@@ -166,13 +164,13 @@
                                         <div class="lesson-link">
                                             <figure>
                                                 <blockquote class="blockquote">
-                                                    <p id="file2">solved-problem.pdf</p>
+                                                    <p id="file2">Quiz Προγραμματισμός Διαδικτύου</p>
                                                 </blockquote>
                                             </figure>
                                         </div>
                                     </div>
-                                    <div class="col-4">
-                                        05/12/2023
+                                    <div class="col-4" onclick="tryQuiz(event)">
+                                        Δοκίμασε
                                     </div>
                                 </div>
 
@@ -182,13 +180,13 @@
                                         <div class="lesson-link">
                                             <figure>
                                                 <blockquote class="blockquote">
-                                                    <p id="file4">video-01.mp4</p>
+                                                    <p id="file4">Quiz Λειτουργικά Συστήματα</p>
                                                 </blockquote>
                                             </figure>
                                         </div>
                                     </div>
-                                    <div class="col-4">
-                                        05/12/2023
+                                    <div class="col-4" onclick="tryQuiz(event)">
+                                        Δοκίμασε
                                     </div>
                                 </div>
 
@@ -236,8 +234,8 @@
             </div>
         </div>
     </div>
-    <script src="document.js"></script>
     <script src="calendarL.js"></script>
+    <script src="quiz.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>

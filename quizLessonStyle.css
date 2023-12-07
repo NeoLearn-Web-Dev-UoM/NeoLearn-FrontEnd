@@ -1,0 +1,187 @@
+body {
+    background-color: rgb(0, 96, 100) !important;
+}
+
+hr {
+    color: black !important;
+}
+
+
+
+.container {
+    background-color: lightgray;
+    /* height: 100vh; */
+    max-width: 70% !important;
+}
+
+/*lefki*/
+@media screen and (max-width: 1280px) {
+    .container {
+        background-color: lightgray;
+        /* height: 100vh; */
+        max-width: 100% !important;
+    }
+}
+
+#header-container {
+    background-color: lightgray;
+    height: 10vh !important;
+    padding-top: 0%;
+    /*lefki*/
+    margin-bottom: -2%;
+    /*lefki*/
+}
+
+/*lefki*/
+@media screen and (max-width: 1280px) {
+    #header-container {
+        background-color: lightgray;
+        height: 10vh !important;
+        padding-top: 0%;
+        margin-bottom: -10% !important;
+    }
+}
+
+.profile-container {
+    display: grid !important;
+    align-items: center !important;
+    grid-template-columns: 1fr 1fr !important;
+    margin-top: 5px;
+    /*lefki*/
+}
+
+/* αυτό νομίζω θέλει σβήσιμο*/
+.icons {
+    margin-top: 50px;
+    width: 40px;
+    height: 30px;
+}
+
+#profile-col {
+    text-align: right;
+    justify-content: right;
+    display: flex;
+    flex-direction: row !important;
+    color: #263238;
+    /*lefki*/
+}
+
+
+.blockquote {
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    gap: 45px;
+}
+
+
+.footer {
+    text-align: center !important;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+.sum-profile {
+    display: flex;
+    flex-direction: row !important;
+}
+
+/*sidebar*/
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 15%;
+
+    position: fixed;
+    height: 100%;
+    overflow-wrap: break-word;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #263238;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: lightblue;
+    color: #263238;
+}
+
+@media screen and (max-width: 1280px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+        font-size: 25px;
+    }
+}
+
+.logo {
+    /*  margin-top: -20%;*/
+    margin-left: -4%;
+    width: 110%;
+    height: 30%;
+}
+
+@media screen and (max-width: 1280) {
+    .logo {
+        margin-top: -20%;
+        margin-bottom: -20%;
+        margin-left: -2%;
+        width: 100%;
+    }
+}
+
+
+#options {
+    overflow-wrap: break-word;
+}
+
+.quiz-form {
+    background-color: lightgray;
+    height: 100vh;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+h4 {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.form-check-label {
+    color: rgb(0, 96, 100);
+}
+
+#submit {
+    width: 7rem !important;
+    background-color: rgb(0, 96, 100) !important;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
