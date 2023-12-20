@@ -13,40 +13,31 @@ hr {
     /* height: 100vh; */
     max-width: 70% !important;
 }
-
 @media screen and (max-width: 1280px) {
     .container {
         background-color: lightgray;
         /* height: 100vh; */
-        max-width: 100% !important;
-    }
+        max-width: 100% !important; /*lefki*/
 }
-
+  }
 #header-container {
     background-color: lightgray;
     height: 10vh !important;
-    padding-top: 0%;
-    /*lefki*/
-    margin-bottom: -2%;
-    /*lefki*/
 }
 
-/*lefki*/
 @media screen and (max-width: 1280px) {
     #header-container {
-        background-color: lightgray;
-        height: 10vh !important;
-        padding-top: 0%;
-        margin-bottom: -10% !important;
-    }
-}
-
+      background-color: lightgray;
+      height: 10vh !important;
+      padding-top: 0%;
+      margin-bottom: -2%!important;
+  }
+  }
 .profile-container {
     display: grid !important;
     align-items: center !important;
     grid-template-columns: 1fr 1fr !important;
-    margin-top: 5px;
-    /*lefki*/
+    margin-top: 15px;
 }
 
 .icons {
@@ -93,15 +84,14 @@ hr {
 
 #courses-frame {
     margin-top: 15px;
-    height: 60vh;
-    width: 80%;
+    height: 50vh;
+    width: 100%;
     box-shadow: 5px 5px 20px rgb(0, 96, 100);
     margin-left: 3px;
-    display: inline-flex;
     padding-top: 15px;
     padding-left: 9px;
     align-items: center;
-    font-size: 7px;
+    font-size: 15px;
     background-color: lightgray;
 }
 
@@ -171,6 +161,7 @@ hr {
 }
 
 /*sidebar*/
+
 .sidebar {
     margin: 0;
     padding: 0;
@@ -242,3 +233,72 @@ hr {
 #options {
     overflow-wrap: break-word;
 }
+
+/**/
+
+#title {
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 3px;
+    padding-left: 9px;
+    align-items: center;
+    background-color: whitesmoke;
+    text-align: left;
+    justify-content: left;
+    display: flex;
+    flex-direction: row !important;
+    color: black !important;
+
+}
+
+/*----*/
+/*.open-button {
+    background-color: rgb(0, 96, 100);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 280px;
+  }
+  */
+ 
+  
+  #newLec{
+    background-color: rgb(0, 96, 100);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 280px;
+  }
+  
+  /* Add some hover effects to buttons */
+  #newLec:hover {
+    opacity: 1;
+    background-color: #39AEA9;
+  }
+
+  .st{
+    color: white;
+  }
+
+  #hidden{
+    display: none;
+    background-color: rgb(0, 96, 100);
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+
+  #opa{
+    display: inline-flex;
+  }
+
+  #textboxContainer{
+    width: 280px;
+    margin-left: -4%;
+  }

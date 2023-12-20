@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NeoLearn</title>
     <link rel="icon" href="images/greenBack.png" type="image/png">
-    <link rel="stylesheet" href="lessonDesTeacherStyle.css">
+    <link rel="stylesheet" href="lecturesTeacherStyle.css">
+    <link rel="stylesheet" href="calendarL.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -83,8 +84,8 @@
             <hr>
             <div class="row">
                 <div class="col">
-                    <div class="container-fluid" id="middle-container">
-                        <div class=".container-md" id="lesson">
+                    <div class="container-fluid" id="title-container">
+                        <div class=".container-md" id="title">
                             <figure>
                                 <blockquote class="blockquote">
                                     <!-- <p id="lesson-name"></p> -->
@@ -100,14 +101,145 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-8">
-                    <div class="container-fluid" id="details-container">
-                        <div class=".container-md" id="details-lesson">
-                            <!--περιγραφη μαθηματος -->
+                <div class="col">
+                    <div class="container-fluid" id="middle-container">
+                        <div class=".container-md" id="courses-frame">
+                            <div class="slide" id="slide1">
+                                <h5>Αρχικός κατάλογος</h5>
+                                <hr>
+                                <!-- θα το βαζω να πηγαινει στο αναλογο αρχειο του μαθηματος -->
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="lesson-link" onclick="lecture('lecture1')">
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p id="lecture1">Διάλεξη 1</p>
+                                                </blockquote>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        05/12/2023
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="lesson-link" onclick="lecture('lecture2')">
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p id="lecture2">Διάλεξη 2</p>
+                                                </blockquote>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        05/12/2023
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="lesson-link" onclick="lecture('lecture3')">
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p id="lecture3">Διάλεξη 3</p>
+                                                </blockquote>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        05/12/2023
+                                    </div>
+                                </div>
+                                <hr>
+                                <button type="button" onclick="changeSlide(2)" class="btn btn-outline"
+                                    id="slideBtn">Next</button>
+                            </div>
+                            <div class="slide" id="slide2">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="lesson-link" onclick="lecture('lecture4')">
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p id="lecture4">Διάλεξη 4</p>
+                                                </blockquote>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        05/12/2023
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="lesson-link" onclick="lecture('lecture5')">
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p id="lecture5">Διάλεξη 5</p>
+                                                </blockquote>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        05/12/2023
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="lesson-link" onclick="lecture('lecture6')">
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p id="lecture6">Διάλεξη 6</p>
+                                                </blockquote>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        05/12/2023
+                                    </div>
+                                </div>
+                                <hr>
+                                <button type="button" onclick="changeSlide(1)" class="btn btn-outline"
+                                    id="slideBtn">Previous</button>
+                            </div>
                         </div>
+                        <br>
+                       
+                        <button onclick="addTextbox(event)" id="newLec">Νέα Διάλεξη <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                          </svg></button>
+                          <br>
+                          <br>
+                          <div class="container" id="opa">
+                            <div id="textboxContainer">
+                            </div>
+                            <br>
+                            <button id="hidden"> Προσθήκη</button>
+                          </div>
+                         
+                        
+                        <!--<button class="open-button" onclick="openForm()">Νέα Διάλεξη <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                          </svg></button>
+                        <div class="chat-popup" id="myForm">
+                             <form action="/action_page.php" class="form-container">
+                             <h1 class="st">Νέα Διάλεξη</h1>
+
+                             <label for="msg" class="st"><b>Τίτλος:</b></label>
+                             <textarea placeholder="Type lecture's name.." name="msg" required></textarea>
+
+                             <button type="submit" class="btn">Προσθήκη</button>
+                              <button type="button" class="btn cancel" onclick="closeForm()">Κλείσιμο</button>
+                              </form>
+                        </div>-->
                     </div>
                 </div>
-                <div class="col-md-4" id="right-col">
+                <div class="col" id="right-col">
                     <div class="month-year" id="month-year"></div>
                     <div class="button-container">
                         <button id="prev-btn">
@@ -117,50 +249,17 @@
                     <table>
                         <tbody id="calendar-body"></tbody>
                     </table>
-
                     <!-- edw to hmerologio -->
-
-                    
                 </div>
-
-
             </div>
-            <div class="col px-2" id="btns">
-                <div class="row">
-                
-                    <button type="button" onclick="edit()" class="btn btn-outline" id="editLesson">
-                                   Επεξεργασία Μαθήματος <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" color="black" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
-                                  </svg>
-                    </button>   
-                   <div class="col">
-                   <button type="button" onclick="deleteLessonLink(event)" class="btn btn-outline" id="viewLesson">
-                                   <a href="/link" class="list-group-item">
-                                       Επισκόπηση Μαθήματος <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-binoculars" viewBox="0 0 16 16">
-                                        <path d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5z"/>
-                                      </svg></a></button>
-                    </div>
-                 </div>
-                <div class="row">
-                                        <button type="button" onclick="deleteLessonLink(event)" class="btn btn-outline" id="deleteLesson">             
-                                                  Διαγραφή Μαθήματος <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" color="black" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" style="font-weight: bold;">
-                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-                                                  </svg>  </button>
-
-                 </div>
-            </div>
-            
-            
-            <br>
 
             <div class="row">
+                
+            </div>
+            <div class="row">
                 <div class="sum-profile">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="80" fill="currentColor" class="bi bi-person-circle d-inline-block align-text-top" viewBox="0 0 16 16" style="color: rgb(0, 96, 100) ;">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                      </svg>
+                    <img src="images\NL-profile.png" alt="profile" width="70" height="80"
+                        class="d-inline-block align-text-top">
                     <div class="container-md">
                         <div class="profile-details">
                             <p>ΜΑΡΙΟΣ ΠΑΠΑΔΟΠΟΥΛΟΣ
@@ -185,8 +284,7 @@
     </div>
 
     <script src="calendarL.js"></script>
-    <script src="deleteTeacher.js"></script>
-    <script src="editLesson.js"></script>
+    <script src="lecturesTeacher.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
