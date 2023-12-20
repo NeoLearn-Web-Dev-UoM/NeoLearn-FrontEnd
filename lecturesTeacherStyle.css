@@ -302,3 +302,19 @@ hr {
     width: 280px;
     margin-left: -4%;
   }
+
+  .h1changes{
+    margin-left: 0;
+    display: none;
+    width: 100%!important; /* Καθορίζει το πλάτος του <hr> στο 100% του παρεχόμενου χώρου */
+    box-sizing: content-box; 
+  }
+  .h1changes {
+    margin-top: 0; /* Καθορίζει το άνω περιθώριο ως μηδέν */
+    color:red;
+}
+
+  #datetime-container{
+    display: none;
+    margin-right: 5%;
+  }

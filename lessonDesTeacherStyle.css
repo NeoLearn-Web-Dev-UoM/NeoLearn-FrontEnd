@@ -90,7 +90,7 @@ hr {
 
 #deleteLesson {
     margin-top: 22px;
-   
+    color: black;
     width: 15rem !important;
     background-color: rgb(231,126,93) !important;
     border: 2px solid rgb(0, 96, 100);
