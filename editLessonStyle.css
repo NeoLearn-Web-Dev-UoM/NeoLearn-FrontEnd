@@ -216,29 +216,25 @@ hr.new2{
 }
 
 #btnCreate{
-    color: white;
-    opacity: 0.8;
-    background: linear-gradient(to right, rgb(0, 96, 100),rgb(80, 186, 190));
-    border-color: rgb(0, 96, 100)!important;
-    border: 2px solid;
-    width: 60vh;
-}
 
+    background-color: rgb(161,214,172) !important;
+    border: 2px solid rgb(0, 96, 100)!important;
+    width: 55vh;
+    margin-left: 3%;
+}
 @media screen and (max-width: 1280px) {
     #btnCreate{
-    color: white;
-    opacity: 0.8;
-    background: linear-gradient(to right, rgb(0, 96, 100),rgb(80, 186, 190));
-    border-color: rgb(0, 96, 100)!important;
-    border: 2px solid;
+    background-color: rgb(161,214,172) !important;
+    border: 2px solid rgb(0, 96, 100)!important;
     margin-left: -25%;
+   
     width: 150%;
 }
 }
 #description, #id , #name{
     border: 2px solid rgb(0, 96, 100);
     background-color: lightgray;
-    width: 60vh;
+    width: 55vh;
 }
 
 .form-check{
