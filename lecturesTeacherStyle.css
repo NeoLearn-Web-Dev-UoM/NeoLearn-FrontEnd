@@ -59,6 +59,7 @@ hr {
     height: 80vh !important;
 }
 
+
 #right-col {
     text-align: right;
 }
@@ -290,12 +291,13 @@ hr {
     color: white;
     cursor: pointer;
     opacity: 0.8;
-    margin-right: 5px;
-    margin-left: 10px;
+    margin-right: 500px;
+    margin-left: 5px;
   }
 
   #opa{
     display: inline-flex;
+    margin-left: 2%;
   }
 
   #textboxContainer{
@@ -318,3 +320,9 @@ hr {
     display: none;
     margin-right: 5%;
   }
+
+  .lesson-link{
+    cursor: pointer;
+
+  }
+  

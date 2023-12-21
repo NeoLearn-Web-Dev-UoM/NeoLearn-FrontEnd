@@ -23,6 +23,17 @@ showSlide(currentSlide);
 function lecture(lecture) {
     window.location.href = 'lecture.html';
 }
+
+function emptylecture(lecture) {
+    console.log('Clicked! Lecture:', lecture);
+    try {
+        window.location.href = 'lecture.html';
+    } catch (error) {
+        console.error('Error in emptylecture:', error);
+    }
+}
+
+
 function openForm() {
     document.getElementById("myForm").style.display = "block";
   }
@@ -38,41 +49,52 @@ function openForm() {
     document.getElementById("textboxContainer").appendChild(input);
     hiddenButton.style.display = "inline-block";
 }
+// ... υπόλοιπος κώδικας ...
+
 function addTextboxq(event) {
     event.preventDefault();
 
     var inputValue = document.getElementById("textboxContainer").querySelector("input").value;
-    document.getElementById("courses-container").insertAdjacentHTML('beforebegin', '<hr class="h1changes">');
 
     if (inputValue.trim() !== "") {
+        var coursesContainer = document.getElementById("courses-container");
         var newElement = document.createElement("div");
         newElement.classList.add("added-course");
         newElement.textContent = inputValue;
-
-        var hrElement = document.createElement("hr"); // Δημιουργία ενός νέου <hr>
-        hrElement.classList.add("h2changes"); // Προσθήκη κλάσης h2changes
-        var coursesContainer = document.getElementById("courses-container");
-        coursesContainer.appendChild(hrElement); // Προσθήκη του <hr> στο #courses-container
         coursesContainer.appendChild(newElement);
 
-        // Καθαρίστε το περιεχόμενο του textbox μετά την προσθήκη.
-        document.getElementById("textboxContainer").querySelector("input").value = "";
+        // Get current date
+        var now = new Date();
+        var options = { day: '2-digit', month: '2-digit' };
+        var date = now.toLocaleDateString(undefined, options);
+
+        // Create a new row (tr)
+        var newRow = document.createElement("tr");
+
+        // Create a new cell for the course text
+        var courseCell = document.createElement("td");
+        courseCell.textContent = inputValue;
+
+        // Create a new cell for the date
+        var dateCell = document.createElement("td");
+        dateCell.textContent = date;
+
+        // Append cells to the new row
+        newRow.appendChild(courseCell);
+        newRow.appendChild(dateCell);
+
+        // Append the new row to the table
+        var tableBody = document.querySelector("#middle-container table tbody");
+        tableBody.appendChild(newRow);
+
         var datetimeContainer = document.getElementById("datetime-container");
-    datetimeContainer.style.display = "block";
-
-    // Get current date and time
-    var now = new Date();
-    var datetime = now.toLocaleString();
-
-    // Create a new element for the date of addition
-    var dateElement = document.createElement("p");
-    dateElement.textContent = "" + datetime;
-
-    // Insert date element into the container
-    datetimeContainer.innerHTML = '';
-    datetimeContainer.appendChild(dateElement);
+        datetimeContainer.style.display = "block";
     }
 }
+
+
+// ... υπόλοιπος κώδικας ...
+
 
 
   // Get current date and time

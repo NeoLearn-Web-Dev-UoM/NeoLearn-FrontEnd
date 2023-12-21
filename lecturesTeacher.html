@@ -6,7 +6,6 @@
     <title>NeoLearn</title>
     <link rel="icon" href="images/greenBack.png" type="image/png">
     <link rel="stylesheet" href="lecturesTeacherStyle.css">
-    <link rel="stylesheet" href="calendarL.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -100,170 +99,106 @@
                     </div>
                 </div>
             </div>
+            <br>
             <div class="row">
-                <div class="col">
-                    <div class="container-fluid" id="middle-container">
-                        <div class=".container-md" id="courses-frame">
-                            <div class="slide" id="slide1">
-                                <h5>Αρχικός κατάλογος</h5>
-                                <hr>
-                                <!-- θα το βαζω να πηγαινει στο αναλογο αρχειο του μαθηματος -->
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="lesson-link" onclick="lecture('lecture1')">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="lecture1">Διάλεξη 1</p>
-                                                </blockquote>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        05/12/2023
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="lesson-link" onclick="lecture('lecture2')">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="lecture2">Διάλεξη 2</p>
-                                                </blockquote>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        05/12/2023
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="lesson-link" onclick="lecture('lecture3')">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="lecture3">Διάλεξη 3</p>
-                                                </blockquote>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        05/12/2023
-                                    </div>
-                                </div>
-                                <hr>
-                                <button type="button" onclick="changeSlide(2)" class="btn btn-outline"
-                                    id="slideBtn">Next</button>
-                            </div>
-                            <div class="slide" id="slide2">
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="lesson-link" onclick="lecture('lecture4')">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="lecture4">Διάλεξη 4</p>
-                                                </blockquote>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        05/12/2023
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="lesson-link" onclick="lecture('lecture5')">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="lecture5">Διάλεξη 5</p>
-                                                </blockquote>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        05/12/2023
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="lesson-link" onclick="lecture('lecture6')">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="lecture6">Διάλεξη 6</p>
-                                                </blockquote>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        05/12/2023
-                                    </div>
-                                </div>
-                                <hr class="h1changes">
-                                <div class="container-new">
-                                    <div class="container" id="courses-container">
-                                         <!-- Εδώ θα προστίθενται τα μαθήματα -->
-                                    </div>
-                                <div id="datetime-container" style="display: none;">
-                                        <!-- Εδώ θα εμφανιστεί το κείμενο -->
-                                </div>
-                            </div>
-                                <hr>
-                                <button type="button" onclick="changeSlide(1)" class="btn btn-outline"
-                                    id="slideBtn">Previous</button>
-                            </div>
-                        </div>
-                        <br>
-                       
-                        <button onclick="addTextbox(event)" id="newLec">Νέα Διάλεξη <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
-                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
-                          </svg></button>
-                          <br>
-                          <br>
-                          <div class="container" id="opa">
-                            <div id="textboxContainer">
-                            </div>
-                            <br>
-                            <button onclick="addTextboxq(event)" id="hidden">Προσθήκη</button>
-                        </div>
-                         
-                        <!--<button class="open-button" onclick="openForm()">Νέα Διάλεξη <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
-                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
-                          </svg></button>
-                        <div class="chat-popup" id="myForm">
-                             <form action="/action_page.php" class="form-container">
-                             <h1 class="st">Νέα Διάλεξη</h1>
+        <div class="container-fluid" id="middle-container">
+        <table class="table table-success table-striped table-bordered border-primary table-hover" style="width:100%">
+            <thead>
+                <tr>
+                    <th style="width:70%">Αρχικός κατάλογος</th>
+                    <th>Ημερομηνία</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><div class="lesson-link" onclick="lecture('lecture6')">Διάλεξη 1</div></td>
+                    <td>10/11</td>
+                </tr>
+                <tr>
+                    <td><div class="lesson-link" onclick="lecture('lecture6')">Διάλεξη 2</div></td>
+                    <td>20/11</td>
+                </tr>
+                <tr>
+                    <td><div class="lesson-link" onclick="lecture('lecture6')">Διάλεξη 3</div></td>
+                    <td>25/11</td>
+                </tr>
+                <tr>
+                    <td><div class="lesson-link" onclick="lecture('lecture6')">Διάλεξη 4</div></td>
+                    <td>22/12</td>
+                </tr>
+                <tr id="lessonRow" style="display: none;">
+                    <td><div class="lesson-link" onclick="emptylecture('lecture6')"> <div class="container" id="courses-container">
 
-                             <label for="msg" class="st"><b>Τίτλος:</b></label>
-                             <textarea placeholder="Type lecture's name.." name="msg" required></textarea>
+                    </div></div></td>
+                    <td><div id="datetime-container" style="display: none;">
+                    
+               </div></td>
+                </tr>
+               
+                  
+            </tbody>
+        </table>
+        <br>
+        <button onclick="addTextbox(event)" id="newLec">Νέα Διάλεξη 
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+            </svg>
+        </button>
+        <br>
+        <br>
+        <div class="container" id="opa">
+            <div id="textboxContainer">
+            </div>
+            <br>
+            <button onclick="addTextboxq(event)" id="hidden">Προσθήκη</button>
+        </div>
+    </div>
+</div>
 
-                             <button type="submit" class="btn">Προσθήκη</button>
-                              <button type="button" class="btn cancel" onclick="closeForm()">Κλείσιμο</button>
-                              </form>
-                        </div>-->
-                    </div>
-                </div>
-                <div class="col" id="right-col">
-                    <div class="month-year" id="month-year"></div>
-                    <div class="button-container">
-                        <button id="prev-btn">
-                            < </button>
-                                <button id="next-btn"> ></button>
-                    </div>
-                    <table>
-                        <tbody id="calendar-body"></tbody>
-                    </table>
-                    <!-- edw to hmerologio -->
-                </div>
+                                   <div class="row">
+                                    <table class="table table-success table-striped table-bordered border-primary table-hover">
+                                        <tbody>
+                                            <thead>
+                                            <tr>
+                                                <th style="width:70%">Αρχικός κατάλογος</th>
+                                                <th>Ημερομηνία</th>
+                                              </tr>
+                                            </thead>
+
+                                              <tr>
+                                                <td><div class="lesson-link" onclick="lecture('lecture6')">
+                                                    Διάλεξη 1
+                                                </div></td>
+                                                <td>10/11</td>
+                                              </tr>
+                                              <tr>
+                                                <td><div class="lesson-link" onclick="lecture('lecture6')">
+                                                    Διάλεξη 2</div></td>
+                                                <td>20/11</td>
+                                              </tr>
+                                              <tr>
+                                                <td><div class="lesson-link" onclick="lecture('lecture6')">
+                                                    Διάλεξη 3
+                                                </div></td>
+                                                <td>25/11</td>
+                                              </tr>
+                                              <tr>
+                                                <td><div class="lesson-link" onclick="lecture('lecture6')">
+                                                    Διάλεξη 4
+                                                </div></td>
+                                                <td>22/12</td>
+                                              </tr>
+                                              
+                                        </tbody>
+                                      </table>
+
+                                        </div>
+<br>
+<br>
+        
             </div>
 
-            <div class="row">
-                
-            </div>
             <div class="row">
                 <div class="sum-profile">
                     <img src="images\NL-profile.png" alt="profile" width="70" height="80"
@@ -291,10 +226,17 @@
         </div>
     </div>
 
-    <script src="calendarL.js"></script>
     <script src="lecturesTeacher.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
 
 </body>
+
+<!--<div class="container-new">
+                                    <div class="container" id="courses-container">
+                                          Εδώ θα προστίθενται τα μαθήματα 
+                                        </div>
+                                        <div id="datetime-container" style="display: none;">
+                                                 Εδώ θα εμφανιστεί το κείμενο 
+                                        </div>-->
