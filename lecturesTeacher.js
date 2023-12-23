@@ -1,5 +1,9 @@
 'use strict'
 
+function viewLessonLink() {
+    window.location.href = "lecturesTeacher.html";
+}
+
 let currentSlide = 1;
 function showSlide(slideNumber) {
     const slides = document.querySelectorAll('.slide');
@@ -65,7 +69,7 @@ function addTextboxq(event) {
 
         // Get current date
         var now = new Date();
-        var options = { day: '2-digit', month: '2-digit' };
+        var options = { day: '2-digit', month: '2-digit', year: 'numeric' };
         var date = now.toLocaleDateString(undefined, options);
 
         // Create a new row (tr)
@@ -92,7 +96,6 @@ function addTextboxq(event) {
     }
 }
 
-
 // ... υπόλοιπος κώδικας ...
 
 
@@ -107,20 +110,3 @@ function addTextboxq(event) {
 
   // Insert date element into the container
   document.getElementById("datetime-container").appendChild(dateElement);
-
-  function showDatetime() {
-    var datetimeContainer = document.getElementById("datetime-container");
-    datetimeContainer.style.display = "block";
-
-    // Get current date and time
-    var now = new Date();
-    var datetime = now.toLocaleString();
-
-    // Create a new element for the date of addition
-    var dateElement = document.createElement("p");
-    dateElement.textContent = "Ημερομηνία προσθήκης: " + datetime;
-
-    // Insert date element into the container
-    datetimeContainer.innerHTML = '';
-    datetimeContainer.appendChild(dateElement);
-}

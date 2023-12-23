@@ -1,6 +1,6 @@
 'use strict'
 
-function edit() {
+function editLessonLink() {
     window.location.href = "editLesson.html";
 }
 
