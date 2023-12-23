@@ -222,15 +222,7 @@ hr.new2{
     width: 55vh;
     margin-left: 3%;
 }
-@media screen and (max-width: 1280px) {
-    #btnCreate{
-    background-color: rgb(161,214,172) !important;
-    border: 2px solid rgb(0, 96, 100)!important;
-    margin-left: -25%;
-   
-    width: 150%;
-}
-}
+
 #description, #id , #name{
     border: 2px solid rgb(0, 96, 100);
     background-color: lightgray;
@@ -272,6 +264,7 @@ hr.new2{
     #btnCancel{
         background-color: rgb(231,126,93) !important;
         border: 2px solid rgb(0, 96, 100)!important;
+        color: black;
         width: 55vh;
         margin-left: 3%;
         opacity: 0.9;
@@ -286,3 +279,33 @@ hr.new2{
         border-top: 1px solid #ccc;
         margin: 10px 0; /* Απόσταση πάνω και κάτω από την οριζόντια γραμμή */
     }
+
+    @media screen and (max-width: 1280px) {
+        #description, #id, #name {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        #btnCreate {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+
+    /* CSS για κεντρικά κουμπιά σε μικρές οθόνες */
+@media screen and (max-width: 1280px) {
+    .d-grid.col-5.mx-auto {
+        width: 80% !important;
+        justify-content: center !important;
+    }
+}
+
+/* Κουμπιά σε μικρότερες οθόνες */
+@media screen and (max-width: 768px) {
+    #btnCreate,
+    #btnCancel {
+        width: 100%;
+        margin-left: 0;
+    }
+}

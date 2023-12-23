@@ -20,7 +20,7 @@ hr {
         max-width: 100% !important;
 }
   }
-  
+
 #header-container {
     background-color: lightgray;
     height: 10vh !important;
@@ -221,7 +221,8 @@ hr.new2{
     background: linear-gradient(to right, rgb(0, 96, 100),rgb(80, 186, 190));
     border-color: rgb(0, 96, 100)!important;
     border: 2px solid;
-    width: 60vh;
+    width: 55vh;
+    margin-left: 3%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -231,8 +232,9 @@ hr.new2{
     background: linear-gradient(to right, rgb(0, 96, 100),rgb(80, 186, 190));
     border-color: rgb(0, 96, 100)!important;
     border: 2px solid;
-    margin-left: -25%;
-    width: 150%;
+   
+    width: 100%;
+    margin-left: 0;
 }
 }
 #description, #id , #name{
@@ -272,3 +274,31 @@ hr.new2{
         visibility: visible;
         border: 2px solid white;
     }
+
+    #btnCancel{
+        background-color: rgb(231,126,93) !important;
+        border: 2px solid rgb(0, 96, 100)!important;
+        color: black;
+        width: 55vh;
+        margin-left: 3%;
+        opacity: 0.9;
+    }
+
+
+    /* Προσαρμογή στην κινητή οθόνη */
+   
+    @media screen and (max-width: 1280px) {
+        #description, #id, #name {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        #btnCreate,
+        #btnCancel {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+
+    

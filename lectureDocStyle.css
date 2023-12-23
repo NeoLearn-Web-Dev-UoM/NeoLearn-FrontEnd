@@ -56,9 +56,15 @@ hr {
 
 #middle-container {
     background-color: lightgray;
-    height: 80vh !important;
+    height: 100vh !important;
 }
 
+@media screen and (max-width: 1280) {
+    #middle-container {
+        background-color: lightgray;
+        height: 100vh !important;
+    }
+}
 
 #right-col {
     text-align: right;
@@ -154,6 +160,22 @@ hr {
     display: flex;
     flex-direction: row !important;
     color: black !important;
+}
+
+@media screen and (max-width: 992px) {
+    .profile-details {
+        width: 80%; /*lefki*/
+        margin-left: 3px;
+        padding-left: 9px;
+        align-items: center;
+        font-size: 15px;
+        background-color: whitesmoke;
+        text-align: left;
+        justify-content: left;
+        display: flex;
+        flex-direction: row !important;
+        color: black !important;
+    }
 }
 
 .sum-profile {
@@ -371,13 +393,15 @@ th:nth-child(2), td:nth-child(2) {
     margin-left: 25%;
 }
 
-@media screen and (max-width: 1280) {
-    #addField{
-     margin-left: 100%!important;
-    }
-}
-
 #newFolder{
     margin-left: 1%!important;
     text-align: left;
+}
+
+
+/* Ιδιότητες για τις κινητές συσκευές */
+@media only screen and (max-width: 768px) {
+    .table thead {
+        display: none;
+    }
 }

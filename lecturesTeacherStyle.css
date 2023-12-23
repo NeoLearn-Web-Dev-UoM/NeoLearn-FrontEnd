@@ -156,6 +156,22 @@ hr {
     color: black !important;
 }
 
+@media screen and (max-width: 992px) {
+    .profile-details {
+        width: 80%; /*lefki*/
+        margin-left: 3px;
+        padding-left: 9px;
+        align-items: center;
+        font-size: 15px;
+        background-color: whitesmoke;
+        text-align: left;
+        justify-content: left;
+        display: flex;
+        flex-direction: row !important;
+        color: black !important;
+    }
+}
+
 .sum-profile {
     display: flex;
     flex-direction: row !important;

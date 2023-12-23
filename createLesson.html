@@ -109,7 +109,9 @@
                 <div class="col">
                     <div class="container-fluid d-flex justify-content-center align-items-center" id="middle-container">                            
                             <form>
-                                <h2 class="h2style"> Δημιουργία νέου μαθήματος</h2>
+                                <h2 class="h2style"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-highlighter" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.096.644a2 2 0 0 1 2.791.036l1.433 1.433a2 2 0 0 1 .035 2.791l-.413.435-8.07 8.995a.5.5 0 0 1-.372.166h-3a.5.5 0 0 1-.234-.058l-.412.412A.5.5 0 0 1 2.5 15h-2a.5.5 0 0 1-.354-.854l1.412-1.412A.5.5 0 0 1 1.5 12.5v-3a.5.5 0 0 1 .166-.372l8.995-8.07.435-.414Zm-.115 1.47L2.727 9.52l3.753 3.753 7.406-8.254-2.905-2.906Zm3.585 2.17.064-.068a1 1 0 0 0-.017-1.396L13.18 1.387a1 1 0 0 0-1.396-.018l-.068.065 2.85 2.85M5.293 13.5 2.5 10.707v1.586L3.707 13.5z"/>
+                                  </svg> Δημιουργία νέου μαθήματος</h2>
                                 <div class="mb-3">
                                   <label for="exampleInputEmail1" class="form-label">Όνομα Μαθήματος:</label>
                                   <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Όνομα νέου μαθήματος">
@@ -137,36 +139,17 @@
                                     <textarea class="form-control" id="description" rows="3" placeholder="Περιγράψτε το μάθημα.. "></textarea>
                                   </div>
                               </form>
-                          
-                      <!-- <div class="input-group mb-3">
-                            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Προσθήκη Αρχείου:</button>
-                            <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
-                          </div>-->
-                           <!--Προσθήκη αρχείων-->
-                        <!--  <form class="md-form">
-                            <div class="file-field">
-                              <div class="btn btn-primary btn-sm float-left" style="background-color:  rgb(12, 167, 136);">
-                                <span>Προσθήκη Αρχείου</span>
-                                <input type="file"> 
-                              </div>
-                              <div class="btn btn-primary btn-sm float-left" style="background-color:  rgb(143, 208, 78);">
-                                <span>Προσθήκη Video</span>
-                                <input type="file">
-                              </div>
-                            </div>
-                          </form>
-                        -->
-                      <!--  <div class=".container-md" id="courses-frame">
-                            
-                        </div>-->
                     </div>
                     <div class="row">
                         <div class="d-flex justify-content-center align-items-center">
                             <div class="d-grid gap-2 col-5 mx-auto">
-                                <button class="btn" type="button" id="btnCreate">Δημιουργία Μαθήματος</button>
+                                <button class="btn" type="button" id="btnCreate" onclick="returnToMainPage()">Επεξεργασία Μαθήματος</button>
+                                <button class="btn" type="button" id="btnCancel" onclick="returnToMainPage()">Ακύρωση</button>
+
                             </div>
                         </div>
                     </div>  
+                    <br> 
                     <br>
                     
 
