@@ -56,15 +56,9 @@ hr {
 
 #middle-container {
     background-color: lightgray;
-    height: 100vh !important;
+    height: 80vh !important;
 }
 
-@media screen and (max-width: 1280) {
-    #middle-container {
-        background-color: lightgray;
-        height: 100vh !important;
-    }
-}
 
 #right-col {
     text-align: right;
@@ -345,79 +339,10 @@ hr {
 
   .lesson-link{
     cursor: pointer;
-
-  }
-  table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-}
-
-th:nth-child(3), td:nth-child(3) {
-    text-align: center;
-}
-
-/* Add this style to align icons to the right */
-td svg {
-    float: center;
-}
-
-/* Adjust the text alignment for the specific column */
-th:nth-child(2), td:nth-child(2) {
-    text-align: left;
-}
-
-.lesson-link {
-    cursor: pointer;
     text-decoration: underline;
-    color: blue;
-}
-
-.custom-header {
+    color: rgb(0, 96, 100);
+  }
+  
+  .custom-header {
     color: rgb(38, 50, 56)!important;
 }
-
-#addField{
-    background-color: rgb(161,214,172) !important;
-    border: 2px solid rgb(0, 96, 100);
-    /* margin-top: 10px !important; */
-    color:rgb(38, 50, 56);
-}
-
-#files{
-    margin-left: 25%;
-}
-
-#newFolder{
-    margin-left: 1%!important;
-    text-align: left;
-}
-
-
-/* Ιδιότητες για τις κινητές συσκευές */
-@media only screen and (max-width: 768px) {
-    .table thead {
-        display: none;
-    }
-}
-
-
-@media screen and (max-width: 768px) {
-    #addField,
-    #uploadDoc1 {
-        width: 100%;
-        margin-left: -25%!important;
-    }
-}
-
-
-#btnNewFolder,#uploadDoc1:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
