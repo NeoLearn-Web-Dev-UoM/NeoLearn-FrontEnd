@@ -77,6 +77,10 @@ function addTextboxq(event) {
         // Create a new cell for the course text
         var courseCell = document.createElement("td");
         courseCell.textContent = inputValue;
+        
+        courseCell.style.textDecoration = 'underline';
+        courseCell.style.cursor = 'pointer';
+        courseCell.style.color = 'rgb(0, 96, 100)';
 
         // Create a new cell for the date
         var dateCell = document.createElement("td");
@@ -85,6 +89,11 @@ function addTextboxq(event) {
         // Append cells to the new row
         newRow.appendChild(courseCell);
         newRow.appendChild(dateCell);
+
+        newRow.addEventListener('click', function() {
+            // Μεταφορά του χρήστη στη σελίδα "lectureDoc.html"
+            window.location.href = 'lectureDoc.html';
+        });
 
         // Append the new row to the table
         var tableBody = document.querySelector("#middle-container table tbody");
