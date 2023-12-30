@@ -20,7 +20,7 @@ body {
     background-color: lightgray;
     height: 10vh !important;
     padding-top: 0%;
-    margin-bottom: 0%;
+    margin-bottom: -2%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -51,87 +51,11 @@ body {
     background-color: lightgray;
 }
 
-#right-col {
-    text-align: right;
-}
-
-@media screen and (max-width: 992px) {
-  #right-col {
-      text-align: center;
-
-  }
-}
-
-.search-course {
-    display: flex;
-    align-items: center;
-}
-
-#searchbtn {
-    background-color: rgba(0, 0, 255, 0.1);
-}
-
-/*.courses-frame {
-    margin-top: 15px;
-    height: 60vh;
-    width: 80%;
-    margin-left: 3px;
-    display: inline-flex;
-    padding-top: 15px;
-    padding-left: 9px;
-    align-items: center;
-    font-size: 12px;
-}*/
-#courses-frame {
-    margin-top: 15px;
-    margin-left: 3px;
-    box-shadow: 5px 5px 20px rgb(0, 96, 100);
-    background-color: lightgray;
-    width: 100%;
-    display: inline-flex;
-    padding-top: 15px;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 10px;
-    font-size: 12px;
-    /*overflow: auto;*/
-  }
-
-#row-course {
-    flex-direction: row !important;
-}
-
-.delete-icon {
-    background-color: lightgray;
-    width: 30px;
-    height: 20px;
-}
-
 .blockquote {
     display: flex;
     flex-direction: row;
     row-gap: 10px;
     gap: 45px;
-}
-
-#slideBtn {
-    width: 7rem !important;
-    background-color: rgb(0, 96, 100) !important;
-    text-align: center;
-    color: white;
-}
-
-#newLesson {
-    margin-top: 30px;
-    width: 14rem !important;
-    background-color: rgb(0, 96, 100) !important;
-    /* margin-top: 10px !important; */
-    text-align: center;
-}
-
-.newLesson {
-    width: 20px;
-    height: 25px;
 }
 
 .footer {
@@ -175,11 +99,6 @@ body {
     flex-direction: row !important;
 }
 
-#header-container{
-    margin-bottom: -2%;
-}
-
-  /*egw*/
     .logo {
       /*  margin-top: -20%;*/
         margin-left: -4%;
@@ -204,13 +123,7 @@ body {
     hr.new2{
       border: 1px solid #263238;
     }
- 
 
-  .slide {
-      width: 100%;
-      box-sizing: border-box;
-  }
-  
   /*sidebar*/
   body {
     margin: 0;
@@ -271,7 +184,6 @@ body {
   #options{
     overflow-wrap: break-word;
   }
-
 
   #quest{
     color: rgb(38, 50, 56);

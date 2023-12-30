@@ -48,12 +48,6 @@ hr {
     /*lefki*/
 }
 
-.icons {
-    margin-top: 50px;
-    width: 40px;
-    height: 30px;
-}
-
 #profile-col {
     text-align: right;
     justify-content: right;
@@ -68,10 +62,6 @@ hr {
     /* padding-bottom: 7%; */
 }
 
-/* 
-#right-col {
-    text-align: right;
-} */
 
 #lesson {
     margin-top: 10px;
@@ -127,10 +117,6 @@ hr {
         text-align: center;
     }
 }
-.imgLesson {
-    width: 20px;
-    height: 25px;
-}
 
 #details-container {
     margin-top: 5%;
@@ -153,9 +139,7 @@ hr {
 }
 
 .profile-details {
-    width: 65%;
-    margin-top: 15px;
-    padding: 10px;
+    width: 50%;
     margin-left: 3px;
     padding-left: 9px;
     align-items: center;
@@ -234,8 +218,6 @@ button {
     cursor: pointer;
     font-size: 12px;
 }
-
-/* ews edw */
 
 /*sidebar*/
 .sidebar {

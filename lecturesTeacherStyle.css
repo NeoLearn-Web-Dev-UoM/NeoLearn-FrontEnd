@@ -6,8 +6,6 @@ hr {
     color: black !important;
 }
 
-
-
 .container {
     background-color: lightgray;
     /* height: 100vh; */
@@ -23,6 +21,8 @@ hr {
 #header-container {
     background-color: lightgray;
     height: 10vh !important;
+    padding-top: 0%;
+    margin-bottom: -2%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -30,20 +30,14 @@ hr {
       background-color: lightgray;
       height: 10vh !important;
       padding-top: 0%;
-      margin-bottom: -2%!important;
+      margin-bottom: -10%!important;
   }
   }
 .profile-container {
     display: grid !important;
     align-items: center !important;
     grid-template-columns: 1fr 1fr !important;
-    margin-top: 15px;
-}
-
-.icons {
-    margin-top: 50px;
-    width: 40px;
-    height: 30px;
+    margin-top: 5px;
 }
 
 #profile-col {
@@ -51,7 +45,7 @@ hr {
     justify-content: right;
     display: flex;
     flex-direction: row !important;
-    color: black !important;
+    color: #263238 !important;
 }
 
 #middle-container {
@@ -59,80 +53,11 @@ hr {
     height: 80vh !important;
 }
 
-
-#right-col {
-    text-align: right;
-}
-
-@media screen and (max-width: 992px) {
-    #right-col {
-        text-align: center;
-
-    }
-}
-
-.search-course {
-    display: flex;
-    align-items: center;
-    font-size: 7px;
-    row-gap: 10px;
-    gap: 20px;
-}
-
-#searchbtn {
-    background-color: rgba(0, 0, 255, 0.1);
-}
-
-#courses-frame {
-    margin-top: 15px;
-    height: 50vh;
-    width: 100%;
-    box-shadow: 5px 5px 20px rgb(0, 96, 100);
-    margin-left: 3px;
-    padding-top: 15px;
-    padding-left: 9px;
-    align-items: center;
-    font-size: 15px;
-    background-color: lightgray;
-}
-
-#row-course {
-    flex-direction: row !important;
-}
-
-.delete-icon {
-    background-color: lightgray;
-    width: 30px;
-    height: 20px;
-}
-
 .blockquote {
     display: flex;
     flex-direction: row;
     row-gap: 10px;
     gap: 45px;
-}
-
-#slideBtn {
-    width: 7rem !important;
-    background-color: rgb(0, 96, 100) !important;
-    text-align: center;
-    color: white;
-}
-
-#newLesson {
-    margin-top: 30px;
-    width: 14rem !important;
-    background-color: rgb(0, 96, 100) !important;
-    /* margin-top: 10px !important; */
-    text-align: center;
-}
-
-
-
-.newLesson {
-    width: 20px;
-    height: 25px;
 }
 
 .footer {
@@ -268,19 +193,6 @@ hr {
 
 }
 
-/*----*/
-/*.open-button {
-    background-color: rgb(0, 96, 100);
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    width: 280px;
-  }
-  */
- 
-  
   #newLec{
     background-color: rgb(0, 96, 100);
     color: white;
@@ -311,7 +223,7 @@ hr {
     margin-left: 5px;
   }
 
-  #opa{
+  #addLecTitle{
     display: inline-flex;
     margin-left: 2%;
   }

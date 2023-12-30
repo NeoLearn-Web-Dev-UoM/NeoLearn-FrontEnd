@@ -45,13 +45,6 @@ hr {
     margin-top: 5px;/*lefki*/
 }
 
-/* αυτό νομίζω θέλει σβήσιμο*/
-.icons {
-    margin-top: 50px;
-    width: 40px;
-    height: 30px;
-}
-
 #profile-col {
     text-align: right;
     justify-content: right;
@@ -65,33 +58,12 @@ hr {
     height: 80vh !important;
 }
 
-#right-col {
-    text-align: right;
-}
-
-@media screen and (max-width: 992px) {
-    #right-col {
-        text-align: center;
-
-    }
-}
-
-.search-course {
-    display: flex;
-    align-items: center;
-}
-
-
-
-
-
 .blockquote {
     display: flex;
     flex-direction: row;
     row-gap: 10px;
     gap: 45px;
 }
-
 
 .footer {
     text-align: center !important;
@@ -188,7 +160,6 @@ hr {
     }
 }
 
-
 #options {
     overflow-wrap: break-word;
 }
@@ -207,13 +178,6 @@ hr.new2{
     font-weight: Georgia;
     font-size: 20px;
   }
-
-  
-  #inputGroupFileAddon03{
-   /* background: linear-gradient(to right, rgb(11, 196, 135), #263238);*/
-   background-color:  rgb(12, 167, 136)!important;
-   color: white;
-}
 
 #btnCreate{
     color: white;

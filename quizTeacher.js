@@ -24,14 +24,14 @@ function changeSlide(nextSlide) {
 showSlide(currentSlide);
 
 
-function lecture(lecture) {
-    window.location.href = 'lectureDoc.html';
+function quiz(quiz) {
+    window.location.href = 'quiz_num.html';
 }
 
-function emptylecture(lecture) {
+function emptyquiz(quiz) {
     console.log('Clicked! Lecture:', lecture);
     try {
-        window.location.href = 'lecture.html';
+        window.location.href = 'quiz_num.html';
     } catch (error) {
         console.error('Error in emptylecture:', error);
     }
@@ -97,7 +97,7 @@ function addTextboxq(event) {
 
         newRow.addEventListener('click', function() {
             // Μεταφορά του χρήστη στη σελίδα "lectureDoc.html"
-            window.location.href = 'lectureDoc.html';
+            window.location.href = 'quiz_num.html';
         });
 
         var datetimeContainer = document.getElementById("datetime-container");

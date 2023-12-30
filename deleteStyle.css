@@ -12,7 +12,6 @@ hr {
     max-width: 70% !important;
 }
 
-/*lefki*/
 @media screen and (max-width: 1280px) {
     .container {
         background-color: lightgray;
@@ -48,13 +47,6 @@ hr {
     /*lefki*/
 }
 
-/* αυτό νομίζω θέλει σβήσιμο*/
-.icons {
-    margin-top: 50px;
-    width: 40px;
-    height: 30px;
-}
-
 #profile-col {
     text-align: right;
     justify-content: right;
@@ -66,26 +58,6 @@ hr {
 #middle-container {
     background-color: lightgray;
     height: 80vh !important;
-}
-
-#right-col {
-    text-align: right;
-}
-
-@media screen and (max-width: 992px) {
-    #right-col {
-        text-align: center;
-
-    }
-}
-
-.search-course {
-    display: flex;
-    align-items: center;
-}
-
-#searchbtn {
-    background-color: rgba(0, 0, 255, 0.1);
 }
 
 #courses-frame {
@@ -102,15 +74,12 @@ hr {
     background-color: lightgray;
 }
 
-
-
 .blockquote {
     display: flex;
     flex-direction: row;
     row-gap: 10px;
     gap: 45px;
 }
-
 
 .footer {
     text-align: center !important;
@@ -132,7 +101,6 @@ hr {
     flex-direction: row !important;
     color: black !important;
 }
-
 
 @media screen and (max-width: 992px) {
     .profile-details {
@@ -222,13 +190,9 @@ hr {
         width: 100%;
     }
 }
-
-
 #options {
     overflow-wrap: break-word;
 }
-
-/**/
 
 .message-class {
     margin-top: 30px;
