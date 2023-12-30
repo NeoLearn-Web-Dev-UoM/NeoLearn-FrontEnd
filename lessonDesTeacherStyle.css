@@ -311,3 +311,11 @@ button {
 }
 
 /* telos sidebar */
+
+hr.new1{
+    border: 1px solid white;
+}
+
+hr.new2{
+    border: 1px solid #263238;
+  }

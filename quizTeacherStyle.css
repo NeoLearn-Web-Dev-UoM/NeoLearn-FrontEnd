@@ -346,3 +346,11 @@ hr {
   .custom-header {
     color: rgb(38, 50, 56)!important;
 }
+
+hr.new1{
+    border: 1px solid white;
+}
+
+hr.new2{
+    border: 1px solid #263238;
+  }

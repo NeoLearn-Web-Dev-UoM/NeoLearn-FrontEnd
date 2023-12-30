@@ -421,3 +421,11 @@ th:nth-child(2), td:nth-child(2) {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
+
+  hr.new1{
+    border: 1px solid white;
+}
+
+hr.new2{
+    border: 1px solid #263238;
+  }
