@@ -47,8 +47,8 @@ body {
 }
 
 #middle-container {
+    color: rgb(38, 50, 56);
     background-color: lightgray;
-    height: 80vh !important;
 }
 
 #right-col {
@@ -271,3 +271,50 @@ body {
   #options{
     overflow-wrap: break-word;
   }
+
+
+  #quest{
+    color: rgb(38, 50, 56);
+  }
+
+  input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(0, 96, 100);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+
+.time{
+    color: rgb(150, 0, 25);
+}
+
+#submit {
+    width: 7rem !important;
+    background-color: rgb(0, 96, 100) !important;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    margin-left: 60%;
+}

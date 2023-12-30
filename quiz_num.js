@@ -1,41 +1,35 @@
-  'use strict'
-  const form = document.getElementById("quiz-form");
+'use strict'
+
+      const form = document.getElementById("quiz-form");
       form.onsubmit = function() {
         const inputs = form.querySelectorAll("input[type=radio]:checked");
         const score = inputs.length;
-        alert("Your score is: " + score + "/3");
+        alert("Your score is: " + score + "/10");
       }
 
-   const form = document.getElementById("quiz-form");
-   form.onsubmit = function() {
-     const inputs = form.querySelectorAll("input[type=radio]:checked");
-     const score = inputs.length;
-     alert("Your score is: " + score + "/3");
-   }
+      let duration = 30 * 60;
 
-      // Set the duration of the quiz in seconds
-      const duration = 1800; // 30 minutes in seconds
+    // Επιλέγουμε το στοιχείο του χρονομέτρου
+    const timerElement = document.getElementById("timer");
 
-      window.onload = function () {
-        const form = document.getElementById("quiz-form");
+    // Ορίζουμε μια συνάρτηση για την ενημέρωση του χρονομέτρου
+    function updateTimer() {
+        const minutes = Math.floor(duration / 60);
+        const seconds = duration % 60;
 
-        // Submit the quiz automatically after the duration has passed
-        setTimeout(function() {
-          form.submit();
-        }, duration * 1000);
+        // Εμφανίζουμε τον χρόνο στο στοιχείο του χρονομέτρου
+        timerElement.textContent = ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
 
-        // Update the timer every second
-        setInterval(function() {
-          const timer = document.getElementById("timer");
-          const remainingSeconds = parseInt(timer.dataset.remainingSeconds, 10) - 1;
-          if (remainingSeconds < 0) {
-            timer.textContent = "00:00";
-            form.submit();
-          } else {
-            const minutes = Math.floor(remainingSeconds / 60);
-            const seconds = remainingSeconds % 60;
-            timer.textContent = ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
-            timer.dataset.remainingSeconds = remainingSeconds;
-          }
-        }, 1000);
-      };
+        // Μειώνουμε τον χρόνο κατά ένα δευτερόλεπτο
+        duration--;
+
+        // Εάν ο χρόνος έχει λήξει, μπορείτε να προσθέσετε κώδικα εδώ για επιπλέον λειτουργίες
+
+        // Εάν ο χρόνος δεν έχει λήξει, ορίζουμε την επόμενη κλήση της συνάρτησης μετά από ένα δευτερόλεπτο
+        if (duration >= 0) {
+            setTimeout(updateTimer, 1000);
+        }
+    }
+
+    // Καλούμε τη συνάρτηση για πρώτη φορά για να ξεκινήσει το χρονόμετρο
+    updateTimer();
