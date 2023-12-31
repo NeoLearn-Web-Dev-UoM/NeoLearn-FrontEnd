@@ -1,11 +1,5 @@
 'use strict'
 
-function tryQuiz(event) {
-    event.preventDefault();
-    window.location.href = 'quizLesson.html';
-}
-
-
 function openNewPage(lessonTextId, sourceTitleId) {
     var lessonText = document.getElementById(lessonTextId).textContent;
     var sourceTitle = document.getElementById(sourceTitleId).textContent;

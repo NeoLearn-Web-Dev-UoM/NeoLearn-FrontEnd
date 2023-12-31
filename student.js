@@ -20,17 +20,15 @@ showSlide(currentSlide);
 
 
 function openNewPage(lessonTextId, sourceTitleId) {
-    //Εδω απο τη βαση θα γεμιζω κι το πλαισιο για την περιγραφη του μαθήματος 
-
-
-    // Get the text content of the specified <p> and <cite> elements
     var lessonText = document.getElementById(lessonTextId).textContent;
     var sourceTitle = document.getElementById(sourceTitleId).textContent;
 
-    // Encode the values as URI components and pass them as query parameters
-    var encodedLessonText = encodeURIComponent(lessonText);
-    var encodedSourceTitle = encodeURIComponent(sourceTitle);
+    // Use unique identifiers for each link
+    var keyPrefix = 'lessonDescription_';  // Unique prefix
+    localStorage.setItem(keyPrefix + 'lessonText', lessonText);
+    localStorage.setItem(keyPrefix + 'sourceTitle', sourceTitle);
 
-    // Navigate to the new_page.html with the lessonText as a query parameter
-    window.location.href = 'lessonDescription.html?lessonText=' + encodedLessonText + '&sourceTitle=' + encodedSourceTitle;
+    // Navigate to the new_page.html
+    window.location.href = 'lessonDescription.html';
 }
+
