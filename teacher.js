@@ -31,19 +31,11 @@ function openNewPage(lessonTextId, sourceTitleId) {
     localStorage.setItem(keyPrefix + 'sourceTitle', sourceTitle);
 
     // Navigate to the new_page.html
-    window.location.href = 'lessonDescription.html';
+    window.location.href = 'lessonDescriptionTeacher.html';
 }
 
 function homeBtn() {
     window.location.href = 'teacher.html';
-}
-
-function profileBtn() {
-    window.location.href = 'viewProfile.html';
-}
-
-function calendarBtn() {
-    window.location.href = 'calendar.html';
 }
 
 function logOutBtn() {
@@ -52,12 +44,4 @@ function logOutBtn() {
       window.location.href = 'welcome.html';
     }
     document.getElementById("demo").innerHTML = txt;
-}
-
-function newLessonBtn() {
-    window.location.href = 'createLesson.html';
-}
-
-function editProfileBtn() {
-    window.location.href = 'editProfile.html';
 }
