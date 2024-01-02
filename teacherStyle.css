@@ -43,7 +43,7 @@ body {
     justify-content: right;
     display: flex;
     flex-direction: row !important;
-   color: #263238;
+   color: black;
 }
 
 #middle-container {
@@ -249,4 +249,8 @@ body {
 
   #options{
     overflow-wrap: break-word;
+  }
+
+  #profile{
+    cursor: pointer;
   }

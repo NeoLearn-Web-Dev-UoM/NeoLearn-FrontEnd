@@ -29,3 +29,12 @@ function lessonClicked(lessonTitle) {
     details.textContent = lessonTitle;
 
 }
+
+function homeBtn() {
+    window.location.href = 'teacher.html';
+}
+
+
+function profileBtn() {
+    window.location.href = 'viewProfile.html';
+}

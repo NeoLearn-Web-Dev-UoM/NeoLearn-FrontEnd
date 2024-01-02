@@ -5,6 +5,8 @@
         const inputs = form.querySelectorAll("input[type=radio]:checked");
         const score = inputs.length;
         alert("Your score is: " + score + "/10");
+        event.preventDefault();
+        window.location.href = 'quizTeacher.html';
       }
 
       let duration = 30 * 60;

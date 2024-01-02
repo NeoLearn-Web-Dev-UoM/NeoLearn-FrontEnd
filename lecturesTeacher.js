@@ -1,9 +1,5 @@
 'use strict'
 
-function viewLessonLink() {
-    window.location.href = "lecturesTeacher.html";
-}
-
 let currentSlide = 1;
 function showSlide(slideNumber) {
     const slides = document.querySelectorAll('.slide');

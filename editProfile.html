@@ -8,7 +8,7 @@
     <!-- <link rel="stylesheet" href="studentStyle.css"> -->
     <!--προσοχη στα ονοματα css-->
     <!-- <link rel="stylesheet" href="teacher3.css"> -->
-    <link rel="stylesheet" href="createLessonStyle.css">
+    <link rel="stylesheet" href="editLessonStyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -111,45 +111,31 @@
                             <form>
                                 <h2 class="h2style"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-highlighter" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M11.096.644a2 2 0 0 1 2.791.036l1.433 1.433a2 2 0 0 1 .035 2.791l-.413.435-8.07 8.995a.5.5 0 0 1-.372.166h-3a.5.5 0 0 1-.234-.058l-.412.412A.5.5 0 0 1 2.5 15h-2a.5.5 0 0 1-.354-.854l1.412-1.412A.5.5 0 0 1 1.5 12.5v-3a.5.5 0 0 1 .166-.372l8.995-8.07.435-.414Zm-.115 1.47L2.727 9.52l3.753 3.753 7.406-8.254-2.905-2.906Zm3.585 2.17.064-.068a1 1 0 0 0-.017-1.396L13.18 1.387a1 1 0 0 0-1.396-.018l-.068.065 2.85 2.85M5.293 13.5 2.5 10.707v1.586L3.707 13.5z"/>
-                                  </svg> Δημιουργία νέου μαθήματος</h2>
+                                  </svg> Επεξεργασία προφίλ</h2>
                                 <div class="mb-3">
-                                  <label for="exampleInputEmail1" class="form-label">Όνομα Μαθήματος:</label>
+                                  <label for="exampleInputEmail1" class="form-label">Όνομα:</label>
                                   <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Όνομα νέου μαθήματος">
                                 </div>
                                 <div class="mb-3">
-                                  <label for="exampleId1" class="form-label">Κωδικός Μαθήματος:</label>
+                                  <label for="exampleId1" class="form-label">Επίθετο:</label>
                                   <input type="id" class="form-control" id="id" placeholder="πχ. NEL210">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">Κατηγορία Μαθήματος:</label>
-                                    <br>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                        <label class="form-check-label" for="inlineRadio1">Υποχρεωτικό Μάθημα</label>
-                                      </div>
-                                      <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                        <label class="form-check-label" for="inlineRadio2">Μάθημα επιλογής</label>
-                                      </div>
-                                      
-                                  </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Περιγραφή Μαθήματος:</label>
+                                    <label for="exampleFormControlTextarea1" class="form-label">Λίγα λόγια για εσάς:</label>
                                     <div id="emailHelp" class="form-text">Παρακαλώ δώστε μια σύντομη αλλά λεπτομερής περιγραφή.</div>
-                                    <textarea class="form-control" id="description" rows="3" placeholder="Περιγράψτε το μάθημα.. "></textarea>
+                                    <textarea class="form-control" id="description" rows="3" placeholder="Περιγράψτε τον εαυτό σας.. "></textarea>
                                   </div>
                               </form>
                     </div>
                     <div class="row">
                         <div class="d-flex justify-content-center align-items-center">
                             <div class="d-grid gap-2 col-5 mx-auto">
-                                <button class="btn" type="button" id="btnCreate" onclick="returnToMainPage()">Δημιουργία Μαθήματος</button>
+                                <button class="btn" type="button" id="btnCreate" onclick="updateLesson()">Επεξεργασία προφίλ</button>
                                 <button class="btn" type="button" id="btnCancel" onclick="returnToMainPage()">Ακύρωση</button>
 
                             </div>
                         </div>
                     </div>  
-                    <br> 
                     <br>
                     
 
@@ -167,7 +153,7 @@
             </div>
         </div>
     </div>
-    <script src="createLesson.js"></script>
+    <script src="editProfile.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>

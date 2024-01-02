@@ -21,6 +21,8 @@ hr {
 #header-container {
     background-color: lightgray;
     height: 10vh !important;
+    padding-top: 0%;
+    margin-bottom: -2%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -35,7 +37,7 @@ hr {
     display: grid !important;
     align-items: center !important;
     grid-template-columns: 1fr 1fr !important;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 #profile-col {
