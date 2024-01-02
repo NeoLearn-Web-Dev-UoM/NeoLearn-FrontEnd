@@ -35,3 +35,7 @@ function openNewPage(lessonTextId, sourceTitleId) {
 function homeBtn() {
     window.location.href = 'student.html';
 }
+
+function newLesson() {
+    window.location.href = 'newLesson.html';
+}
