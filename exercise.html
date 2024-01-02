@@ -141,78 +141,49 @@
             <div class="row">
                 <div class="col">
                     <div class="container-fluid" id="middle-container">
-                        <div class=".container-md" id="courses-frame">
-                            <div class="slide" id="slide1">
-                                <div class="row">
-                                    <div class="col-5">
-                                        <h5>Εργασίες</h5>
-                                    </div>
-                                    <div class="col-4">
-                                        Ημερομηνία
-                                    </div>
-                                    <div class="col-3">
-                                        Βαθμός
-                                    </div>
-                                </div>
-                                <hr>
-                                <!-- θα το βαζω να πηγαινει στο αναλογο αρχειο του μαθηματος -->
-                                <div class="row">
-                                    <div class="col-5">
-                                        <div class="lesson-link" onclick="lecture('lecture1')">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="lecture1">Εργασία 1</p>
-                                                </blockquote>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        05/12/2023
-                                    </div>
-                                    <div class="col-3">
-                                        6.72
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-5">
-                                        <div class="lesson-link" onclick="lecture('lecture2')">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="lecture2">Εργασία 2</p>
-                                                </blockquote>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        05/12/2023
-                                    </div>
-                                    <div class="col-3">
-                                        9.81
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-5">
-                                        <div class="lesson-link" onclick="lecture('lecture3')">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="lecture3">Εργασία 3</p>
-                                                </blockquote>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        05/12/2023
-                                    </div>
-                                    <div class="col-3">
-                                        5.12
-                                    </div>
-                                </div>
-                                <hr>
-                                <button type="button" onclick="changeSlide(2)" class="btn btn-outline"
-                                    id="slideBtn">Next</button>
-                            </div>
+
+                        <div class="slide" id="slide1">
+                            <table class="table table-success table-striped table-bordered border-primary table-hover"
+                                style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th class="custom-header" style="width:70%">Εργασίες</th>
+                                        <th class="custom-header">Ημερομηνία</th>
+                                        <th class="custom-header">Βαθμός</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="lesson-link" onclick="lecture('lecture1')">Εργασία 1</div>
+                                        </td>
+                                        <td>10/11/2023</td>
+                                        <td>6.07</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="lesson-link" onclick="lecture('lecture2')">Εργασία 2</div>
+                                        </td>
+                                        <td>20/11/2023</td>
+                                        <td>7.13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="lesson-link" onclick="lecture('lecture3')">Εργασία 3</div>
+                                        </td>
+                                        <td>25/11/2023</td>
+                                        <td>5.43</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="lesson-link" onclick="lecture('lecture4')">Εργασία 4</div>
+                                        </td>
+                                        <td>22/12/2023</td>
+                                        <td>9.43</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
                             <div class="slide" id="slide2">
                                 <div class="row">
                                     <div class="col-5">
@@ -272,76 +243,65 @@
                                     id="slideBtn">Previous</button>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col" id="right-col">
-                    <div class="month-year" id="month-year"></div>
-                    <div class="button-container">
-                        <button id="prev-btn">
-                            < </button>
-                                <button id="next-btn"> ></button>
-                    </div>
-                    <table>
-                        <tbody id="calendar-body"></tbody>
-                    </table>
-                    <!-- edw to hmerologio -->
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="sum-profile">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="80" fill="currentColor"
-                        class="bi bi-person-circle d-inline-block align-text-top" viewBox="0 0 16 16"
-                        style="color: rgb(0, 96, 100) ;">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                        <path fill-rule="evenodd"
-                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                    </svg>
-                    <div class="container-md">
-                        <div class="profile-details">
-                            <p>ΜΑΡΙΟΣ ΠΑΠΑΔΟΠΟΥΛΟΣ
-                                Κατηγορία: ΠΡΟΠΤΥΧΙΑΚΟΣ ΦΟΙΤΗΤΗΣ
-                                Τμήμα Εφαρμοσμένης Πληροφορικής (Department of Applied Informatics)
-                                ΠΑΝΕΠΙΣΤΗΜΙΟ ΜΑΚΕΔΟΝΙΑΣ (UNIVERSITY OF MACEDONIA)</p>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="sum-profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="80" fill="currentColor"
+                            class="bi bi-person-circle d-inline-block align-text-top" viewBox="0 0 16 16"
+                            style="color: rgb(0, 96, 100) ;">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                        <div class="container-md">
+                            <div class="profile-details">
+                                <p>ΜΑΡΙΟΣ ΠΑΠΑΔΟΠΟΥΛΟΣ
+                                    Κατηγορία: ΠΡΟΠΤΥΧΙΑΚΟΣ ΦΟΙΤΗΤΗΣ
+                                    Τμήμα Εφαρμοσμένης Πληροφορικής (Department of Applied Informatics)
+                                    ΠΑΝΕΠΙΣΤΗΜΙΟ ΜΑΚΕΔΟΝΙΑΣ (UNIVERSITY OF MACEDONIA)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="container-fluid" id="footer-container">
-                    <div class="footer">
-                        2023 NeoLearn All Rights Reserved.<br>
-                        <a href="">Terms of UsePrivacy Policy2G Fair Use Policy</a>
+                <hr>
+                <div class="row">
+                    <div class="container-fluid" id="footer-container">
+                        <div class="footer">
+                            2023 NeoLearn All Rights Reserved.<br>
+                            <a href="">Terms of UsePrivacy Policy2G Fair Use Policy</a>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
-    </div>
-    <script src="calendarL.js"></script>
-    <script src="exercise.js"></script>
+        <script src="calendarL.js"></script>
+        <script src="exercise.js"></script>
 
-    <script>
-        // Use unique identifiers for each link
-        var keyPrefix = 'lessonDescription_';  // Unique prefix
-        var lessonText = localStorage.getItem(keyPrefix + 'lessonText');
-        var sourceTitle = localStorage.getItem(keyPrefix + 'sourceTitle');
+        <script>
+            // Use unique identifiers for each link
+            var keyPrefix = 'lessonDescription_';  // Unique prefix
+            var lessonText = localStorage.getItem(keyPrefix + 'lessonText');
+            var sourceTitle = localStorage.getItem(keyPrefix + 'sourceTitle');
 
-        // Display the values in the desired elements on the new page
-        var lessonTextElement = document.getElementById('lessonTextElement');
-        var sourceTitleElement = document.getElementById('sourceTitleElement');
+            // Display the values in the desired elements on the new page
+            var lessonTextElement = document.getElementById('lessonTextElement');
+            var sourceTitleElement = document.getElementById('sourceTitleElement');
 
-        if (lessonTextElement) {
-            lessonTextElement.textContent = lessonText;
-        }
+            if (lessonTextElement) {
+                lessonTextElement.textContent = lessonText;
+            }
 
-        if (sourceTitleElement) {
-            sourceTitleElement.textContent = sourceTitle;
-        }
+            if (sourceTitleElement) {
+                sourceTitleElement.textContent = sourceTitle;
+            }
 
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+            </script>
 </body>

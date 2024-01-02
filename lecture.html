@@ -64,7 +64,7 @@
                                                                             class="d-inline-block align-text-top">-->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
                                             fill="currentColor" class="bi bi-houses  d-inline-block align-text-top"
-                                            viewBox="0 0 16 16" style="color: #263238;">
+                                            viewBox="0 0 16 16" style="color: #263238;" onclick="homeBtn()">
                                             <path
                                                 d="M5.793 1a1 1 0 0 1 1.414 0l.647.646a.5.5 0 1 1-.708.708L6.5 1.707 2 6.207V12.5a.5.5 0 0 0 .5.5.5.5 0 0 1 0 1A1.5 1.5 0 0 1 1 12.5V7.207l-.146.147a.5.5 0 0 1-.708-.708zm3 1a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708zm.707.707L5 7.207V13.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5V7.207z" />
                                         </svg>
@@ -127,11 +127,11 @@
                             <figure>
                                 <blockquote class="blockquote">
                                     <!-- <p id="lesson-name"></p> -->
-                                    <p id="lessonText"></p>
+                                    <p id="lessonTextElement"></p>
                                 </blockquote>
                                 <figcaption class="blockquote-footer">
                                     <!-- <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης</cite> -->
-                                    <p id="sourceTitle"></p>
+                                    <p id="sourceTitleElement"></p>
                                 </figcaption>
                             </figure>
                         </div>
@@ -141,103 +141,188 @@
             <div class="row">
                 <div class="col">
                     <div class="container-fluid" id="middle-container">
-                        <div class=".container-md" id="courses-frame">
-                            <div class="slide" id="slide1">
-                                <!-- επιλεγμενη διαλεξη -->
-                                <h5>Διάλεξη 1</h5>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="lesson-link">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="file1">lect-01.pdf</p>
-                                                </blockquote>
-                                            </figure>
+                        <table class="table table-success table-striped table-bordered border-primary table-hover"
+                            style="width:100%" id="lecturesTable">
+                            <thead>
+                                <tr>
+                                    <th class="custom-header" style="width:5%">Τύπος</th>
+                                    <th class="custom-header" style="width:70%">Αρχείο</th>
+                                    <th class="custom-header" style="width:5%"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="20" height="20" fill="currentColor"
+                                            class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+                                            <path
+                                                d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5M12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0m2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0M1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1M1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25" />
+                                        </svg></th>
+                                    <th class="custom-header" style="width:10%">Ημερομηνία</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-folder2-open" viewBox="0 0 16 16">
+                                            <path
+                                                d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v.64c.57.265.94.876.856 1.546l-.64 5.124A2.5 2.5 0 0 1 12.733 15H3.266a2.5 2.5 0 0 1-2.481-2.19l-.64-5.124A1.5 1.5 0 0 1 1 6.14zM2 6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5a.5.5 0 0 0-.5.5zm-.367 1a.5.5 0 0 0-.496.562l.64 5.124A1.5 1.5 0 0 0 3.266 14h9.468a1.5 1.5 0 0 0 1.489-1.314l.64-5.124A.5.5 0 0 0 14.367 7H1.633z" />
+                                        </svg></td>
+                                    <td>
+                                        <div class="lesson-link" onclick="lecture('lecture6')">lect-01</div>
+                                    </td>
+                                    <td style="cursor: pointer;"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5" />
+                                        </svg></td>
+                                    <td>05/12/23</td>
+                                </tr>
+                                <tr>
+                                    <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-filetype-pdf" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z" />
+                                        </svg></td>
+                                    <td>
+                                        <div class="lesson-link" onclick="lecture('lecture6')">solved-problem.pdf</div>
+                                    </td>
+                                    <td style="cursor: pointer;"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5" />
+                                        </svg></td>
+                                    <td>05/12/23</td>
+                                </tr>
+                                <tr>
+                                    <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z" />
+                                        </svg></td>
+                                    <td>
+                                        <div class="lesson-link" onclick="lecture('lecture6')">video-01.mp4</div>
+                                    </td>
+                                    <td style="cursor: pointer;"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5" />
+                                        </svg></td>
+                                    <td>05/12/23</td>
+                                </tr>
+                                <tr>
+                                    <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
+                                            <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                            <path
+                                                d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12" />
+                                        </svg></td>
+                                    <td>
+                                        <div class="lesson-link" onclick="lecture('lecture6')">image_01.jpg</div>
+                                    </td>
+                                    <td style="cursor: pointer;"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5" />
+                                        </svg></td>
+                                    <td>23/12/23</td>
+                                </tr>
+                                <tr>
+                                    <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-file-code" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1" />
+                                        </svg></td>
+                                    <td>
+                                        <div class="lesson-link" onclick="lecture('lecture6')">javascript.js</div>
+                                    </td>
+                                    <td style="cursor: pointer;"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5" />
+                                        </svg></td>
+                                    <td>23/12/23</td>
+                                </tr>
+                                <tr>
+                                    <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-file-zip" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.5 7.5a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v.938l.4 1.599a1 1 0 0 1-.416 1.074l-.93.62a1 1 0 0 1-1.109 0l-.93-.62a1 1 0 0 1-.415-1.074l.4-1.599V7.5zm2 0h-1v.938a1 1 0 0 1-.03.243l-.4 1.598.93.62.93-.62-.4-1.598a1 1 0 0 1-.03-.243z" />
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm5.5-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9v1H8v1h1v1H8v1h1v1H7.5V5h-1V4h1V3h-1V2h1z" />
+                                        </svg></td>
+                                    <td>
+                                        <div class="lesson-link" onclick="lecture('lecture6')">exercises.zip</div>
+                                    </td>
+                                    <td style="cursor: pointer;"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5" />
+                                        </svg></td>
+                                    <td>23/12/23</td>
+                                </tr>
+                                <tr id="lessonRow" style="display: none;">
+                                    <td>
+                                        <div class="lesson-link" onclick="emptylecture('lecture6')">
+                                            <div class="container" id="courses-container">
+
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-4">
-                                        05/12/2023
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="lesson-link">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="file2">solved-problem.pdf</p>
-                                                </blockquote>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        05/12/2023
-                                    </div>
-                                </div>
+                                    </td>
+                                </tr>
 
-                                <hr>
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="lesson-link">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="file4">video-01.mp4</p>
-                                                </blockquote>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        05/12/2023
-                                    </div>
-                                </div>
 
-                            </div>
-                        </div>
+                            </tbody>
+                        </table>
+                        <br>
                     </div>
                 </div>
-                <div class="col" id="right-col">
-                    <div class="month-year" id="month-year"></div>
-                    <div class="button-container">
-                        <button id="prev-btn">
-                            < </button>
-                                <button id="next-btn"> ></button>
-                    </div>
-                    <table>
-                        <tbody id="calendar-body"></tbody>
-                    </table>
-                    <!-- edw to hmerologio -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="sum-profile">
-                    <img src="images\NL-profile.png" alt="profile" width="70" height="80"
-                        class="d-inline-block align-text-top">
-                    <div class="container-md">
-                        <div class="profile-details">
-                            <p>ΜΑΡΙΟΣ ΠΑΠΑΔΟΠΟΥΛΟΣ
-                                Κατηγορία: ΠΡΟΠΤΥΧΙΑΚΟΣ ΦΟΙΤΗΤΗΣ
-                                Τμήμα Εφαρμοσμένης Πληροφορικής (Department of Applied Informatics)
-                                ΠΑΝΕΠΙΣΤΗΜΙΟ ΜΑΚΕΔΟΝΙΑΣ (UNIVERSITY OF MACEDONIA)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="container-fluid" id="footer-container">
-                    <div class="footer">
-                        2023 NeoLearn All Rights Reserved.<br>
-                        <a href="">Terms of UsePrivacy Policy2G Fair Use Policy</a>
-                    </div>
-                </div>
-
             </div>
         </div>
+
+        <div class="row">
+            <div class="sum-profile">
+                <img src="images\NL-profile.png" alt="profile" width="70" height="80"
+                    class="d-inline-block align-text-top">
+                <div class="container-md">
+                    <div class="profile-details">
+                        <p>ΜΑΡΙΟΣ ΠΑΠΑΔΟΠΟΥΛΟΣ
+                            Κατηγορία: ΠΡΟΠΤΥΧΙΑΚΟΣ ΦΟΙΤΗΤΗΣ
+                            Τμήμα Εφαρμοσμένης Πληροφορικής (Department of Applied Informatics)
+                            ΠΑΝΕΠΙΣΤΗΜΙΟ ΜΑΚΕΔΟΝΙΑΣ (UNIVERSITY OF MACEDONIA)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="container-fluid" id="footer-container">
+                <div class="footer">
+                    2023 NeoLearn All Rights Reserved.<br>
+                    <a href="">Terms of UsePrivacy Policy2G Fair Use Policy</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
     </div>
     <script src="document.js"></script>
     <script src="calendarL.js"></script>
+    <script>
+        // Use unique identifiers for each link
+        var keyPrefix = 'lessonDescription_';  // Unique prefix
+        var lessonText = localStorage.getItem(keyPrefix + 'lessonText');
+        var sourceTitle = localStorage.getItem(keyPrefix + 'sourceTitle');
+
+        // Display the values in the desired elements on the new page
+        var lessonTextElement = document.getElementById('lessonTextElement');
+        var sourceTitleElement = document.getElementById('sourceTitleElement');
+
+        if (lessonTextElement) {
+            lessonTextElement.textContent = lessonText;
+        }
+
+        if (sourceTitleElement) {
+            sourceTitleElement.textContent = sourceTitle;
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>

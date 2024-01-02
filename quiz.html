@@ -138,71 +138,45 @@
             <div class="row">
                 <div class="col">
                     <div class="container-fluid" id="middle-container">
-                        <div class=".container-md" id="courses-frame">
-                            <div class="slide" id="slide1">
-                                <hr>
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="lesson-link">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="file1">Quiz 1</p>
-                                                </blockquote>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-4" onclick="tryQuiz(event)">
-                                        Δοκίμασε
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="lesson-link">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="file2">Quiz 2</p>
-                                                </blockquote>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-4" onclick="tryQuiz(event)">
-                                        Δοκίμασε
-                                    </div>
-                                </div>
-
-                                <hr>
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div class="lesson-link">
-                                            <figure>
-                                                <blockquote class="blockquote">
-                                                    <p id="file4">Quiz 3</p>
-                                                </blockquote>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-4" onclick="tryQuiz(event)">
-                                        Δοκίμασε
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
+                        <table class="table table-success table-striped table-bordered border-primary table-hover"
+                            style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th class="custom-header" style="width:70%">Αρχικός κατάλογος</th>
+                                    <th class="custom-header"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="lesson-link">Quiz 1</div>
+                                    </td>
+                                    <td onclick="tryQuiz()">Δοκίμασε</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="lesson-link">Quiz 2</div>
+                                    </td>
+                                    <td onclick="tryQuiz()">Δοκίμασε</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="lesson-link">Quiz 3</div>
+                                    </td>
+                                    <td onclick="tryQuiz()">Δοκίμασε</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="lesson-link">Quiz 4</div>
+                                    </td>
+                                    <td onclick="tryQuiz()">Δοκίμασε</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
                     </div>
                 </div>
-                <div class="col" id="right-col">
-                    <div class="month-year" id="month-year"></div>
-                    <div class="button-container">
-                        <button id="prev-btn">
-                            < </button>
-                                <button id="next-btn"> ></button>
-                    </div>
-                    <table>
-                        <tbody id="calendar-body"></tbody>
-                    </table>
-                    <!-- edw to hmerologio -->
-                </div>
+
             </div>
 
             <div class="row">

@@ -236,3 +236,74 @@ hr {
     color: black !important;
 
 }
+
+/* new 2/1/23 */
+#newLec:hover {
+    opacity: 1;
+    background-color: #39AEA9;
+}
+
+.st {
+    color: white;
+}
+
+#hidden {
+    display: none;
+    background-color: rgb(0, 96, 100);
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    margin-right: 500px;
+    margin-left: 5px;
+}
+
+#addLecTitle {
+    display: inline-flex;
+    margin-left: 2%;
+}
+
+#textboxContainer {
+    width: 280px;
+    margin-left: -4%;
+}
+
+.h1changes {
+    margin-left: 0;
+    display: none;
+    width: 100% !important;
+    /* Καθορίζει το πλάτος του <hr> στο 100% του παρεχόμενου χώρου */
+    box-sizing: content-box;
+}
+
+.h1changes {
+    margin-top: 0;
+    /* Καθορίζει το άνω περιθώριο ως μηδέν */
+    color: red;
+}
+
+#datetime-container {
+    display: none;
+    margin-right: 5%;
+}
+
+.lesson-link {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(0, 96, 100);
+}
+
+.custom-header {
+    color: rgb(38, 50, 56) !important;
+}
+
+hr.new1 {
+    border: 1px solid white;
+}
+
+hr.new2 {
+    border: 1px solid #263238;
+}
+
+#click {
+    cursor: pointer;
+}
