@@ -39,3 +39,5 @@ function homeBtn() {
 function newLesson() {
     window.location.href = 'newLesson.html';
 }
+
+
