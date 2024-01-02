@@ -363,3 +363,7 @@ body{
        color:#fff;
         height:40px;
 }
+
+#click{
+    cursor: pointer;
+  }

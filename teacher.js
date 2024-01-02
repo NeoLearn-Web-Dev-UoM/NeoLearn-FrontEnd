@@ -21,20 +21,43 @@ function changeSlide(nextSlide) {
 // Show the initial slide
 showSlide(currentSlide);
 
-function lessonClicked(lessonTitle) {
+function openNewPage(lessonTextId, sourceTitleId) {
+    var lessonText = document.getElementById(lessonTextId).textContent;
+    var sourceTitle = document.getElementById(sourceTitleId).textContent;
 
-    //για να ξερω αν πηρε σωστο ονομα μαθηματος θα το σβησω 
-    alert('Lesson Clicked: ' + lessonTitle);
-    var details = document.getElementById('lesson-name')
-    details.textContent = lessonTitle;
+    // Use unique identifiers for each link
+    var keyPrefix = 'lessonDescription_';  // Unique prefix
+    localStorage.setItem(keyPrefix + 'lessonText', lessonText);
+    localStorage.setItem(keyPrefix + 'sourceTitle', sourceTitle);
 
+    // Navigate to the new_page.html
+    window.location.href = 'lessonDescription.html';
 }
 
 function homeBtn() {
     window.location.href = 'teacher.html';
 }
 
-
 function profileBtn() {
     window.location.href = 'viewProfile.html';
+}
+
+function calendarBtn() {
+    window.location.href = 'calendar.html';
+}
+
+function logOutBtn() {
+    var txt;
+    if (confirm("Είσαι σίγουρος ότι επιθυμείς να αποσυνδεθείς από το Λογαριασμό σου;")) {
+      window.location.href = 'welcome.html';
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+
+function newLessonBtn() {
+    window.location.href = 'createLesson.html';
+}
+
+function editProfileBtn() {
+    window.location.href = 'editProfile.html';
 }

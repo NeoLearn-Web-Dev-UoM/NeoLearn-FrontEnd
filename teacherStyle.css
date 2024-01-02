@@ -251,6 +251,11 @@ body {
     overflow-wrap: break-word;
   }
 
-  #profile{
+  #click{
     cursor: pointer;
+  }
+
+  #lessonText1, #lessonText2, #lessonText3, #lessonText4, #lessonText5, #lessonText6{
+    cursor: pointer;
+
   }

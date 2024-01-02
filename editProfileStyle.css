@@ -278,3 +278,7 @@ hr.new2{
         margin-left: 0;
     }
 }
+
+#click{
+    cursor: pointer;
+  }

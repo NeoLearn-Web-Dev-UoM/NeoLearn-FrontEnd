@@ -301,3 +301,28 @@ hr.new1{
 hr.new2{
     border: 1px solid #263238;
   }
+  
+  #click{
+    cursor: pointer;
+  }
+
+  #quizLesson {
+    margin-top: 22px;
+    margin-left: 12px;
+    width: 15rem !important;
+    background-color: #574B90!important;
+    border: 2px solid rgb(0, 96, 100);
+     color: black!important;
+    /* margin-top: 10px !important; */
+    text-align: center!important;
+}
+
+@media screen and (max-width: 1280px) {
+    #quizLesson {
+        margin-top: 22px;
+        width: 15rem !important;
+        margin-left: -2px;
+        /* margin-top: 10px !important; */
+        text-align: center;
+    }
+}
