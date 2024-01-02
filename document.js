@@ -36,3 +36,7 @@ function openNewPage(lessonTextId, sourceTitleId) {
     // Navigate to the new_page.html
     window.location.href = 'lessonDescription.html';
 }
+
+function homeBtn() {
+    window.location.href = 'student.html';
+}
