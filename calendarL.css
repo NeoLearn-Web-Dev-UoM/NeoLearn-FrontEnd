@@ -7,7 +7,7 @@ table {
     text-align: center;
     justify-content: right;
     margin-right: 10px;
-    margin-left: 8vh;/*+*/
+    margin-left: 10vh;/*+*/
 }
 
 th,
@@ -19,7 +19,8 @@ td {
 }
 
 th {
-    background-color: lightgray;
+    background-color: rgb(128, 128, 128);
+
 }
 
 .month-year {
@@ -46,12 +47,27 @@ button {
 
 /*+*/
 #calendar-body {
-    border: 3px solid rgb(0, 96, 100);
     border-radius: 5px;
     padding: 10px;
     width: 70%;
     max-width: 400px;
     margin: 20px auto;
-    color: black;
+    color: white;
     text-align: center;
+    background-color: rgb(128, 128, 128);
 }
+
+@media screen and (max-width: 1280px) {
+    table {
+        width: 70%;
+        max-width: 400px;
+        border-collapse: collapse;
+        margin-top: 20px;
+        color: black;
+        text-align: center;
+        justify-content: right;
+        margin-right: 10px;
+        margin-left: 2vh;/*+*/
+    }
+    
+  }
