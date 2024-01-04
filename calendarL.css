@@ -71,3 +71,14 @@ button {
     }
     
   }
+  .current-date {
+    color: white; /* Χρώμα κειμένου */
+    background-color: rgb(0, 96, 100); /* Χρώμα φόντου */
+    border-radius: 50%; /* Δίνει στο στοιχείο σχήμα κύκλου */
+    width: 30px; /* Προσαρμόστε το μέγεθος του κύκλου σύμφωνα με τις ανάγκες σας */
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

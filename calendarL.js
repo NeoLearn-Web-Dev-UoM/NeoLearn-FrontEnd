@@ -39,7 +39,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     cell.textContent = '';
                 } else if (date <= daysInMonth) {
                     cell.textContent = date;
-                    date++;
+                if (date === currentDate.getDate() && currentMonth === currentDate.getMonth() && currentYear === currentDate.getFullYear()) {
+                    // Highlight the current day with red color
+                    cell.classList.add('current-date');
+                }
+                date++;
                 }
                 row.appendChild(cell);
             }
