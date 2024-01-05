@@ -8,6 +8,7 @@ function deleteLessonLink(event) {
 
 function removeLesson(lessonId) {
     alert("Το μάθημα διαγράφτηκε με επιτυχία!");
+    //δεν ξερω γιατι δεν δουλευει
 
     var lessonElement = document.getElementById(lessonId);
     if (lessonElement) {
