@@ -326,3 +326,15 @@ hr.new2{
         text-align: center;
     }
 }
+
+table {
+    width: 70%;
+    max-width: 400px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: black;
+    text-align: center;
+    justify-content: right;
+    margin-right: 10vh;
+    margin-left: -5vh;/*+*/
+}

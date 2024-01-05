@@ -1,15 +1,3 @@
-table {
-    width: 70%;
-    max-width: 400px;
-    border-collapse: collapse;
-    margin-top: 20px;
-    color: black;
-    text-align: center;
-    justify-content: right;
-    margin-right: 10px;
-    margin-left: 10vh;/*+*/
-}
-
 th,
 td {
     border: 1px solid #ddd;
@@ -82,3 +70,28 @@ button {
     justify-content: center;
     cursor: pointer;
 }
+
+
+#month-year{
+    color:black;
+  }
+
+  .button-container{
+    display: inline-flex;
+    margin-right: 30%!important;
+  }
+
+  #prev-btn, #next-btn{
+    background-color:grey;;
+    color:white;
+    height: 5vh;
+    margin-top: 15%;
+    border-radius: 80%;
+    width: 5vh;
+    font-size: 24px; 
+    padding-top: 0px;
+  }
+  #prev-btn:hover, #next-btn:hover {
+    background-color: #ddd;
+    color: black;
+  }
