@@ -24,3 +24,7 @@ function logOutBtn() {
     }
     document.getElementById("demo").innerHTML = txt;
 }
+
+function homeBtn() {
+    window.location.href = 'student.html';
+}
