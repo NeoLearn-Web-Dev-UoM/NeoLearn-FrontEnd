@@ -229,3 +229,12 @@ hr.new2{
   #click{
     cursor: pointer;
   }
+
+  hr.new1{
+    border: 1px solid white;
+}
+
+
+hr.new2{
+  border: 1px solid #263238;
+}

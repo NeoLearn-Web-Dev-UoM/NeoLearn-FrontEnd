@@ -263,3 +263,12 @@ td {
     text-align: center;
     color: white;
 }
+
+hr.new1{
+    border: 1px solid white;
+}
+
+
+hr.new2{
+  border: 1px solid #263238;
+}
