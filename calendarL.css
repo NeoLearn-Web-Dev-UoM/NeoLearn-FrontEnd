@@ -70,7 +70,10 @@ button {
     justify-content: center;
     cursor: pointer;
 }
-
+.current-date:hover{
+  background-color: #ddd;
+  color: black;
+}
 
 #month-year{
     color:black;
@@ -82,7 +85,7 @@ button {
   }
 
   #prev-btn, #next-btn{
-    background-color:grey;;
+    background-color:grey;
     color:white;
     height: 5vh;
     margin-top: 15%;
