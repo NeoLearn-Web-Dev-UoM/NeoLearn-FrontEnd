@@ -13,7 +13,13 @@ hr {
     /* height: 100vh; */
     max-width: 70% !important;
 }
-
+@media screen and (max-width: 1280px) {
+    .container {
+        background-color: lightgray;
+        /* height: 100vh; */
+        max-width: 100% !important; /*lefki*/
+}
+  }
 #header-container {
     background-color: lightgray;
     height: 10vh !important;
@@ -45,6 +51,9 @@ hr {
     height: 80vh !important;
 }
 
+.table{
+    margin-left: 5px;
+  }
 #right-col {
     text-align: right;
 }
@@ -141,6 +150,21 @@ hr {
     color: black !important;
 }
 
+@media screen and (max-width: 992px) {
+    .profile-details {
+        width: 80%; /*lefki*/
+        margin-left: 3px;
+        padding-left: 9px;
+        align-items: center;
+        font-size: 15px;
+        background-color: whitesmoke;
+        text-align: left;
+        justify-content: left;
+        display: flex;
+        flex-direction: row !important;
+        color: black !important;
+    }
+}
 .sum-profile {
     display: flex;
     flex-direction: row !important;
@@ -235,4 +259,11 @@ hr {
     flex-direction: row !important;
     color: black !important;
 
+}
+
+.lesson-link {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+    text-align: left;
 }

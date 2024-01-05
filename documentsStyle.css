@@ -280,16 +280,14 @@ hr {
     /* Καθορίζει το άνω περιθώριο ως μηδέν */
     color: red;
 }
-
-#datetime-container {
-    display: none;
-    margin-right: 5%;
+.date{
+    text-align: left;
 }
-
 .lesson-link {
     cursor: pointer;
     text-decoration: underline;
     color: rgb(0, 96, 100);
+    text-align: left;
 }
 
 .custom-header {
@@ -306,4 +304,32 @@ hr.new2 {
 
 #click {
     cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        background-color: lightgray;
+        /* height: 100vh; */
+        max-width: 100% !important; /*lefki*/
+}
+  }
+
+  .table{
+    margin-left: 0vh;
+  }
+  
+@media screen and (max-width: 992px) {
+    .profile-details {
+        width: 80%; /*lefki*/
+        margin-left: 3px;
+        padding-left: 9px;
+        align-items: center;
+        font-size: 15px;
+        background-color: whitesmoke;
+        text-align: left;
+        justify-content: left;
+        display: flex;
+        flex-direction: row !important;
+        color: black !important;
+    }
 }
