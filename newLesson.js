@@ -103,8 +103,4 @@ document.addEventListener('DOMContentLoaded', function () {
         showSlide(currentPage);
     });
 
-    // document.getElementById('nextButton2').addEventListener('click', function () {
-    //     currentPage++;
-    //     showSlide(currentPage);
-    // });
 });
