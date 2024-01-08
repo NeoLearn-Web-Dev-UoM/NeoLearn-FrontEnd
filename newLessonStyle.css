@@ -83,6 +83,9 @@ hr {
 .search-course {
     display: flex;
     align-items: center;
+    font-size: 7px;
+    row-gap: 10px;
+    gap: 20px;
 }
 
 #searchbtn {
