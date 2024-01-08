@@ -47,3 +47,17 @@ function logOutBtn() {
     }
     document.getElementById("demo").innerHTML = txt;
 }
+
+
+
+function addBtn(lesson) {
+
+    var selectedLessonsList = document.getElementById(lesson).textContent;
+
+    // Use unique identifiers for each link
+    var keyPrefix = 'student_';  // Unique prefix
+    localStorage.setItem(keyPrefix + 'selectedLessonsList', selectedLessonsList);
+
+    // Navigate to the new_page.html
+    window.location.href = 'student.html';
+}

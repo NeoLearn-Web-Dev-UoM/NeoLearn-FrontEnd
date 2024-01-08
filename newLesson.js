@@ -4,6 +4,7 @@ function homeBtn() {
     window.location.href = 'student.html';
 }
 
+
 document.addEventListener('DOMContentLoaded', function () {
     var currentPage = 1;
 
@@ -71,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             checkbox.addEventListener('change', function () {
                 if (checkbox.checked) {
-                    addToSelectedLessons(rowData[0]);
+                    addBtn();
                 } else {
                     removeFromSelectedLessons(rowData[0]);
                 }
@@ -79,15 +80,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    function addToSelectedLessons(lesson) {
-        var selectedLessonsList = document.getElementById('selectedLessonsList');
-        var li = document.createElement('li');
-        li.textContent = lesson;
-        selectedLessonsList.appendChild(li);
-
-        // Update the newLessonText element
-        document.getElementById('newLessonText').textContent = lesson;
+    function addBtn() {
+        alert('Το μάθημα προστέθηκε')
     }
+
 
     showSlide(currentPage);
 
