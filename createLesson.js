@@ -4,6 +4,12 @@ function returnToMainPage() {
     window.location.href = 'lessonDescriptionTeacher.html';
 }
 
+function createLess() {
+    alert("Το μάθημα δημιουργήθηκε με επιτυχία!");
+    //εδω θυελω οταν παταω οκ στο αλερτ να νμε οηγαινει στην αρχικη σελιδα με τα μαθηματα χωωρις το μαθηα 
+    // που μολις διεγραψα 
+    window.location.href = 'lessonDescriptionTeacher.html';
+}
 function homeBtn() {
     window.location.href = 'teacher.html';
 }

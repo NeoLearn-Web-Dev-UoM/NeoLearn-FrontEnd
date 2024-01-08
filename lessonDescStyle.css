@@ -34,7 +34,7 @@ hr {
 @media screen and (max-width: 1280px) {
     #header-container {
         background-color: lightgray;
-        height: 25vh !important;
+        height: 10vh !important;
         padding-top: 0%;
         margin-bottom: -10% !important;
     }
@@ -113,7 +113,12 @@ hr {
     align-items: center;
     background-color: lightgray;
 }
-
+@media screen and (max-width: 1280px) {
+    #details-container {
+        margin-top: 25%;
+       
+    }
+}
 .footer {
     text-align: center !important;
     color: rgba(0, 0, 0, 0.5);

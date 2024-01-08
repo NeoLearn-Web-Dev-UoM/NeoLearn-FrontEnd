@@ -16,7 +16,11 @@ body {
     height: auto;
     margin-top: 15%;
 }
-
+@media (max-width: 1280px) {
+    #logo {
+        margin-left: -30%;
+    }
+}
 h1 {
     font-family: Georgia;
     height: 25vh;
@@ -85,7 +89,22 @@ h2 {
     margin-top: 15%;
 }
 
-
+@media (max-width: 1280px) {
+    .frame {
+        width: 90%;
+        max-width: 500px;
+        box-shadow: 5px 5px 20px rgb(0, 96, 100);
+        border-radius: 15%;
+        background-color: white;
+        padding: 15%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15%;
+        margin-bottom: 20%;
+    }
+}
 .form-check {
     margin-top: 5px;
 }
