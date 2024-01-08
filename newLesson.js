@@ -32,13 +32,22 @@ document.addEventListener('DOMContentLoaded', function () {
         tbody.innerHTML = ''; // Clear existing content
 
         // Sample data for the table
-        var data = [
-            ['Data 1', 'Data 2'],
-            ['Data 3', 'Data 4'],
-            ['Data 5', 'Data 6'],
-            ['Data 7', 'Data 8'],
-            ['Data 9', 'Data 10']
+        var dataSets = [
+            [
+                ['Βάσεις Δεδομένων II (CSC502)', 'Υποχρεωτικό Μάθημα Κατεύθυνσης', 'Γεώργιος Ευαγγελίδης '],
+                ['Γραμμική Άλγευρα (AIC102)', 'Μάθημα επιλογής', 'Άγγελος Σιφαλέρας'],
+                ['Δίκτυα Υπολογιστών (AIC302)', 'Υποχρεωτικό Μάθημα Κορμόυ', 'Γεώργιος Τρακατέλης'],
+                ['Δομές Δεδομένων (AIC205)', 'Υποχρεωτικό Μάθημα Κορμόυ', 'Γεωργία Κολωνιάρη']
+            ],
+            [
+                ['Ηλεκτρονική Διακυβέρνηση (DAI143)', 'Μάθημα επιλογής', 'Ευθύμιος Ταμπούρης'],
+                ['Θεωρία Παιγνίων (DAI224)', 'Υποχρεωτικό Μάθημα Κατεύθυνσης', 'Ιωάννης Ρεφανίδης'],
+                ['Κρυπτογραφία (DAI233)', 'Μάθημα επιλογής', 'Δημήτριος Παπαδόπουλος'],
+                ['Μηχανική Μάθηση (CSC707)', 'Υποχρεωτικό Μάθημα Κατεύθυνσης', 'Ευτύχιος Πρωτοπαπαδάκης']
+            ]
         ];
+        var data = dataSets[slideNumber - 1];
+
 
         // Loop through the data and create table rows
         data.forEach(function (rowData) {
@@ -59,10 +68,30 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             tbody.appendChild(tr);
+
+            checkbox.addEventListener('change', function () {
+                if (checkbox.checked) {
+                    addToSelectedLessons(rowData[0]);
+                } else {
+                    removeFromSelectedLessons(rowData[0]);
+                }
+            });
         });
     }
 
+    function addToSelectedLessons(lesson) {
+        var selectedLessonsList = document.getElementById('selectedLessonsList');
+        var li = document.createElement('li');
+        li.textContent = lesson;
+        selectedLessonsList.appendChild(li);
+
+        // Update the newLessonText element
+        document.getElementById('newLessonText').textContent = lesson;
+    }
+
     showSlide(currentPage);
+
+
 
     document.getElementById('nextButton1').addEventListener('click', function () {
         currentPage++;
@@ -74,8 +103,8 @@ document.addEventListener('DOMContentLoaded', function () {
         showSlide(currentPage);
     });
 
-    document.getElementById('nextButton2').addEventListener('click', function () {
-        currentPage++;
-        showSlide(currentPage);
-    });
+    // document.getElementById('nextButton2').addEventListener('click', function () {
+    //     currentPage++;
+    //     showSlide(currentPage);
+    // });
 });

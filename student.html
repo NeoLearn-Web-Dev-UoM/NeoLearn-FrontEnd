@@ -197,9 +197,19 @@
                                         </figcaption>
                                     </figure>
                                 </a>
+                                <a class="lesson-link" onclick="openNewPage('newLessonText' ,'newSourceTitle')">
+                                    <figure>
+                                        <blockquote class="blockquote">
+                                            <p id="newLessonText"></p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            <cite title="Source Title" id="newSourceTitle"></cite>
+                                        </figcaption>
+                                    </figure>
+                                </a>
                                 <hr>
                                 <button type="button" onclick="changeSlide(1)" class="btn btn-outline"
-                                    id="slideBtn">Previous</button>
+                                    id="slideBtn">Πίσω</button>
                             </div>
                         </div>
                     </div>
@@ -210,16 +220,17 @@
                             <img src="images/NL-add.png" class="newLesson" alt="add">
                             Εγγραφή σε μάθημα</a></button>
 
-                            <div class="button-container">
-                                <button id="prev-btn">&#8249
-                                     </button><div class="month-year" id="month-year"></div>
-                                        <button id="next-btn"> &#8250</button>
-                            </div>
-                            <table>
-                                <tbody id="calendar-body"></tbody>
-                            </table>
-                            <br>
-                            
+                    <div class="button-container">
+                        <button id="prev-btn">&#8249
+                        </button>
+                        <div class="month-year" id="month-year"></div>
+                        <button id="next-btn"> &#8250</button>
+                    </div>
+                    <table>
+                        <tbody id="calendar-body"></tbody>
+                    </table>
+                    <br>
+
                     <!-- edw to hmerologio -->
                 </div>
             </div>
