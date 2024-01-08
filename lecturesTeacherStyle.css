@@ -267,6 +267,6 @@ hr.new2{
     border: 1px solid #263238;
   }
   
-  #click{
+  #click, #dlt{
     cursor: pointer;
   }

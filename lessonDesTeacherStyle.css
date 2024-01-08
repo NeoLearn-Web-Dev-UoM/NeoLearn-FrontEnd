@@ -131,6 +131,13 @@ hr {
     background-color: lightgray;
 }
 
+@media screen and (max-width: 1280px) {
+    #details-container {
+        margin-top: 25%;
+       
+    }
+}
+
 .footer {
     text-align: center !important;
     color: rgba(0, 0, 0, 0.5);
