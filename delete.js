@@ -5,16 +5,16 @@ function deleteLessonLink(event) {
     window.location.href = 'deleteLesson.html';
 }
 
+function removeLesson(lessonTextElementId) {
+    var lessonElement = document.getElementById(lessonTextElementId);
 
-function removeLesson(lessonId) {
-    alert("Το μάθημα διαγράφτηκε με επιτυχία!");
-    //δεν ξερω γιατι δεν δουλευει
-
-    var lessonElement = document.getElementById(lessonId);
     if (lessonElement) {
-        lessonElement.parentNode.parentNode.remove();
+        lessonElement.parentElement.remove();
+        alert("Το μάθημα διαγράφτηκε με επιτυχία!");
+        window.location.href = 'student.html';
+    } else {
+        console.error("Lesson element not found with ID: " + lessonTextElementId);
     }
-    window.location.href = 'student.html';
 }
 
 function logOutBtn() {
