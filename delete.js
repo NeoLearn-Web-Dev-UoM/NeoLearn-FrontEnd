@@ -5,6 +5,7 @@ function deleteLessonLink(event) {
     window.location.href = 'deleteLesson.html';
 }
 
+//den douleyei
 function removeLesson(lessonTextElementId) {
     var lessonElement = document.getElementById(lessonTextElementId);
 
