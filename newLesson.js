@@ -100,3 +100,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
+function logOutBtn() {
+    var txt;
+    if (confirm("Είσαι σίγουρος ότι επιθυμείς να αποσυνδεθείς από το Λογαριασμό σου;")) {
+        window.location.href = 'welcome.html';
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
