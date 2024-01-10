@@ -56,7 +56,7 @@ function updateTimer() {
 updateTimer();
 
 function homeBtn() {
-    window.location.href = 'teacher.html';
+    window.location.href = 'student.html';
 }
 
 function logOutBtn() {
