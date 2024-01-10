@@ -3,6 +3,19 @@
 function homeBtn() {
     window.location.href = 'teacher.html';
 }
+function openNewPage(lessonTextId, sourceTitleId) {
+    var lessonText = document.getElementById(lessonTextId).textContent;
+    var sourceTitle = document.getElementById(sourceTitleId).textContent;
+
+    // Use unique identifiers for each link
+    var keyPrefix = 'lessonDescription_';  // Unique prefix
+    localStorage.setItem(keyPrefix + 'lessonText', lessonText);
+    localStorage.setItem(keyPrefix + 'sourceTitle', sourceTitle);
+
+    // Navigate to the new_page.html
+    window.location.href = 'lessonDescription.html';
+}
+
 
 function onSubmitForm() {
     console.log("Form submitted");
@@ -129,26 +142,26 @@ function createNewFolderRow() {
     // Δημιουργούμε το κουμπί για τη δημιουργία φακέλου
     var createButton = document.createElement('button');
     createButton.textContent = 'Create Folder';
-   // Εκτελεί τη συνάρτηση όταν πατηθεί το κουμπί
-createButton.onclick = function () {
-    // Εδώ μπορείτε να προσθέσετε τον κώδικα που θέλετε για τη δημιουργία του φακέλου
-    alert('Create folder: ' + inputField.value);
+    // Εκτελεί τη συνάρτηση όταν πατηθεί το κουμπί
+    createButton.onclick = function () {
+        // Εδώ μπορείτε να προσθέσετε τον κώδικα που θέλετε για τη δημιουργία του φακέλου
+        alert('Create folder: ' + inputField.value);
 
-    // Εξαφανίζουμε το πλαίσιο κειμένου και το κουμπί
-    inputField.style.display = 'none';
-    createButton.style.display = 'none';
+        // Εξαφανίζουμε το πλαίσιο κειμένου και το κουμπί
+        inputField.style.display = 'none';
+        createButton.style.display = 'none';
 
-    // Δημιουργούμε ένα νέο span για το κείμενο
-    var textSpan = document.createElement('span');
-    textSpan.textContent = inputField.value;
-    textSpan.style.cursor = 'pointer';
-    textSpan.style.textDecoration = 'underline';
-    textSpan.style.color = 'blue';
+        // Δημιουργούμε ένα νέο span για το κείμενο
+        var textSpan = document.createElement('span');
+        textSpan.textContent = inputField.value;
+        textSpan.style.cursor = 'pointer';
+        textSpan.style.textDecoration = 'underline';
+        textSpan.style.color = 'blue';
 
-    // Εμφανίζουμε το span με το κείμενο στο κελί
-    cell2.innerHTML = '';
-    cell2.appendChild(textSpan);
-};
+        // Εμφανίζουμε το span με το κείμενο στο κελί
+        cell2.innerHTML = '';
+        cell2.appendChild(textSpan);
+    };
 
     // Προσθέτουμε το input field και το κουμπί στο κελί
     cell2.appendChild(inputField);
@@ -165,7 +178,7 @@ createButton.onclick = function () {
 function logOutBtn() {
     var txt;
     if (confirm("Είσαι σίγουρος ότι επιθυμείς να αποσυνδεθείς από το Λογαριασμό σου;")) {
-      window.location.href = 'welcome.html';
+        window.location.href = 'welcome.html';
     }
     document.getElementById("demo").innerHTML = txt;
 }

@@ -33,7 +33,7 @@ function emptylecture(lecture) {
     }
 }
 
-  function addTextbox(event) {
+function addTextbox(event) {
     var input = document.createElement("input");
     var hiddenButton = document.getElementById("hidden");
     input.setAttribute("type", "text");
@@ -64,7 +64,7 @@ function addTextboxq(event) {
         // Create a new cell for the course text
         var courseCell = document.createElement("td");
         courseCell.textContent = inputValue;
-        
+
         courseCell.style.textDecoration = 'underline';
         courseCell.style.cursor = 'pointer';
         courseCell.style.color = 'rgb(0, 96, 100)';
@@ -82,7 +82,7 @@ function addTextboxq(event) {
         newRow.appendChild(dateCell);
         newRow.appendChild(svgCell);
 
-        newRow.addEventListener('click', function() {
+        newRow.addEventListener('click', function () {
             // Μεταφορά του χρήστη στη σελίδα "lectureDoc.html"
             window.location.href = 'lectureDoc.html';
         });
@@ -101,7 +101,7 @@ function addTextboxq(event) {
         // Create a new element for the date of addition with styles
         var dateElement = document.createElement("p");
         dateElement.innerHTML = "<span style='text-decoration: underline; color: red;'>" + datetime + "</span>";
-        
+
         // Insert date element into the container
         datetimeContainer.appendChild(dateElement);
     }
@@ -114,7 +114,7 @@ function homeBtn() {
 function logOutBtn() {
     var txt;
     if (confirm("Είσαι σίγουρος ότι επιθυμείς να αποσυνδεθείς από το Λογαριασμό σου;")) {
-      window.location.href = 'welcome.html';
+        window.location.href = 'welcome.html';
     }
     document.getElementById("demo").innerHTML = txt;
 }
@@ -125,4 +125,18 @@ function deleteRow(element, event) {
 
     // Σταματήστε το γεγονός κλικ να φτάσει στα επίπεδα που θα προκαλέσουν τη μετάβαση στην άλλη σελίδα
     event.stopPropagation();
+}
+
+
+function openNewPage(lessonTextId, sourceTitleId) {
+    var lessonText = document.getElementById(lessonTextId).textContent;
+    var sourceTitle = document.getElementById(sourceTitleId).textContent;
+
+    // Use unique identifiers for each link
+    var keyPrefix = 'lessonDescription_';  // Unique prefix
+    localStorage.setItem(keyPrefix + 'lessonText', lessonText);
+    localStorage.setItem(keyPrefix + 'sourceTitle', sourceTitle);
+
+    // Navigate to the new_page.html
+    window.location.href = 'lecturesTeacher.html';
 }

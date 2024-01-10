@@ -24,6 +24,8 @@ function calculateScore() {
     }
 
     alert(`Σκορ: ${score}/10`);
+    window.location.href = "quiz.html";
+
 }
 
 let duration = 30 * 60;
@@ -67,5 +69,5 @@ function logOutBtn() {
 
 function quizLessonLink(event) {
     event.preventDefault();
-    window.location.href = "quizTeacher.html";
+    window.location.href = "quiz.html";
 }

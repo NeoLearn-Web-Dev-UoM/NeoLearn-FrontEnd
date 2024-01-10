@@ -1,5 +1,19 @@
 'use strict'
 
+function openNewPage(lessonTextId, sourceTitleId) {
+    var lessonText = document.getElementById(lessonTextId).textContent;
+    var sourceTitle = document.getElementById(sourceTitleId).textContent;
+
+    // Use unique identifiers for each link
+    var keyPrefix = 'lessonDescription_';  // Unique prefix
+    localStorage.setItem(keyPrefix + 'lessonText', lessonText);
+    localStorage.setItem(keyPrefix + 'sourceTitle', sourceTitle);
+
+    // Navigate to the new_page.html
+    window.location.href = 'lessonDescription.html';
+}
+
+
 function viewLessonLink() {
     window.location.href = "lecturesTeacher.html";
 }
@@ -40,13 +54,13 @@ function emptyquiz(quiz) {
 
 function openForm() {
     document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
+}
 
-  function addTextbox(event) {
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+
+function addTextbox(event) {
     var input = document.createElement("input");
     var hiddenButton = document.getElementById("hidden");
     input.setAttribute("type", "text");
@@ -95,11 +109,11 @@ function addTextboxq(event) {
         newRow.appendChild(dateCell);
         newRow.appendChild(svgCell);
 
-        newRow.addEventListener('click', function() {
+        newRow.addEventListener('click', function () {
             // Μεταφορά του χρήστη στη σελίδα "lectureDoc.html"
             window.location.href = 'quiz_num.html';
         });
-        
+
         // Append the new row to the table
         var tableBody = document.querySelector("#middle-container table tbody");
         tableBody.appendChild(newRow);
@@ -114,7 +128,7 @@ function addTextboxq(event) {
         // Create a new element for the date of addition with styles
         var dateElement = document.createElement("p");
         dateElement.innerHTML = "<span style='text-decoration: underline; color: red;'>" + datetime + "</span>";
-        
+
         // Insert date element into the container
         datetimeContainer.appendChild(dateElement);
 
@@ -128,7 +142,7 @@ function homeBtn() {
 function logOutBtn() {
     var txt;
     if (confirm("Είσαι σίγουρος ότι επιθυμείς να αποσυνδεθείς από το Λογαριασμό σου;")) {
-      window.location.href = 'welcome.html';
+        window.location.href = 'welcome.html';
     }
     document.getElementById("demo").innerHTML = txt;
 }

@@ -114,11 +114,11 @@
                             <figure>
                                 <blockquote class="blockquote">
                                     <!-- <p id="lesson-name"></p> -->
-                                    <p id="lessonText"></p>
+                                    <p id="lessonTextElement"></p>
                                 </blockquote>
                                 <figcaption class="blockquote-footer">
                                     <!-- <cite title="Source Title">Υποχρεωτικό Μάθημα Κατεύθυνσης</cite> -->
-                                    <p id="sourceTitle"></p>
+                                    <p id="sourceTitleElement"></p>
                                 </figcaption>
                             </figure>
                         </div>
@@ -356,6 +356,25 @@
     </div>
 
     <script src="lectureDoc.js"></script>
+    <script>
+        // Use unique identifiers for each link
+        var keyPrefix = 'lessonDescription_';  // Unique prefix
+        var lessonText = localStorage.getItem(keyPrefix + 'lessonText');
+        var sourceTitle = localStorage.getItem(keyPrefix + 'sourceTitle');
+
+        // Display the values in the desired elements on the new page
+        var lessonTextElement = document.getElementById('lessonTextElement');
+        var sourceTitleElement = document.getElementById('sourceTitleElement');
+
+
+        if (lessonTextElement) {
+            lessonTextElement.textContent = lessonText;
+        }
+
+        if (sourceTitleElement) {
+            sourceTitleElement.textContent = sourceTitle;
+        }
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const deleteButtons = document.querySelectorAll('.delete-row');
