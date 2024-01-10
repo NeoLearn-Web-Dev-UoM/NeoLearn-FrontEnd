@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NeoLearn</title>
-    <link rel="icon" href="images/greenBack.png" type="image/png">
+    <link rel="icon" href="images/greenBack.png" type="image/png" alt="NeoLearn">
     <link rel="stylesheet" href="quiz_num.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,22 +15,29 @@
 <body>
 
     <div class="sidebar">
-        <img src="images/NL-white.png" class="logo">
+        <img src="images/NL-white.png" class="logo" alt="NeoLearn">
         <hr class="new1">
         <a class="active" href="#home" id="options">Βασικές επιλογές</a>
-        <a href="createLesson.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
-        </svg> Νέο Μάθημα</a>
-        <a href="teacher.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
-            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
-            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/>
-        </svg> Τα μαθήματα μου</a>
-        <a href="editProfile.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-gear" viewBox="0 0 16 16">
-            <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4m9.886-3.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382l.045-.148ZM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
-        </svg> Επεξεργασία προφίλ</a>
+        <a href="createLesson.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+            </svg> Νέο Μάθημα</a>
+        <a href="teacher.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                <path
+                    d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
+                <path
+                    d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z" />
+            </svg> Τα μαθήματα μου</a>
+        <a href="editProfile.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-fill-gear" viewBox="0 0 16 16">
+                <path
+                    d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4m9.886-3.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382l.045-.148ZM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
+            </svg> Επεξεργασία προφίλ</a>
     </div>
-  
-     <div class="container">
+
+    <div class="container">
         <div class=".container text-white">
             <div class="row">
                 <div class="container-fluid" id="header-container">
@@ -41,43 +48,59 @@
                                     <div class="col" id="home-questionmark">
                                         <!--<img src="images/NL-home.png" alt="home" width="50" height="50"
                                             class="d-inline-block align-text-top">-->
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-houses  d-inline-block align-text-top" viewBox="0 0 16 16" style="color: #263238;" onclick="homeBtn()">
-                                                <path d="M5.793 1a1 1 0 0 1 1.414 0l.647.646a.5.5 0 1 1-.708.708L6.5 1.707 2 6.207V12.5a.5.5 0 0 0 .5.5.5.5 0 0 1 0 1A1.5 1.5 0 0 1 1 12.5V7.207l-.146.147a.5.5 0 0 1-.708-.708zm3 1a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708zm.707.707L5 7.207V13.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5V7.207z"/>
-                                              </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                            fill="currentColor" class="bi bi-houses  d-inline-block align-text-top"
+                                            viewBox="0 0 16 16" style="color: #263238;" onclick="homeBtn()">
+                                            <path
+                                                d="M5.793 1a1 1 0 0 1 1.414 0l.647.646a.5.5 0 1 1-.708.708L6.5 1.707 2 6.207V12.5a.5.5 0 0 0 .5.5.5.5 0 0 1 0 1A1.5 1.5 0 0 1 1 12.5V7.207l-.146.147a.5.5 0 0 1-.708-.708zm3 1a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708zm.707.707L5 7.207V13.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5V7.207z" />
+                                        </svg>
                                         <!--<img src="images/NL-questionmark.png" alt="questionmark" width="50" height="50"
                                             class="d-inline-block align-text-top">-->
-                                            <div id="popoverContainer" style="display: inline-block;">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-question-diamond d-inline-block align-text-top" viewBox="0 0 16 16" style="color: #263238;">
-                                                    <path d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/>
-                                                    <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
-                                                  </svg>
-                                              </div>
+                                        <div id="popoverContainer" style="display: inline-block;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                                fill="currentColor"
+                                                class="bi bi-question-diamond d-inline-block align-text-top"
+                                                viewBox="0 0 16 16" style="color: #263238;">
+                                                <path
+                                                    d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z" />
+                                                <path
+                                                    d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+                                            </svg>
+                                        </div>
                                     </div>
                                     <div class="col" id="profile-col">
                                         <!--<img src="images/NL-profile.png" alt="profile" width="50" height="50"
                                             class="d-inline-block align-text-top">-->
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle d-inline-block align-text-top" viewBox="0 0 16 16" style="color: #263238;">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                                              </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                            fill="currentColor"
+                                            class="bi bi-person-circle d-inline-block align-text-top"
+                                            viewBox="0 0 16 16" style="color: #263238;">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                        </svg>
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Samaras
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="viewProfile.html" id="click">Το προφίλ μου</a></li>
+                                            <li><a class="dropdown-item" href="viewProfile.html" id="click">Το προφίλ
+                                                    μου</a></li>
                                             <li>
                                                 <hr class="dropdown-divider">
                                             </li>
-                                            <li><a class="dropdown-item" href="teacher.html" id="click">Τα μαθήματα μου</a></li>
+                                            <li><a class="dropdown-item" href="teacher.html" id="click">Τα μαθήματα
+                                                    μου</a></li>
                                             <li>
                                                 <hr class="dropdown-divider">
                                             </li>
-                                            <li><a class="dropdown-item" href="calendar.html" id="click">Το ημερολόγιο μου</a></li>
+                                            <li><a class="dropdown-item" href="calendar.html" id="click">Το ημερολόγιο
+                                                    μου</a></li>
                                             <li>
                                                 <hr class="dropdown-divider">
                                             </li>
-                                            <li><a class="dropdown-item" onclick="logOutBtn()" id="click">Έξοδος</a></li>
+                                            <li><a class="dropdown-item" onclick="logOutBtn()" id="click">Έξοδος</a>
+                                            </li>
                                         </ul>
                                     </div>
 
@@ -92,41 +115,47 @@
                 <h4> Υπολυπόμενος χρόνος: </h4>
                 <div id="timer">30:00</div>
             </div>
-           <br>
+            <br>
             <div class="row">
                 <div class="col-md-6">
                     <div class="container-fluid" id="middle-container">
                         <form id="quiz-form" action="" method="post">
-                        <h2>Ερώτηση 1</h2>
-                        <p>What is a correct syntax to output "Hello World" in Java?</p>
-                        <label><input type="radio" name="q1" value="a"> Console.WriteLine("Hello World");  </label><br>
-                        <label><input type="radio" name="q1" value="b"> echo("Hello World");</label><br>
-                        <label><input type="radio" name="q1" value="c"> System.out.println("Hello World");  </label><br>
-                        <hr>
-                        <br><h2>Ερώτηση 2</h2>
-                        <p>How do you insert COMMENTS in Java code?</p>
-                        <label><input type="radio" name="q2" value="a"> /* This is a comment  </label><br>
-                        <label><input type="radio" name="q2" value="b"> # This is a comment</label><br>
-                        <label><input type="radio" name="q2" value="c"> // This is a comment  </label><br>
-                        <hr>   
-                        <br><h2>Ερώτηση 3</h2>
-                        <p>Which data type is used to create a variable that should store text?</p>
-                        <label><input type="radio" name="q3" value="a"> string </label><br>
-                        <label><input type="radio" name="q3" value="b"> String  </label><br>
-                        <label><input type="radio" name="q3" value="c"> myString</label><br>
-                        <hr>
-                        <br><h2>Ερώτηση 4</h2>
-                        <p>How do you create a variable with the numeric value 5?</p>
-                        <label><input type="radio" name="q4" value="a"> float x = 5;</label><br>
-                        <label><input type="radio" name="q4" value="b"> int x = 5;</label><br>
-                        <label><input type="radio" name="q4" value="c"> x = 5;</label><br>
-                        <hr>
-                        <br><h2>Ερώτηση 5</h2>
-                        <p>What is the formula to calculate the area of a circle?</p>
-                        <label><input type="radio" name="q5" value="a"> x = 2.8f;</label><br>
-                        <label><input type="radio" name="q5" value="b"> float x = 2.8f;</label><br>
-                        <label><input type="radio" name="q5" value="c"> byte x = 2.8f</label><br>
-                        <hr>
+                            <h2>Ερώτηση 1</h2>
+                            <p>What is a correct syntax to output "Hello World" in Java?</p>
+                            <label><input type="radio" name="q1" value="a"> Console.WriteLine("Hello World");
+                            </label><br>
+                            <label><input type="radio" name="q1" value="b"> echo("Hello World");</label><br>
+                            <label><input type="radio" name="q1" value="c"> System.out.println("Hello World");
+                            </label><br>
+                            <hr>
+                            <br>
+                            <h2>Ερώτηση 2</h2>
+                            <p>How do you insert COMMENTS in Java code?</p>
+                            <label><input type="radio" name="q2" value="a"> /* This is a comment </label><br>
+                            <label><input type="radio" name="q2" value="b"> # This is a comment</label><br>
+                            <label><input type="radio" name="q2" value="c"> // This is a comment </label><br>
+                            <hr>
+                            <br>
+                            <h2>Ερώτηση 3</h2>
+                            <p>Which data type is used to create a variable that should store text?</p>
+                            <label><input type="radio" name="q3" value="a"> string </label><br>
+                            <label><input type="radio" name="q3" value="b"> String </label><br>
+                            <label><input type="radio" name="q3" value="c"> myString</label><br>
+                            <hr>
+                            <br>
+                            <h2>Ερώτηση 4</h2>
+                            <p>How do you create a variable with the numeric value 5?</p>
+                            <label><input type="radio" name="q4" value="a"> float x = 5;</label><br>
+                            <label><input type="radio" name="q4" value="b"> int x = 5;</label><br>
+                            <label><input type="radio" name="q4" value="c"> x = 5;</label><br>
+                            <hr>
+                            <br>
+                            <h2>Ερώτηση 5</h2>
+                            <p>What is the formula to calculate the area of a circle?</p>
+                            <label><input type="radio" name="q5" value="a"> x = 2.8f;</label><br>
+                            <label><input type="radio" name="q5" value="b"> float x = 2.8f;</label><br>
+                            <label><input type="radio" name="q5" value="c"> byte x = 2.8f</label><br>
+                            <hr>
                     </div>
                 </div>
                 <div class="col-md-6" id="quest">
@@ -136,25 +165,29 @@
                     <label><input type="radio" name="q6" value="b"> getLength()</label><br>
                     <label><input type="radio" name="q6" value="c"> length()</label><br>
                     <hr>
-                    <br><h2>Ερώτηση 7</h2>
+                    <br>
+                    <h2>Ερώτηση 7</h2>
                     <p>Which operator is used to add together two values?</p>
                     <label><input type="radio" name="q7" value="a"> The * sign</label><br>
                     <label><input type="radio" name="q7" value="b"> The + sign</label><br>
                     <label><input type="radio" name="q7" value="c"> The & sign</label><br>
                     <hr>
-                    <br><h2>Ερώτηση 8</h2>
+                    <br>
+                    <h2>Ερώτηση 8</h2>
                     <p>Which method can be used to return a string in upper case letters?</p>
                     <label><input type="radio" name="q8" value="a"> upperCase()</label><br>
                     <label><input type="radio" name="q8" value="b"> toUpperCase()</label><br>
                     <label><input type="radio" name="q8" value="c"> tuc()</label><br>
                     <hr>
-                    <br><h2>Ερώτηση 9</h2>
+                    <br>
+                    <h2>Ερώτηση 9</h2>
                     <p>What is the correct way to create an object called myObj of MyClass?</p>
                     <label><input type="radio" name="q9" value="a"> MyClass myObj = new MyClass();</label><br>
                     <label><input type="radio" name="q9" value="b"> class myObj = new MyClass();</label><br>
                     <label><input type="radio" name="q9" value="c"> new myObj = MyClass();</label><br>
                     <hr>
-                    <br><h2>Ερώτηση 10</h2>
+                    <br>
+                    <h2>Ερώτηση 10</h2>
                     <p>Which method can be used to find the highest value of x and y?</p>
                     <label><input type="radio" name="q10" value="a"> Math.maximum(x,y)</label><br>
                     <label><input type="radio" name="q10" value="b"> Math.largest(x,y)</label><br>
@@ -163,8 +196,8 @@
                     <br>
                     <button type="submit" id="submit" class="btn btn-outline">Υποβολή</button>
 
-                </form>
-                    
+                    </form>
+
                 </div>
 
             </div>
@@ -175,16 +208,20 @@
             <br>
             <div class="row">
                 <div class="sum-profile">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="80" fill="currentColor" class="bi bi-person-circle d-inline-block align-text-top" viewBox="0 0 16 16" style="color: rgb(0, 96, 100) ;">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="80" fill="currentColor"
+                        class="bi bi-person-circle d-inline-block align-text-top" viewBox="0 0 16 16"
+                        style="color: rgb(0, 96, 100) ;">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
                     <div class="container-md">
                         <div class="profile-details">
                             <p>ΑΛΕΞΑΝΔΡΟΣ ΣΑΜΑΡΑΣ <br>
                                 Κατηγορία: ΚΑΘΗΓΗΤΗΣ, ΔΙΔΑΚΤΙΚΟ ΠΡΟΣΩΠΙΚΟ
                                 <br>Τμήμα Εφαρμοσμένης Πληροφορικής (Department of Applied Informatics)
-                                ΠΑΝΕΠΙΣΤΗΜΙΟ ΜΑΚΕΔΟΝΙΑΣ (UNIVERSITY OF MACEDONIA)</p>
+                                ΠΑΝΕΠΙΣΤΗΜΙΟ ΜΑΚΕΔΟΝΙΑΣ (UNIVERSITY OF MACEDONIA)
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -202,18 +239,18 @@
 
         </div>
     </div>
-   
+
     <script src="quiz_num.js"></script>
     <script>
         // Enable Bootstrap popover
-        $(document).ready(function(){
-          $('#popoverContainer').popover({
-            content: 'H NeoLearn είναι μια διαδικτυακή εκπαιδευτική πλατφόρμα, η οποία παρέχει καινοτόμες μεθόδους μάθησης και αξιολόγησης των εκπαιδευομένων. Η πλατφόρμα προσφέρει εκπαιδευτικό υλικό και δραστηριότητες εκμάθησης γλωσσών διαδικτυακού προγραμματισμού όπως JavaScript, Java, PHP, κλπ.',
-            placement: 'bottom',
-            trigger: 'click', // You can change this to 'hover' if you want the popover to appear on hover
-          });
+        $(document).ready(function () {
+            $('#popoverContainer').popover({
+                content: 'H NeoLearn είναι μια διαδικτυακή εκπαιδευτική πλατφόρμα, η οποία παρέχει καινοτόμες μεθόδους μάθησης και αξιολόγησης των εκπαιδευομένων. Η πλατφόρμα προσφέρει εκπαιδευτικό υλικό και δραστηριότητες εκμάθησης γλωσσών διαδικτυακού προγραμματισμού όπως JavaScript, Java, PHP, κλπ.',
+                placement: 'bottom',
+                trigger: 'click', // You can change this to 'hover' if you want the popover to appear on hover
+            });
         });
-      </script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>

@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NeoLearn</title>
     <link rel="icon" href="images/greenBack.png" type="image/png" alt="NeoLearn">
-    <!-- <link rel="stylesheet" href="studentStyle.css"> -->
-    <!--προσοχη στα ονοματα css-->
-    <!-- <link rel="stylesheet" href="teacher3.css"> -->
-    <link rel="stylesheet" href="editLessonStyle.css">
+    <link rel="stylesheet" href="quiz_num.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -16,7 +13,7 @@
 </head>
 
 <body>
-    <!--slide bar αλλαζω αναλογα το παραθυρο που θελω !!!!!!-->
+
     <div class="sidebar">
         <img src="images/NL-white.png" class="logo" alt="NeoLearn">
         <hr class="new1">
@@ -40,8 +37,6 @@
             </svg> Επεξεργασία προφίλ</a>
     </div>
 
-    <!--πειραζουμε css για τα χοντρικα ειναι αυτο-->
-    <!--το κεντρικο γκρι κοντεινερ-->
     <div class="container">
         <div class=".container text-white">
             <div class="row">
@@ -51,12 +46,16 @@
                             <a class="navbar-brand" href="#">
                                 <div class="profile-container">
                                     <div class="col" id="home-questionmark">
+                                        <!--<img src="images/NL-home.png" alt="home" width="50" height="50"
+                                            class="d-inline-block align-text-top">-->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
                                             fill="currentColor" class="bi bi-houses  d-inline-block align-text-top"
                                             viewBox="0 0 16 16" style="color: #263238;" onclick="homeBtn()">
                                             <path
                                                 d="M5.793 1a1 1 0 0 1 1.414 0l.647.646a.5.5 0 1 1-.708.708L6.5 1.707 2 6.207V12.5a.5.5 0 0 0 .5.5.5.5 0 0 1 0 1A1.5 1.5 0 0 1 1 12.5V7.207l-.146.147a.5.5 0 0 1-.708-.708zm3 1a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708zm.707.707L5 7.207V13.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5V7.207z" />
                                         </svg>
+                                        <!--<img src="images/NL-questionmark.png" alt="questionmark" width="50" height="50"
+                                            class="d-inline-block align-text-top">-->
                                         <div id="popoverContainer" style="display: inline-block;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
                                                 fill="currentColor"
@@ -70,6 +69,8 @@
                                         </div>
                                     </div>
                                     <div class="col" id="profile-col">
+                                        <!--<img src="images/NL-profile.png" alt="profile" width="50" height="50"
+                                            class="d-inline-block align-text-top">-->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
                                             fill="currentColor"
                                             class="bi bi-person-circle d-inline-block align-text-top"
@@ -81,9 +82,7 @@
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Samaras
-                                            <!--ονομα μαθητη ή καθηγητη αναλογα-->
                                         </a>
-
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item" href="viewProfile.html" id="click">Το προφίλ
                                                     μου</a></li>
@@ -112,62 +111,136 @@
                 </div>
             </div>
             <hr class="new2">
+            <div class="time">
+                <h4> Υπολυπόμενος χρόνος: </h4>
+                <div id="timer">30:00</div>
+            </div>
+            <br>
             <div class="row">
-                <div class="col">
-                    <div class="container-fluid d-flex justify-content-center " id="middle-container">
-                        <form>
-                            <h2 class="h2style"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                    fill="currentColor" class="bi bi-highlighter" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M11.096.644a2 2 0 0 1 2.791.036l1.433 1.433a2 2 0 0 1 .035 2.791l-.413.435-8.07 8.995a.5.5 0 0 1-.372.166h-3a.5.5 0 0 1-.234-.058l-.412.412A.5.5 0 0 1 2.5 15h-2a.5.5 0 0 1-.354-.854l1.412-1.412A.5.5 0 0 1 1.5 12.5v-3a.5.5 0 0 1 .166-.372l8.995-8.07.435-.414Zm-.115 1.47L2.727 9.52l3.753 3.753 7.406-8.254-2.905-2.906Zm3.585 2.17.064-.068a1 1 0 0 0-.017-1.396L13.18 1.387a1 1 0 0 0-1.396-.018l-.068.065 2.85 2.85M5.293 13.5 2.5 10.707v1.586L3.707 13.5z" />
-                                </svg> Επεξεργασία προφίλ</h2>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Όνομα:</label>
-                                <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
-                                    placeholder="Όνομα">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleId1" class="form-label">Επίθετο:</label>
-                                <input type="id" class="form-control" id="id" placeholder="Επίθετο">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Λίγα λόγια για εσάς:</label>
-                                <div id="emailHelp" class="form-text">Παρακαλώ δώστε μια σύντομη αλλά λεπτομερής
-                                    περιγραφή.</div>
-                                <textarea class="form-control" id="description" rows="3"
-                                    placeholder="Περιγράψτε τον εαυτό σας.. "></textarea>
-                            </div>
-                        </form>
+                <div class="col-md-6">
+                    <div class="container-fluid" id="middle-container">
+                        <form id="quiz-form" action="" method="post">
+                            <h2>Ερώτηση 1</h2>
+                            <p>What is a correct syntax to output "Hello World" in Java?</p>
+                            <label><input type="radio" name="q1" value="a"> Console.WriteLine("Hello World");
+                            </label><br>
+                            <label><input type="radio" name="q1" value="b"> echo("Hello World");</label><br>
+                            <label><input type="radio" name="q1" value="c"> System.out.println("Hello World");
+                            </label><br>
+                            <hr>
+                            <br>
+                            <h2>Ερώτηση 2</h2>
+                            <p>How do you insert COMMENTS in Java code?</p>
+                            <label><input type="radio" name="q2" value="a"> /* This is a comment </label><br>
+                            <label><input type="radio" name="q2" value="b"> # This is a comment</label><br>
+                            <label><input type="radio" name="q2" value="c"> // This is a comment </label><br>
+                            <hr>
+                            <br>
+                            <h2>Ερώτηση 3</h2>
+                            <p>Which data type is used to create a variable that should store text?</p>
+                            <label><input type="radio" name="q3" value="a"> string </label><br>
+                            <label><input type="radio" name="q3" value="b"> String </label><br>
+                            <label><input type="radio" name="q3" value="c"> myString</label><br>
+                            <hr>
+                            <br>
+                            <h2>Ερώτηση 4</h2>
+                            <p>How do you create a variable with the numeric value 5?</p>
+                            <label><input type="radio" name="q4" value="a"> float x = 5;</label><br>
+                            <label><input type="radio" name="q4" value="b"> int x = 5;</label><br>
+                            <label><input type="radio" name="q4" value="c"> x = 5;</label><br>
+                            <hr>
+                            <br>
+                            <h2>Ερώτηση 5</h2>
+                            <p>What is the formula to calculate the area of a circle?</p>
+                            <label><input type="radio" name="q5" value="a"> x = 2.8f;</label><br>
+                            <label><input type="radio" name="q5" value="b"> float x = 2.8f;</label><br>
+                            <label><input type="radio" name="q5" value="c"> byte x = 2.8f</label><br>
+                            <hr>
                     </div>
-                    <div class="row">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div class="d-grid gap-2 col-5 mx-auto">
-                                <button class="btn" type="button" id="btnCreate" onclick="updateLesson()">Επεξεργασία
-                                    προφίλ</button>
-                                <button class="btn" type="button" id="btnCancel"
-                                    onclick="returnToMainPage()">Ακύρωση</button>
-
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                <div class="col-md-6" id="quest">
+                    <h2>Ερώτηση 6</h2>
+                    <p>Which method can be used to find the length of a string?</p>
+                    <label><input type="radio" name="q6" value="a"> len() </label><br>
+                    <label><input type="radio" name="q6" value="b"> getLength()</label><br>
+                    <label><input type="radio" name="q6" value="c"> length()</label><br>
+                    <hr>
                     <br>
+                    <h2>Ερώτηση 7</h2>
+                    <p>Which operator is used to add together two values?</p>
+                    <label><input type="radio" name="q7" value="a"> The * sign</label><br>
+                    <label><input type="radio" name="q7" value="b"> The + sign</label><br>
+                    <label><input type="radio" name="q7" value="c"> The & sign</label><br>
+                    <hr>
+                    <br>
+                    <h2>Ερώτηση 8</h2>
+                    <p>Which method can be used to return a string in upper case letters?</p>
+                    <label><input type="radio" name="q8" value="a"> upperCase()</label><br>
+                    <label><input type="radio" name="q8" value="b"> toUpperCase()</label><br>
+                    <label><input type="radio" name="q8" value="c"> tuc()</label><br>
+                    <hr>
+                    <br>
+                    <h2>Ερώτηση 9</h2>
+                    <p>What is the correct way to create an object called myObj of MyClass?</p>
+                    <label><input type="radio" name="q9" value="a"> MyClass myObj = new MyClass();</label><br>
+                    <label><input type="radio" name="q9" value="b"> class myObj = new MyClass();</label><br>
+                    <label><input type="radio" name="q9" value="c"> new myObj = MyClass();</label><br>
+                    <hr>
+                    <br>
+                    <h2>Ερώτηση 10</h2>
+                    <p>Which method can be used to find the highest value of x and y?</p>
+                    <label><input type="radio" name="q10" value="a"> Math.maximum(x,y)</label><br>
+                    <label><input type="radio" name="q10" value="b"> Math.largest(x,y)</label><br>
+                    <label><input type="radio" name="q10" value="c"> Math.max(x,y)</label><br>
+                    <hr>
+                    <br>
+                    <button type="submit" id="submit" class="btn btn-outline">Υποβολή</button>
 
+                    </form>
 
                 </div>
-                <hr class="new2">
-                <div class="row">
-                    <div class="container-fluid" id="footer-container">
-                        <div class="footer">
-                            2023 NeoLearn All Rights Reserved.<br>
-                            <a href="">Terms of UsePrivacy Policy2G Fair Use Policy</a>
+
+            </div>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <div class="row">
+                <div class="sum-profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="80" fill="currentColor"
+                        class="bi bi-person-circle d-inline-block align-text-top" viewBox="0 0 16 16"
+                        style="color: rgb(0, 96, 100) ;">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
+                    <div class="container-md">
+                        <div class="profile-details">
+                            <p>ΑΛΕΞΑΝΔΡΟΣ ΣΑΜΑΡΑΣ <br>
+                                Κατηγορία: ΚΑΘΗΓΗΤΗΣ, ΔΙΔΑΚΤΙΚΟ ΠΡΟΣΩΠΙΚΟ
+                                <br>Τμήμα Εφαρμοσμένης Πληροφορικής (Department of Applied Informatics)
+                                ΠΑΝΕΠΙΣΤΗΜΙΟ ΜΑΚΕΔΟΝΙΑΣ (UNIVERSITY OF MACEDONIA)
+                            </p>
                         </div>
                     </div>
-
                 </div>
             </div>
+            <hr class="new2">
+            <div class="row">
+                <div class="container-fluid" id="footer-container">
+                    <div class="footer">
+                        2023 NeoLearn All Rights Reserved.<br>
+                        <a href="">Terms of UsePrivacy Policy2G Fair Use Policy</a>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
-    <script src="editProfile.js"></script>
+
+    <script src="quiz.js"></script>
     <script>
         // Enable Bootstrap popover
         $(document).ready(function () {
