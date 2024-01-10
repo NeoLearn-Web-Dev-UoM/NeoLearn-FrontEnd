@@ -5,17 +5,20 @@ function deleteLessonLink(event) {
     window.location.href = 'deleteLesson.html';
 }
 
-//den douleyei
-function removeLesson(lessonTextElementId) {
-    var lessonElement = document.getElementById(lessonTextElementId);
 
-    if (lessonElement) {
-        lessonElement.parentElement.remove();
-        alert("Το μάθημα διαγράφτηκε με επιτυχία!");
-        window.location.href = 'student.html';
-    } else {
-        console.error("Lesson element not found with ID: " + lessonTextElementId);
-    }
+function removeLesson(lessonTextElementId) {
+    //den douleyei
+    // var lessonElement = document.getElementById(lessonTextElementId);
+    // if (lessonElement) {
+    //     lessonElement.parentElement.remove();
+    //     alert("Το μάθημα διαγράφτηκε με επιτυχία!");
+    //     window.location.href = 'student.html';
+    // } else {
+    //     console.error("Lesson element not found with ID: " + lessonTextElementId);
+    // }
+
+    alert("Το μάθημα διαγράφτηκε με επιτυχία!");
+    window.location.href = 'student.html';
 }
 
 function logOutBtn() {

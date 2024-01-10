@@ -62,6 +62,8 @@ function addBtn(lesson) {
     window.location.href = 'student.html';
 }
 
+
+
 document.getElementById('searchInput').addEventListener('input', function () {
     var searchValue = this.value.toLowerCase();
     var lessonsContainer = document.getElementById('courses-frame');
