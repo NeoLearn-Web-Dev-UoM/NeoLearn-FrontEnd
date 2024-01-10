@@ -140,6 +140,7 @@ hr {
     display: flex;
     flex-direction: row !important;
     color: black !important;
+    overflow-y: auto;
 }
 
 .sum-profile {

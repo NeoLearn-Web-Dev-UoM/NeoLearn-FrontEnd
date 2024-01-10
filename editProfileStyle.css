@@ -18,31 +18,34 @@ hr {
         background-color: lightgray;
         /* height: 100vh; */
         max-width: 100% !important;
+    }
 }
-  }
-  
+
 #header-container {
     background-color: lightgray;
     height: 10vh !important;
-    padding-top: 0%;/*lefki*/
-    margin-bottom: -2%;/*lefki*/
+    padding-top: 0%;
+    /*lefki*/
+    margin-bottom: -2%;
+    /*lefki*/
 }
 
 /*lefki*/
 @media screen and (max-width: 1280px) {
     #header-container {
-      background-color: lightgray;
-      height: 10vh !important;
-      padding-top: 0%;
-      margin-bottom: -10%!important;
-  }
-  }
+        background-color: lightgray;
+        height: 10vh !important;
+        padding-top: 0%;
+        margin-bottom: -10% !important;
+    }
+}
 
 .profile-container {
     display: grid !important;
     align-items: center !important;
     grid-template-columns: 1fr 1fr !important;
-    margin-top: 5px;/*lefki*/
+    margin-top: 5px;
+    /*lefki*/
 }
 
 #profile-col {
@@ -50,7 +53,8 @@ hr {
     justify-content: right;
     display: flex;
     flex-direction: row !important;
-    color: #263238; /*lefki*/
+    color: #263238;
+    /*lefki*/
 }
 
 #middle-container {
@@ -85,6 +89,7 @@ hr {
     display: flex;
     flex-direction: row !important;
     color: black !important;
+    overflow-y: auto;
 }
 
 .sum-profile {
@@ -166,103 +171,110 @@ hr {
     overflow-wrap: break-word;
 }
 
-hr.new1{
+hr.new1 {
     border: 1px solid white;
 }
 
-hr.new2{
+hr.new2 {
     border: 1px solid #263238;
-  }
+}
 
-  .h2style{
-    color:#263238;
+.h2style {
+    color: #263238;
     font-family: Georgia;
-  }
+}
 
-  .form-label{
+.form-label {
     color: #263238;
     font-weight: Georgia;
     font-size: 20px;
-  }
+}
 
-#btnCreate{
-    background-color: rgb(161,214,172) !important;
-    border: 2px solid rgb(0, 96, 100)!important;
+#btnCreate {
+    background-color: rgb(161, 214, 172) !important;
+    border: 2px solid rgb(0, 96, 100) !important;
     width: 55vh;
     margin-left: 3%;
 }
 
-#description, #id , #name{
+#description,
+#id,
+#name {
     border: 2px solid rgb(0, 96, 100);
     background-color: lightgray;
     width: 55vh;
 }
 
-.form-check{
+.form-check {
     color: black;
 }
 
-    input[type='radio']:after {
-        width: 15px;
-        height: 15px;
-        border-radius: 15px;
-        top: -2px;
-        left: -1px;
-        position: relative;
-        background-color: #d1d3d1;
-        content: '';
-        display: inline-block;
-        visibility: visible;
-        border: 2px solid white;
-    }
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
 
-    input[type='radio']:checked:after {
-        width: 15px;
-        height: 15px;
-        border-radius: 15px;
-        top: -2px;
-        left: -1px;
-        position: relative;
-        background-color: rgb(0, 96, 100);
-        content: '';
-        display: inline-block;
-        visibility: visible;
-        border: 2px solid white;
-    }
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(0, 96, 100);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
 
-    #btnCancel{
-        background-color: rgb(231,126,93) !important;
-        border: 2px solid rgb(0, 96, 100)!important;
-        color: black;
-        width: 55vh;
-        margin-left: 3%;
-        opacity: 0.9;
-    }
+#btnCancel {
+    background-color: rgb(231, 126, 93) !important;
+    border: 2px solid rgb(0, 96, 100) !important;
+    color: black;
+    width: 55vh;
+    margin-left: 3%;
+    opacity: 0.9;
+}
 
-    .textbox-container {
-        margin-bottom: 10px; /* Απόσταση μεταξύ των textboxes */
-    }
-    
-    hr {
-        border: none;
-        border-top: 1px solid #ccc;
-        margin: 10px 0; /* Απόσταση πάνω και κάτω από την οριζόντια γραμμή */
-    }
+.textbox-container {
+    margin-bottom: 10px;
+    /* Απόσταση μεταξύ των textboxes */
+}
 
-    @media screen and (max-width: 1280px) {
-        #description, #id, #name {
-            width: 100%;
-        }
-    }
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+    /* Απόσταση πάνω και κάτω από την οριζόντια γραμμή */
+}
 
-    @media screen and (max-width: 1280px) {
-        #btnCreate {
-            width: 100%;
-            margin-left: 0;
-        }
-    }
+@media screen and (max-width: 1280px) {
 
-    /* CSS για κεντρικά κουμπιά σε μικρές οθόνες */
+    #description,
+    #id,
+    #name {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #btnCreate {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* CSS για κεντρικά κουμπιά σε μικρές οθόνες */
 @media screen and (max-width: 1280px) {
     .d-grid.col-5.mx-auto {
         width: 80% !important;
@@ -272,6 +284,7 @@ hr.new2{
 
 /* Κουμπιά σε μικρότερες οθόνες */
 @media screen and (max-width: 768px) {
+
     #btnCreate,
     #btnCancel {
         width: 100%;
@@ -279,6 +292,6 @@ hr.new2{
     }
 }
 
-#click{
+#click {
     cursor: pointer;
-  }
+}

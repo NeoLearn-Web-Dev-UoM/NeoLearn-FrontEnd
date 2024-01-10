@@ -11,13 +11,16 @@ hr {
     /* height: 100vh; */
     max-width: 70% !important;
 }
+
 @media screen and (max-width: 1280px) {
     .container {
         background-color: lightgray;
         /* height: 100vh; */
-        max-width: 100% !important; /*lefki*/
+        max-width: 100% !important;
+        /*lefki*/
+    }
 }
-  }
+
 #header-container {
     background-color: lightgray;
     height: 10vh !important;
@@ -27,12 +30,13 @@ hr {
 
 @media screen and (max-width: 1280px) {
     #header-container {
-      background-color: lightgray;
-      height: 10vh !important;
-      padding-top: 0%;
-      margin-bottom: -10%!important;
-  }
-  }
+        background-color: lightgray;
+        height: 10vh !important;
+        padding-top: 0%;
+        margin-bottom: -10% !important;
+    }
+}
+
 .profile-container {
     display: grid !important;
     align-items: center !important;
@@ -86,11 +90,13 @@ hr {
     display: flex;
     flex-direction: row !important;
     color: black !important;
+    overflow-y: auto;
 }
 
 @media screen and (max-width: 992px) {
     .profile-details {
-        width: 80%; /*lefki*/
+        width: 80%;
+        /*lefki*/
         margin-left: 3px;
         padding-left: 9px;
         align-items: center;
@@ -198,11 +204,11 @@ hr {
 
 }
 
-  .st{
+.st {
     color: white;
-  }
+}
 
-  #hidden{
+#hidden {
     display: none;
     background-color: rgb(0, 96, 100);
     color: white;
@@ -210,40 +216,46 @@ hr {
     opacity: 0.8;
     margin-right: 500px;
     margin-left: 5px;
-  }
-
-  .h1changes{
-    margin-left: 0;
-    display: none;
-    width: 100%!important; /* Καθορίζει το πλάτος του <hr> στο 100% του παρεχόμενου χώρου */
-    box-sizing: content-box; 
-  }
-  .h1changes {
-    margin-top: 0; /* Καθορίζει το άνω περιθώριο ως μηδέν */
-    color:red;
 }
 
-  #datetime-container{
+.h1changes {
+    margin-left: 0;
+    display: none;
+    width: 100% !important;
+    /* Καθορίζει το πλάτος του <hr> στο 100% του παρεχόμενου χώρου */
+    box-sizing: content-box;
+}
+
+.h1changes {
+    margin-top: 0;
+    /* Καθορίζει το άνω περιθώριο ως μηδέν */
+    color: red;
+}
+
+#datetime-container {
     display: none;
     margin-right: 5%;
-  }
+}
 
-  .lesson-link{
+.lesson-link {
     cursor: pointer;
 
-  }
-  table {
+}
+
+table {
     border-collapse: collapse;
     width: 100%;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
 }
 
-th:nth-child(3), td:nth-child(3) {
+th:nth-child(3),
+td:nth-child(3) {
     text-align: center;
 }
 
@@ -253,7 +265,8 @@ td svg {
 }
 
 /* Adjust the text alignment for the specific column */
-th:nth-child(2), td:nth-child(2) {
+th:nth-child(2),
+td:nth-child(2) {
     text-align: left;
 }
 
@@ -264,22 +277,22 @@ th:nth-child(2), td:nth-child(2) {
 }
 
 .custom-header {
-    color: rgb(38, 50, 56)!important;
+    color: rgb(38, 50, 56) !important;
 }
 
-#addField{
-    background-color: rgb(161,214,172) !important;
+#addField {
+    background-color: rgb(161, 214, 172) !important;
     border: 2px solid rgb(0, 96, 100);
     /* margin-top: 10px !important; */
-    color:rgb(38, 50, 56);
+    color: rgb(38, 50, 56);
 }
 
-#files{
+#files {
     margin-left: 25%;
 }
 
-#newFolder{
-    margin-left: 1%!important;
+#newFolder {
+    margin-left: 1% !important;
     text-align: left;
 }
 
@@ -293,28 +306,30 @@ th:nth-child(2), td:nth-child(2) {
 
 
 @media screen and (max-width: 768px) {
+
     #addField,
     #uploadDoc1 {
         width: 100%;
-        margin-left: -25%!important;
+        margin-left: -25% !important;
     }
 }
 
 
-#btnNewFolder,#uploadDoc1:active {
+#btnNewFolder,
+#uploadDoc1:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-  }
+}
 
-  hr.new1{
+hr.new1 {
     border: 1px solid white;
 }
 
-hr.new2{
+hr.new2 {
     border: 1px solid #263238;
-  }
-  
-  #click{
+}
+
+#click {
     cursor: pointer;
-  }
+}

@@ -82,7 +82,7 @@ hr {
     margin-top: 22px;
     color: black;
     width: 15rem !important;
-    background-color: rgb(231,126,93) !important;
+    background-color: rgb(231, 126, 93) !important;
     border: 2px solid rgb(0, 96, 100);
     /* margin-top: 10px !important; */
     text-align: center;
@@ -91,8 +91,8 @@ hr {
 #editLesson {
     margin-top: 22px;
     width: 15rem !important;
-    
-    background-color: rgb(161,214,172) !important;
+
+    background-color: rgb(161, 214, 172) !important;
     border: 2px solid rgb(0, 96, 100);
     /* margin-top: 10px !important; */
     text-align: center;
@@ -101,9 +101,9 @@ hr {
 #viewLesson {
     margin-top: 22px;
     width: 15rem !important;
-    background-color: rgb(128,195,208)!important;
+    background-color: rgb(128, 195, 208) !important;
     border: 2px solid rgb(0, 96, 100);
-     color: black!important;
+    color: black !important;
     /* margin-top: 10px !important; */
     text-align: center;
 }
@@ -129,12 +129,13 @@ hr {
     padding-left: 9px;
     align-items: center;
     background-color: lightgray;
+    overflow-y: auto;
 }
 
 @media screen and (max-width: 1280px) {
     #details-container {
         margin-top: 25%;
-       
+
     }
 }
 
@@ -157,11 +158,13 @@ hr {
     display: flex;
     flex-direction: row !important;
     color: black !important;
+    overflow-y: auto;
 }
 
 @media screen and (max-width: 992px) {
     .profile-details {
-        width: 80%; /*lefki*/
+        width: 80%;
+        /*lefki*/
         margin-left: 3px;
         padding-left: 9px;
         align-items: center;
@@ -301,27 +304,27 @@ button {
 
 /* telos sidebar */
 
-hr.new1{
+hr.new1 {
     border: 1px solid white;
 }
 
-hr.new2{
+hr.new2 {
     border: 1px solid #263238;
-  }
-  
-  #click{
-    cursor: pointer;
-  }
+}
 
-  #quizLesson {
+#click {
+    cursor: pointer;
+}
+
+#quizLesson {
     margin-top: 22px;
     margin-left: 12px;
     width: 15rem !important;
-    background-color: #574B90!important;
+    background-color: #574B90 !important;
     border: 2px solid rgb(0, 96, 100);
-     color: black!important;
+    color: black !important;
     /* margin-top: 10px !important; */
-    text-align: center!important;
+    text-align: center !important;
 }
 
 @media screen and (max-width: 1280px) {
@@ -343,5 +346,6 @@ table {
     text-align: center;
     justify-content: right;
     margin-right: 10vh;
-    margin-left: -5vh;/*+*/
+    margin-left: -5vh;
+    /*+*/
 }

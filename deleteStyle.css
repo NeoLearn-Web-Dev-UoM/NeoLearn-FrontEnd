@@ -104,7 +104,8 @@ hr {
 
 @media screen and (max-width: 992px) {
     .profile-details {
-        width: 80%; /*lefki*/
+        width: 80%;
+        /*lefki*/
         margin-left: 3px;
         padding-left: 9px;
         align-items: center;
@@ -115,8 +116,10 @@ hr {
         display: flex;
         flex-direction: row !important;
         color: black !important;
+        overflow-y: auto;
     }
 }
+
 .sum-profile {
     display: flex;
     flex-direction: row !important;
@@ -190,6 +193,7 @@ hr {
         width: 100%;
     }
 }
+
 #options {
     overflow-wrap: break-word;
 }
@@ -218,23 +222,23 @@ hr {
     margin-left: 30px;
 }
 
-hr.new1{
+hr.new1 {
     border: 1px solid white;
 }
 
-hr.new2{
+hr.new2 {
     border: 1px solid #263238;
-  }
-  
-  #click{
-    cursor: pointer;
-  }
+}
 
-  hr.new1{
+#click {
+    cursor: pointer;
+}
+
+hr.new1 {
     border: 1px solid white;
 }
 
 
-hr.new2{
-  border: 1px solid #263238;
+hr.new2 {
+    border: 1px solid #263238;
 }

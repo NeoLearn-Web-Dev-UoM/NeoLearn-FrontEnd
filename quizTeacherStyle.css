@@ -11,13 +11,16 @@ hr {
     /* height: 100vh; */
     max-width: 70% !important;
 }
+
 @media screen and (max-width: 1280px) {
     .container {
         background-color: lightgray;
         /* height: 100vh; */
-        max-width: 100% !important; /*lefki*/
+        max-width: 100% !important;
+        /*lefki*/
+    }
 }
-  }
+
 #header-container {
     background-color: lightgray;
     height: 10vh !important;
@@ -27,12 +30,13 @@ hr {
 
 @media screen and (max-width: 1280px) {
     #header-container {
-      background-color: lightgray;
-      height: 10vh !important;
-      padding-top: 0%;
-      margin-bottom: -2%!important;
-  }
-  }
+        background-color: lightgray;
+        height: 10vh !important;
+        padding-top: 0%;
+        margin-bottom: -2% !important;
+    }
+}
+
 .profile-container {
     display: grid !important;
     align-items: center !important;
@@ -79,11 +83,13 @@ hr {
     display: flex;
     flex-direction: row !important;
     color: black !important;
+    overflow-y: auto;
 }
 
 @media screen and (max-width: 992px) {
     .profile-details {
-        width: 80%; /*lefki*/
+        width: 80%;
+        /*lefki*/
         margin-left: 3px;
         padding-left: 9px;
         align-items: center;
@@ -189,8 +195,8 @@ hr {
     color: black !important;
 
 }
-  
-  #newLec{
+
+#newLec {
     background-color: rgb(0, 96, 100);
     color: white;
     padding: 16px 20px;
@@ -198,19 +204,19 @@ hr {
     cursor: pointer;
     opacity: 0.8;
     width: 280px;
-  }
-  
-  /* Add some hover effects to buttons */
-  #newLec:hover {
+}
+
+/* Add some hover effects to buttons */
+#newLec:hover {
     opacity: 1;
     background-color: #39AEA9;
-  }
+}
 
-  .st{
+.st {
     color: white;
-  }
+}
 
-  #hidden{
+#hidden {
     display: none;
     background-color: rgb(0, 96, 100);
     color: white;
@@ -218,52 +224,56 @@ hr {
     opacity: 0.8;
     margin-right: 500px;
     margin-left: 5px;
-  }
-
-  #addTitle{
-    display: inline-flex;
-    margin-left: 2%;
-  }
-
-  #textboxContainer{
-    width: 280px;
-    margin-left: -4%;
-  }
-
-  .h1changes{
-    margin-left: 0;
-    display: none;
-    width: 100%!important; /* Καθορίζει το πλάτος του <hr> στο 100% του παρεχόμενου χώρου */
-    box-sizing: content-box; 
-  }
-  .h1changes {
-    margin-top: 0; /* Καθορίζει το άνω περιθώριο ως μηδέν */
-    color:red;
 }
 
-  #datetime-container{
+#addTitle {
+    display: inline-flex;
+    margin-left: 2%;
+}
+
+#textboxContainer {
+    width: 280px;
+    margin-left: -4%;
+}
+
+.h1changes {
+    margin-left: 0;
+    display: none;
+    width: 100% !important;
+    /* Καθορίζει το πλάτος του <hr> στο 100% του παρεχόμενου χώρου */
+    box-sizing: content-box;
+}
+
+.h1changes {
+    margin-top: 0;
+    /* Καθορίζει το άνω περιθώριο ως μηδέν */
+    color: red;
+}
+
+#datetime-container {
     display: none;
     margin-right: 5%;
-  }
+}
 
-  .lesson-link{
+.lesson-link {
     cursor: pointer;
     text-decoration: underline;
     color: rgb(0, 96, 100);
-  }
-  
-  .custom-header {
-    color: rgb(38, 50, 56)!important;
 }
 
-hr.new1{
+.custom-header {
+    color: rgb(38, 50, 56) !important;
+}
+
+hr.new1 {
     border: 1px solid white;
 }
 
-hr.new2{
+hr.new2 {
     border: 1px solid #263238;
-  }
-  
-  #click, #dlt{
+}
+
+#click,
+#dlt {
     cursor: pointer;
-  }
+}
