@@ -61,3 +61,18 @@ function addBtn(lesson) {
     // Navigate to the new_page.html
     window.location.href = 'student.html';
 }
+
+document.getElementById('searchInput').addEventListener('input', function () {
+    var searchValue = this.value.toLowerCase();
+    var lessonsContainer = document.getElementById('courses-frame');
+    var lessonLinks = lessonsContainer.getElementsByClassName('lesson-link');
+
+    for (var i = 0; i < lessonLinks.length; i++) {
+        var lessonText = lessonLinks[i].querySelector('.blockquote p').textContent.toLowerCase();
+        if (lessonText.includes(searchValue)) {
+            lessonLinks[i].style.display = 'block';
+        } else {
+            lessonLinks[i].style.display = 'none';
+        }
+    }
+});
