@@ -6,8 +6,15 @@ hr {
     color: black !important;
 }
 
+hr.new2{
+    border: 1px solid #263238;
+  }
 
-
+  @media screen and (max-width: 1280px) {
+    hr.new2{
+       margin-top: -2%;
+      }
+  }
 .container {
     background-color: lightgray;
     /* height: 100vh; */
