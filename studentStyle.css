@@ -93,17 +93,16 @@ hr {
 
 #courses-frame {
     margin-top: 15px;
-    height: 60vh;
-    width: 100%;
-    box-shadow: 5px 5px 20px rgb(0, 96, 100);
     margin-left: 3px;
+    box-shadow: 5px 5px 20px rgb(0, 96, 100);
+    background-color: lightgray;
+    width: 100%;
     display: inline-flex;
     padding-top: 15px;
-    padding-left: 9px;
     align-items: center;
     box-sizing: border-box;
+    padding: 10px;
     font-size: 12px;
-    background-color: lightgray;
 }
 
 #row-course {
