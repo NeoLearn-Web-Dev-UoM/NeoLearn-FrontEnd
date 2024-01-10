@@ -112,13 +112,16 @@ hr {
     padding-left: 9px;
     align-items: center;
     background-color: lightgray;
+    overflow-y: auto;
 }
+
 @media screen and (max-width: 1280px) {
     #details-container {
         margin-top: 25%;
-       
+
     }
 }
+
 .footer {
     text-align: center !important;
     color: rgba(0, 0, 0, 0.5);
@@ -140,6 +143,7 @@ hr {
     display: flex;
     flex-direction: row !important;
     color: black !important;
+    overflow-y: auto;
 }
 
 .sum-profile {
@@ -279,17 +283,18 @@ table {
     text-align: center;
     justify-content: right;
     margin-right: 10vh;
-    margin-left: -5vh;/*+*/
+    margin-left: -5vh;
+    /*+*/
 }
 
-hr.new1{
+hr.new1 {
     border: 1px solid white;
 }
 
-hr.new2{
-  border: 1px solid #263238;
+hr.new2 {
+    border: 1px solid #263238;
 }
 
-#click{
+#click {
     cursor: pointer;
 }

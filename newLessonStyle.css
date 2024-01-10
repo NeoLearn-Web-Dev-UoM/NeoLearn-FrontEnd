@@ -143,6 +143,7 @@ h5 {
     flex-direction: row !important;
     color: black !important;
     margin-bottom: 5%;
+    overflow-y: auto;
 }
 
 .sum-profile {
