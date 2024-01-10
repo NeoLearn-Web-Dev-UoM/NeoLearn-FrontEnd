@@ -1,13 +1,36 @@
 'use strict'
 
-      const form = document.getElementById("quiz-form");
-      form.onsubmit = function() {
-        const inputs = form.querySelectorAll("input[type=radio]:checked");
-        const score = inputs.length;
-        alert("Your score is: " + score + "/10");
-        event.preventDefault();
-        window.location.href = 'quizTeacher.html';
-      }
+const correctAnswers = {
+  q1: 'c',
+  q2: 'c',
+  q3: 'b',
+  q4: 'b',
+  q5: 'b',
+  q6: 'c',
+  q7: 'b',
+  q8: 'b',
+  q9: 'a',
+  q10: 'c'
+};
+
+const form = document.getElementById("quiz-form");
+form.onsubmit = function(event) {
+  event.preventDefault();
+
+  let score = 0;
+
+  for (let i = 1; i <= 10; i++) {
+    const questionName = 'q' + i;
+    const userAnswer = form.querySelector('input[name="' + questionName + '"]:checked');
+
+    if (userAnswer && userAnswer.value === correctAnswers[questionName]) {
+      score++;
+    }
+  }
+
+  alert("Your score is: " + score + "/10");
+  window.location.href = 'quizTeacher.html';
+}
 
       let duration = 30 * 60;
 
