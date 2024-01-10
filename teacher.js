@@ -41,7 +41,23 @@ function homeBtn() {
 function logOutBtn() {
     var txt;
     if (confirm("Είσαι σίγουρος ότι επιθυμείς να αποσυνδεθείς από το Λογαριασμό σου;")) {
-      window.location.href = 'welcome.html';
+        window.location.href = 'welcome.html';
     }
     document.getElementById("demo").innerHTML = txt;
 }
+
+
+document.getElementById('searchInput').addEventListener('input', function () {
+    var searchValue = this.value.toLowerCase();
+    var lessonsContainer = document.getElementById('courses-frame');
+    var lessonLinks = lessonsContainer.getElementsByClassName('lesson-link');
+
+    for (var i = 0; i < lessonLinks.length; i++) {
+        var lessonText = lessonLinks[i].querySelector('.blockquote p').textContent.toLowerCase();
+        if (lessonText.includes(searchValue)) {
+            lessonLinks[i].style.display = 'block';
+        } else {
+            lessonLinks[i].style.display = 'none';
+        }
+    }
+});
