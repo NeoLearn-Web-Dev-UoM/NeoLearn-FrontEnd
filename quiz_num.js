@@ -1,35 +1,29 @@
 'use strict'
 
-const correctAnswers = {
-  q1: 'c',
-  q2: 'c',
-  q3: 'b',
-  q4: 'b',
-  q5: 'b',
-  q6: 'c',
-  q7: 'b',
-  q8: 'b',
-  q9: 'a',
-  q10: 'c'
-};
+document.getElementById("quiz-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Αποτρέπει την προεπιλεγμένη συμπεριφορά της φόρμας (αποστολή και ανανέωση της σελίδας)
+  calculateScore();
+});
 
-const form = document.getElementById("quiz-form");
-form.onsubmit = function(event) {
+function calculateScore() {
   event.preventDefault();
 
+  const correctAnswers = ["c", "c", "b", "b", "b", "c", "b", "b", "a", "c"];
   let score = 0;
 
   for (let i = 1; i <= 10; i++) {
-    const questionName = 'q' + i;
-    const userAnswer = form.querySelector('input[name="' + questionName + '"]:checked');
+      const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
 
-    if (userAnswer && userAnswer.value === correctAnswers[questionName]) {
-      score++;
-    }
+      if (selectedAnswer) {
+          const userAnswer = selectedAnswer.value;
+
+          if (userAnswer === correctAnswers[i - 1]) {
+              score++;
+          }
+      }
   }
 
-  alert("Your score is: " + score + "/10");
-  window.location.href = 'quizTeacher.html';
+  alert(`Σκορ: ${score}/10`);
 }
 
       let duration = 30 * 60;
