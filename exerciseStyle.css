@@ -237,3 +237,7 @@ hr {
     color: black !important;
 
 }
+
+#click{
+    cursor: pointer;
+}
