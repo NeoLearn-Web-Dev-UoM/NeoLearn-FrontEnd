@@ -163,6 +163,7 @@ hr {
     display: flex;
     flex-direction: row !important;
     color: black !important;
+    overflow-y: auto;
 }
 
 @media screen and (max-width: 992px) {
@@ -296,7 +297,7 @@ hr.new2 {
 
 }
 
-.st{
+.st {
     color: #263238;
-    display: inline!important;
-  }
+    display: inline !important;
+}
