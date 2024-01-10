@@ -11,11 +11,9 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
 </head>
 
 <body>
-
     <div class="sidebar">
         <img src="images/NL-white.png" class="logo">
         <hr class="new1">
@@ -32,8 +30,6 @@
     </div>
 
     <div class="container">
-        <!-- <img src="images/NL-white.png" class="logo"> -->
-
         <div class=".container text-black">
             <div class="row">
                 <div class="container-fluid" id="header-container">
@@ -42,16 +38,12 @@
                             <a class="navbar-brand" href="#">
                                 <div class="profile-container">
                                     <div class="col" id="home-questionmark">
-                                        <!--<img src="images/NL-home.png" alt="home" width="50" height="50"
-                                                                            class="d-inline-block align-text-top">-->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
                                             fill="currentColor" class="bi bi-houses  d-inline-block align-text-top"
                                             viewBox="0 0 16 16" style="color: #263238;" onclick="homeBtn()">
                                             <path
                                                 d="M5.793 1a1 1 0 0 1 1.414 0l.647.646a.5.5 0 1 1-.708.708L6.5 1.707 2 6.207V12.5a.5.5 0 0 0 .5.5.5.5 0 0 1 0 1A1.5 1.5 0 0 1 1 12.5V7.207l-.146.147a.5.5 0 0 1-.708-.708zm3 1a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708zm.707.707L5 7.207V13.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5V7.207z" />
                                         </svg>
-                                        <!--<img src="images/NL-questionmark.png" alt="questionmark" width="50" height="50"
-                                                                            class="d-inline-block align-text-top">-->
                                         <div id="popoverContainer" style="display: inline-block;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
                                                 fill="currentColor"
@@ -65,8 +57,6 @@
                                         </div>
                                     </div>
                                     <div class="col" id="profile-col">
-                                        <!--<img src="images/NL-profile.png" alt="profile" width="50" height="50"
-                                                                            class="d-inline-block align-text-top">-->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
                                             fill="currentColor"
                                             class="bi bi-person-circle d-inline-block align-text-top"
@@ -79,9 +69,7 @@
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             ics21100
                                         </a>
-
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
                                             <li><a class="dropdown-item" href="student.html">Τα μαθήματα μου</a></li>
                                             <li>
                                                 <hr class="dropdown-divider">
@@ -94,7 +82,6 @@
                                             </li>
                                         </ul>
                                     </div>
-
                                 </div>
                             </a>
                         </li>
@@ -114,7 +101,6 @@
                         </div>
                         <div class=".container-md" id="courses-frame">
                             <div class="slide" id="slide1">
-                                <!-- θα το βαζω να πηγαινει στο αναλογο αρχειο του μαθηματος -->
                                 <a class="lesson-link" onclick="openNewPage('lessonText1' ,'sourceTitle1')">
                                     <figure>
                                         <blockquote class="blockquote">
@@ -138,7 +124,6 @@
                                         </figcaption>
                                     </figure>
                                 </a>
-
                                 <!-- <hr> -->
                                 <a class="lesson-link" onclick="openNewPage('lessonText3','sourceTitle3')">
                                     <figure>
@@ -211,7 +196,6 @@
                                     id="slideBtn">Πίσω</button>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="col" id="right-col">
@@ -219,7 +203,6 @@
                         <a href="newLesson.html" class="list-group-item">
                             <img src="images/NL-add.png" class="newLesson" alt="add">
                             Εγγραφή σε μάθημα</a></button>
-
                     <div class="button-container">
                         <button id="prev-btn">&#8249
                         </button>
@@ -264,10 +247,8 @@
         </div>
     </div>
     <script src="student.js"></script>
-    <!-- <script src="sideBar.js"></script> -->
     <script src="newLesson.html"></script>
     <script src="calendarL.js"></script>
-
     <!--<script>
         // Use unique identifiers for each link
         var keyPrefix = 'student_';  // Unique prefix
