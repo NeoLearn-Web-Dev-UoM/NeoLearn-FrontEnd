@@ -87,11 +87,6 @@ hr {
     color: black !important;
 
 }
-#lesson {
-    width: 30vh;
-    
-
-}
 
 @media screen and (max-width: 1280px) {
     #lesson {
