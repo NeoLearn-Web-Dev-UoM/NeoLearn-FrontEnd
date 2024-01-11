@@ -87,7 +87,20 @@ hr {
     color: black !important;
 
 }
+#lesson {
+    width: 30vh;
+    
 
+}
+
+@media screen and (max-width: 1280px) {
+    #lesson {
+        width: 30vh;
+        margin-bottom: 10px;
+        
+    
+    }
+}
 #deleteLesson {
     margin-top: 22px;
     width: 14rem !important;

@@ -276,6 +276,14 @@ hr.new2 {
 
 }
 
+@media screen and (max-width: 1280px) {
+    #title {
+        width: 30vh;
+        margin-bottom: 10px;
+        
+    
+    }
+}
 .lesson-link {
     cursor: pointer;
     text-decoration: underline;

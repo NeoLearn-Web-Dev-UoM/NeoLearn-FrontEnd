@@ -199,6 +199,14 @@ hr {
 
 }
 
+@media screen and (max-width: 1280px) {
+    #title {
+        width: 30vh;
+        margin-bottom: 10px;
+        
+    
+    }
+}
 #newLec {
     background-color: rgb(0, 96, 100);
     color: white;
