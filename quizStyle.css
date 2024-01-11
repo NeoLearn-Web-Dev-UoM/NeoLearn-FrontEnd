@@ -166,7 +166,14 @@ hr {
     padding: 16px;
     text-decoration: none;
 }
-
+@media screen and (max-width: 1280px) {
+    .container {
+      background-color: lightgray;
+      /* height: 100vh; */
+      max-width: 100% !important;
+      /*lefki*/
+    }
+  }
 .sidebar a.active {
     background-color: #263238;
     color: white;
@@ -237,4 +244,14 @@ hr {
     flex-direction: row !important;
     color: black !important;
 
+}
+
+
+@media screen and (max-width: 1280px) {
+    #title {
+        width: 30vh;
+        margin-bottom: 10px;
+        
+    
+    }
 }
