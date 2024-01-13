@@ -19,8 +19,8 @@
         <img src="images/NL-white.png" class="logo" alt="NeoLearn">
         <hr class="new1">
         <a class="active" href="#home" id="options">Βασικές επιλογές</a>
-        <a href="lessonDescription.html" title="description"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+        <a href="lessonDescription.html" title="description"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
                 <path
                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
             </svg> Περιγραφή</a>
@@ -30,8 +30,8 @@
                 <path
                     d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1z" />
             </svg> Έγγραφα</a>
-        <a href="quiz.html" title="quiz"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-book-fill" viewBox="0 0 16 16">
+        <a href="quiz.html" title="quiz"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-book-fill" viewBox="0 0 16 16">
                 <path
                     d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
             </svg> Quiz αυτό-αξιολόγησης</a>
@@ -62,7 +62,7 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
                                                 fill="currentColor"
                                                 class="bi bi-question-diamond d-inline-block align-text-top"
-                                                viewBox="0 0 16 16" style="color: #263238;">
+                                                viewBox="0 0 16 16" style="color: #263238;" onclick="homeBtn()">
                                                 <path
                                                     d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z" />
                                                 <path
@@ -87,11 +87,13 @@
                                         </a>
 
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="student.html" title="courses">Τα μαθήματα μου</a></li>
+                                            <li><a class="dropdown-item" href="student.html" title="courses">Τα μαθήματα
+                                                    μου</a></li>
                                             <li>
                                                 <hr class="dropdown-divider">
                                             </li>
-                                            <li><a class="dropdown-item" href="calendar.html" title="calendar">Το ημερολόγιο μου</a></li>
+                                            <li><a class="dropdown-item" href="calendar.html" title="calendar">Το
+                                                    ημερολόγιο μου</a></li>
                                             <li>
                                                 <hr class="dropdown-divider">
                                             </li>
@@ -199,7 +201,7 @@
         </div>
     </div>
     <script src="calendarL.js"></script>
-    <script src="quiz.js"></script>
+    <script src="tryQuiz.js"></script>
     <script>
         // Use unique identifiers for each link
         var keyPrefix = 'lessonDescription_';  // Unique prefix
