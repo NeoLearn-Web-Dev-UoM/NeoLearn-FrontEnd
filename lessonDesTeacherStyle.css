@@ -82,10 +82,11 @@ hr {
     #lesson {
         width: 30vh;
         margin-bottom: 10px;
-        
-    
+
+
     }
 }
+
 #deleteLesson {
     margin-top: 22px;
     color: black;
@@ -356,4 +357,8 @@ table {
     margin-right: 10vh;
     margin-left: -5vh;
     /*+*/
+}
+
+#detailsElement {
+    padding-top: 90%;
 }

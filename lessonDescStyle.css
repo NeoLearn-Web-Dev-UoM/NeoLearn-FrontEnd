@@ -92,10 +92,11 @@ hr {
     #lesson {
         width: 30vh;
         margin-bottom: 10px;
-        
-    
+
+
     }
 }
+
 #deleteLesson {
     margin-top: 22px;
     width: 14rem !important;
@@ -305,4 +306,8 @@ hr.new2 {
 
 #click {
     cursor: pointer;
+}
+
+#detailsElement {
+    padding-top: 90%;
 }
