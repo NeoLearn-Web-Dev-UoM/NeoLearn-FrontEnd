@@ -359,6 +359,8 @@ table {
     /*+*/
 }
 
-#detailsElement {
-    padding-top: 90%;
+@media screen and (max-width: 1280px) {
+    #detailsElement {
+        padding-top: 50%;
+    }
 }
